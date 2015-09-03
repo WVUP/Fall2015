@@ -1,0 +1,140 @@
+title CS129: The Video Game v0.0.1
+author Matt Gable
+
+color_palette pastel
+
+========
+OBJECTS
+========
+
+Background
+LIGHTBLUE BLUE
+00000
+10000
+00000
+00010
+00000
+
+Player
+GREEN DARKBLUE RED
+.....
+..2..
+.000.
+01110
+.1.1.
+
+Student
+YELLOW DARKBLUE RED
+.....
+..2..
+.000.
+01110
+.1.1.
+
+AF
+ORANGE DARKBLUE RED
+.....
+..2..
+.000.
+01110
+.1.1.
+
+ASSIGNMENT
+WHITE DARKBLUE LIGHTBLUE
+10001
+01010
+10000
+00010
+00100
+
+Table
+GREY
+.....
+00000
+00000
+00000
+.....
+
+Desk
+LIGHTBROWN
+.....
+00000
+00000
+00000
+.....
+
+
+
+=======
+LEGEND
+=======
+
+.=Background
+X=Player
+S=Student
+F=AF
+A=Assignment
+T=Table
+D=Desk
+
+
+=======
+SOUNDS
+=======
+
+================
+COLLISIONLAYERS
+================
+
+Background
+Desk
+Player, Student, AF, Assignment, Table
+
+======
+RULES
+======
+
+[> Player | Student] -> [> Player | > Student]
+[> Player | Assignment] -> [> Player | > Assignment]
+[> Student | Assignment] -> [> Student | > Assignment]
+[> Assignment | Student] -> [> Assignment | > Student]
+
+==============
+WINCONDITIONS
+==============
+
+All Assignment on Desk
+
+=======
+LEVELS
+=======
+
+Message Welcome to CS129. Place your assignment on AF's desk in the front!
+
+......DFDD
+.TTT..TTT.
+..S.......
+.TTT..TTT.
+..S...S.S.
+.TTT.ATTT.
+.S....X...
+
+Message Place your assignment on AF's desk in the front! But it's between two students!
+
+......DFDD
+.TTT..TTT.
+..S.......
+.TTT..TTT.
+..S...SAS.
+.TTT..TTT.
+.S....X...
+
+Message Place BOTH assignments on AF's desk!
+
+......DFDD
+.TTT..TTT.
+..S....A..
+.TTT..TTT.
+..S...SAS.
+.TTT..TTT.
+.S....X...
