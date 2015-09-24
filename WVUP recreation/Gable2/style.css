@@ -1,0 +1,206 @@
+body
+{
+	background-color: #99CCFF;
+}
+
+.mainbg
+{
+	width: 85%;
+	height: 1700px;
+	margin: 0 auto;
+	background-color: #E3B42B;
+	border-radius: 20px;
+	box-shadow: 0px 0px 10px black;
+}
+
+.topnav
+{
+	height: 2.9%;
+	background: linear-gradient(#3F49BF, #111683);
+	font-family: Helvetica;
+	font-size: 80%;
+	font-weight: bold;
+	text-shadow: 1px -1px #000000;
+	color: #E3B42B;
+}
+
+.topnav-list
+{
+	list-style-type: none;
+}
+
+.topnav-list li
+{
+	padding-top: 2%;
+	padding-bottom: 1%;
+	padding-left: .3%;
+	padding-right: .3%;
+	display: inline-block;
+}
+
+.topnav-list li:hover
+{
+	background: linear-gradient(#FFFFFF, #111683);
+	color: white;
+}
+
+.leftbar
+{
+	float: left;
+	height: 100%;
+	width: 20%;	
+	font-family: Helvetica;
+}
+
+.leftbar-list
+{
+	list-style-type: none;
+	text-align: right;
+}
+
+.leftbar-list li
+{
+	padding: 3% 3% 3% 3%;
+	color: #003366;
+	font-size: 75%;
+}
+.leftbar-list li:hover
+{
+	color: white;
+	background-color: #003366;
+}
+.leftbar-pic
+{
+	width: 100%;
+	margin-top: 10%;
+}
+.leftbar-dapic
+{
+	margin-top: 10%;
+	padding-right: 5%;
+	padding-bottom: 5%;
+}
+
+.leftbar-dapic:hover
+{
+	background-color: #003366;
+}
+
+
+.rightbar
+{
+	float: right;
+	background-color: white;
+	width: 80%;
+	height: 85%;
+	border-radius: 20px;
+}
+.calendar
+{
+	float: right;
+	background: linear-gradient(#5CB8E6, #DEF1FA);
+	margin-top: -10%;
+	margin-right: 3%;
+	width: 30%;
+	height: 60%;
+	border-radius: 15px;
+	position: relative;
+	z-index: 1;
+	font-family: Helvetica;
+	font-size: 120%;
+	color: darkblue;
+	box-shadow: 0px 0px 10px black;
+}
+.calendar-topsection
+{
+	text-align: center;
+	border-radius: 15px;
+	font-weight: bold;
+}
+.calendar-mainsection-line
+{
+	border-left: thick solid;
+	border-left-color: darkblue;
+	margin-left: 5%;
+}
+.calendar-mainsection-line-text
+{
+	font-size: 75%;
+	margin-left: 5%;
+}
+.calendar-socialsection
+{
+
+}
+
+.midsection
+{
+	font-family: Helvetica;
+	font-size: 90%;
+	width: 60%;
+	padding-left: 2%;
+	letter-spacing: 1px;
+}
+
+.midsection-newhead
+{
+	color: darkblue;
+	font-weight: bold;
+	font-size: 150%;
+	letter-spacing: 0px;
+}
+
+}
+
+.midsection-pics
+{
+	display: inline-block;
+	width: 28%;
+	padding: 2%
+}
+
+
+.nolinkstuff
+{
+	background-color: none;
+	text-decoration: none;
+	color: #003366;
+}
+
+.nolinkstuff:hover
+{
+	background-color: #003366;
+	text-decoration: none;
+	color: white;
+}
+
+.calendar-bottom-pics
+{
+	display: inline-block;
+	margin-left: 28%;
+}
+.bottom-box
+{
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	height: 13%;
+	margin-top: 11.5%;
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: 0px 0px 10px black;
+}
+.bottom-box-upper
+{
+	text-align: center;
+	font-family: Helvetica;
+	font-weight: lighter;
+	font-size: 100%;
+}
+.bottom-box-text
+{
+	text-align: center;
+	font-family: Helvetica;
+	font-weight: lighter;
+	font-size: 85%;
+}
