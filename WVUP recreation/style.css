@@ -1,0 +1,101 @@
+<style>
+
+.container
+{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+ul.list-unstyled li
+{
+    list-style-type: none;
+    height: 20px;
+}
+
+.list-inline li
+{
+    display: inline-block;
+}
+.main-nav
+{
+    background-color:  #000099;
+    padding: 0;
+    margin: 0;
+    font-family: tahoma;
+
+}
+
+.main-nav li
+{
+    padding:20px 10px;
+}
+.main-nav li:hover a {
+    background-color: white;
+}
+.main-nav a
+{
+    text-decoration: none; 
+    color: orange;
+}
+.article {
+    width: 880px;
+    height: 900px;
+    background-color: white;
+    border-radius: 25px;
+    position: absolute;
+    text-align: center;
+    top: 100;
+    left: 235;
+    padding: 10px;
+}
+.heading {
+    margin-left: 10px;
+    text-align: left;
+    margin-right: 300;
+    font-family:arial;
+    color: navy;
+}
+.content {
+    margin-left: 10px;
+    margin-right: 300;
+    font-size: 90%;
+    font-family: arial;
+    color: black;
+}
+
+.nav {
+    line-height: 20px;
+    border-radius: 25px;
+    background: linear-gradient(orange, yellow);
+    color: blue;
+    height: 820px;
+    width: 100px;
+    float:left;
+    margin: 30px;
+    padding: 50px; 
+}
+
+.section {
+    width: 160px;
+    height: 700px;
+    background: linear-gradient(blue, white);
+    border-radius: 25px;
+    position: absolute;
+    top: 240;
+    left: 940;
+    padding: 10px; 
+}
+
+.footer {
+    line-height: 5px;
+    width: 900px;
+    border-radius: 25px;
+    float: center;
+    background-color: white;
+    color: black;
+    clear: both;
+    text-align: center;
+    margin: 60px;
+    padding: 10px; 
+}
+
+</style>
