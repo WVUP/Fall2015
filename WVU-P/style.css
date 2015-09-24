@@ -1,0 +1,232 @@
+body {
+	background:#9CBCDA;
+	margin:0;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#555;
+	line-height:1.5em;
+
+}
+.container{
+	max-width:1100px;
+	margin:0 auto;
+	height:1545px;
+	background:linear-gradient(to bottom, #e3b11f 0%,#e0ce9d 100%);
+	box-shadow: 0 6px 10px 2px rgba(0, 0, 0, .35);
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	z-index:1000;
+	position:relative;
+}
+ul.list-unstyled li {list-style-type:none}
+.list-inline li {display:inline-block}
+.main-nav {
+	background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ2NTFjOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjkwJSIgc3RvcC1jb2xvcj0iIzExMTY4MyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	padding:0;
+	margin:0;
+	box-shadow: 0 0 5px 2px rgba(0, 0, 0, .35);
+}
+.main-nav li {
+	padding:0 9px;
+}
+.main-nav li:hover {
+	background-color:#3B44AD;
+}
+.main-nav li:hover a{
+	color:#eee;
+}
+
+.main-nav li:active {
+	background-color:#E3B121;
+	color: #111683;
+	text-shadow:none;
+}
+.main-nav a {
+	text-decoration:none; 
+	color:#E3B11F;
+	text-shadow:0 -1px 0 #000000;
+	font-size:13px;
+	font-weight:600;
+	line-height:40px;
+}
+.left-pane{
+	float:left;
+	width:20%;
+	height:1200px;
+	background: url(http://www.wvup.edu/wp-content/gallery/sidebar-icons/icon-default.png) 0 0 no-repeat;
+	position:absolute;
+}
+
+.wv-logo {
+	display:block;
+	position: fixed;
+    background: url(http:www.wvup.edu/wp-content/themes/wvup/images/bell_graphic.gif) 0 0 no-repeat;
+    width: 220px;
+    height: 250px;
+    margin-top:90px;
+    z-index:-100;
+}
+
+.sidebar-icon {
+	background: url(http://www.wvup.edu/wp-content/gallery/sidebar-icons/icon-default.png) 0 0 no-repeat;
+	display:block;
+	position:absolute;
+	overflow:visible;
+}
+
+.sidebar-content {
+	padding-top:250px;
+	color:#111683;
+	z-index:5000;
+	font-size:13px;
+}
+
+.sidebar-content ul {
+	list-style:none;
+	text-align:right;
+	padding-left:0;
+
+}
+
+.sidebar-content li {
+}
+
+.sidebar-content a {
+	text-decoration: none;
+	color:#111683;
+	background-color:transparent;
+	transition: background-color .3s ease-in-out;
+	line-height:15px;
+	padding:5px 10px 5px 30px;
+	display:block;
+	
+}
+
+.sidebar-content li:hover a {
+	color:#fff;background-color: #111683;
+	transition: background-color .3s ease-in-out;
+}
+
+.wrapper {
+	padding: 0 20px 20px 20px;
+	background: transparent;
+}
+
+.right-pane{
+	float:right;
+	width:80%;
+	background-color:#fff;
+	height:1335px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+.landing-box{
+	background-image: url(http://www.wvup.edu/wp-content/gallery/home_headers/techguy2014.gif);
+	height:350px;
+	width:100%;
+	display:block;
+	box-shadow: 0 10px 20px rgba(50, 50, 50, .75);
+}
+.landing-title{
+	width:100%;
+	height:100%;
+	background:url(http:www.wvup.edu/wp-content/themes/wvup/images/wvuplogo.png) top right no-repeat;
+	float:right;
+	}
+.content{
+	height:100%;
+	background-color:#fff;
+	margin-top:40px;
+	border-radius:4px;
+	width:65%;
+	margin-right:0;
+	float:left;
+}
+
+.sidebar {
+	background: linear-gradient(to bottom, #5392ce 0%,#dde9f5 100%);
+	box-shadow: 0 0 10px rgba(0, 0, 0, .34);
+	width:35%;
+	float:right;
+	margin-top: -60px;
+	border-radius: 10px;
+}
+	
+.sidebar h3 {
+	font-size:14px;
+	text-align:center;
+	padding:0 0 -3px 0;
+}
+
+.sidebar ul {
+	color: #111683;
+	list-style:none;
+	padding:0;
+	margin:0;
+	border-left: 3px solid #111683;
+}
+
+.sidebar ul li{
+	margin-left:5px;
+	margin-bottom:10px;
+}
+
+.sidebar ul li a{
+	color: #111683;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+h2 {
+	font-size:18px;
+	padding:.75em 0;
+	margin:0;
+}
+
+.entry a, h2, h3, h4, h6 {
+	color: #111683;
+	text-decoration:none;
+}
+
+hr {
+	color:#ddd;
+	margin-right:20px;
+
+}
+
+.buttons li {
+	padding:5px;
+}
+
+.footerbar {
+	clear:both;
+	background: white;
+	color: #555;
+	float: right;
+	text-align: center;
+	width: 100%;
+	margin-top: 5px;
+	height:auto;
+	padding-bottom: 25px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.footer-text {
+	margin-left: 20px;
+    margin-right: 20px;
+}
+
+.footer-text a {
+	color: #111683;
+	font-size:17px;
+}
+
+.footer-small-text {
+	font-size:13px;
+	
+}
+
+.footer-small-text a {
+	color: #111683;
+}
