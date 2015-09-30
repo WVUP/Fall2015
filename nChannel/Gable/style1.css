@@ -2,10 +2,11 @@
 
 ==Reference==
 =nChannel colors=
-top bar gray--#3B3E4B
+dark gray--#3B3E4B
 light blue-- #9CDCF2
 orange--#EE7541
 light gray--#F4F4F4
+Mega dark gray--#333643
 
 */
 
@@ -14,6 +15,8 @@ body
 	/*big height--placeholder for scrolling*/
 	height: 5000px;
 	margin: 0px;
+	/*seeing lime green is bad...*/
+	background-color: lime;
 }
 
 .TopBar1
@@ -28,7 +31,7 @@ body
 
 .BlueSection2
 {
-	height: 12%;
+	height: 14%;
 	width: 100%;
 	background-color: #9CDCF2;
 }
@@ -42,15 +45,58 @@ body
 
 .WhiteSection4
 {
-	height: 12%;
+	height: 14%;
 	width: 100%;
 	background-color: #FFFFFF;
 }
 
 .LightGraySection5
 {
-	height: 12%;
+	height: 14%;
 	width: 100%;
 	background-color: #F4F4F4;
 }
+
+.WhiteSection6
+{
+	height:10%;
+	width: 100%;
+	background-color: #FFFFFF;
+}
+
+.OrangeSection7
+{
+	height: 14%;
+	width: 100%;
+	background-color: #EE7541;
+}
+
+.WhiteSection8
+{
+	height: 16%;
+	width: 100%;
+	background-color: #FFFFFF;
+}
+
+.LightGraySection9
+{
+	height: 9%;
+	width: 100%;
+	background-color: #F4F4F4;
+}
+
+.DarkGraySection10
+{
+	height: 5%;
+	width: 100%;
+	background-color: #3B3E4B;
+}
+
+.MegaDarkGraySection11
+{
+	height: 2%;
+	width: 100%;
+	background-color: #333643;
+}
+
 
