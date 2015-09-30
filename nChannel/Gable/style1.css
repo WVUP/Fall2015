@@ -7,6 +7,7 @@ light blue-- #9CDCF2
 orange--#EE7541
 light gray--#F4F4F4
 Mega dark gray--#333643
+Question button yellow--#EAAC15
 
 */
 
@@ -97,6 +98,37 @@ body
 	height: 2%;
 	width: 100%;
 	background-color: #333643;
+}
+
+.QuestionButtonBottom
+{
+	/*
+	position: fixed;
+	float: bottom;
+	top: 4950px;
+	height: 50px;
+	width: 20%;
+	*/
+	position: fixed;
+	right: 2%;
+	height: 6%;
+	width: 20%;
+	bottom: 0px;
+	background-color: #EAAC15;
+
+	font-family: Helvetica;
+	font-weight: bolder;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+}
+
+
+/*Generic classes*/
+.nolinkstuff
+{
+	text-decoration: none;
+	color: inherit;
 }
 
 
