@@ -1,11 +1,22 @@
+/*
+
+==Reference==
+=nChannel colors=
+top bar gray--#3B3E4B
+light blue-- #9CDCF2
+orange--#EE7541
+light gray--#F4F4F4
+
+*/
+
 body
 {
 	/*big height--placeholder for scrolling*/
-	height: 3000px;
+	height: 5000px;
 	margin: 0px;
 }
 
-.topbar
+.TopBar1
 {
 	position: fixed;
 	top: 0px;
@@ -15,9 +26,31 @@ body
 	background-color: #3B3E4B;
 }
 
-.main1
+.BlueSection2
 {
-	height: 100%;
+	height: 12%;
 	width: 100%;
 	background-color: #9CDCF2;
 }
+
+.OrangeSection3
+{
+	height: 2%;
+	width: 100%;
+	background-color: #EE7541;
+}
+
+.WhiteSection4
+{
+	height: 12%;
+	width: 100%;
+	background-color: #FFFFFF;
+}
+
+.LightGraySection5
+{
+	height: 12%;
+	width: 100%;
+	background-color: #F4F4F4;
+}
+
