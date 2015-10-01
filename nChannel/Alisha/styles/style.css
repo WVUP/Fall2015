@@ -13,6 +13,22 @@ body {
 	margin:0 auto;
 }
 
+#main-nav {
+	background-color:#3B3E4B;
+}
+
+ul.top-list {
+	list-style-type:none;
+}
+
+ul.nav-list {
+	list-style-type: none;
+}
+
+.list-inline li {
+	display:inline-block;
+}
+
 #main-header {
 	background-color:blue;
 	height:100px;
@@ -21,4 +37,16 @@ body {
 
 main {
 	background-color:#9CDCF2;
+}
+
+.content-section {
+	
+}
+
+article.content-area.features {
+	background-color:red;
+}
+
+#footer-content {
+	background-color:yellow;
 }
