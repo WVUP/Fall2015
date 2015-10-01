@@ -13,6 +13,13 @@ body {
 	margin:0 auto;
 }
 
+.contain {
+	max-width:940px;
+	position:relative;
+	margin:0 auto;
+	height:200px;
+}
+
 #logo {
 	background-image:url("images/logo.png");
 	text-indent:-9000px;
@@ -84,9 +91,40 @@ ul.top-list {
 }
 
 #main-header {
-	background-color:blue;
-	height:100px;
+	background-color:#9cdcf2;
+	padding: 85px 0 0 0;
 	
+}
+
+.wwh {
+	position:relative;
+	text-align: center;
+	height:100%;
+}
+
+.wwh h1 {
+	font-family:"Kreon", "Times New Roman", serif;
+	color:#fff;
+	font-size:34px;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.wwh p {
+	font-family:"Kreon", "Times New Roman", serif;
+	color:#fff;
+	font-size:20px;
+	line-height:2;
+	font-weight: 400;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.dots {
+	background-image:url(https://www.nchannel.com/wp-content/themes/nchannel/images/dot-pat.png);
+	background-repeat:repeat;
+	position:absolute;
+	height:55px;
+	width:100%;
+	bottom:0;
 }
 
 main {
