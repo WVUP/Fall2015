@@ -150,6 +150,8 @@ body
 	height: 6%;
 	width: 20%;
 	bottom: 0px;
+	border-radius: 20px 20px 0px 0px;
+	box-shadow: 2px -2px 5px darkgrey;
 	background-color: #EAAC15;
 
 	font-family: Helvetica;
