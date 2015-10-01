@@ -20,6 +20,7 @@ body {
 	width:155px;
 	background-repeat:no-repeat;
 	position:absolute;
+	top:-8px;
 }
 
 #top-nav {
@@ -40,6 +41,24 @@ body {
 ul.nav-list{
 	right:0;
 	position:absolute;
+	color:#7f8291;
+	list-style-type: none;
+	font-family:"Kreon", "Times New Roman", serif;
+	top:12px;
+}
+
+
+
+.nav-list li {
+	padding:20px 5px;
+}
+
+.nav-list li a {
+	vertical-align:middle;
+	padding:0 10px;
+	color:#7f8291;
+	font-weight:700;
+	text-decoration:none;
 }
 
 ul.top-list {
@@ -48,13 +67,16 @@ ul.top-list {
 	height:35px;
 }
 
-.nav-list.top-list li {
-	font-size:15px;
+.top-list li {
+	font-size:12px;
+	margin-left:30px;
 }
 
-ul.nav-list {
-	list-style-type: none;
-	font-family:"Kreon", "Times New Roman", serif;
+.top-list li a {
+	color:#7f8291;
+	font-family:"Roboto", "Helvetica", sans-serif;
+	line-height:2.5;
+	text-decoration:underline dotted;
 }
 
 .list-inline li {
