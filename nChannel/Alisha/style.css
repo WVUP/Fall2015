@@ -13,6 +13,13 @@ body {
 	margin:0 auto;
 }
 
+.wrap {
+	max-width:940px;
+	position:relative;
+	margin:0 auto;
+	height:526px;
+}
+
 #logo {
 	background-image:url("images/logo.png");
 	text-indent:-9000px;
@@ -20,6 +27,7 @@ body {
 	width:155px;
 	background-repeat:no-repeat;
 	position:absolute;
+	top:-8px;
 }
 
 #top-nav {
@@ -40,6 +48,24 @@ body {
 ul.nav-list{
 	right:0;
 	position:absolute;
+	color:#7f8291;
+	list-style-type: none;
+	font-family:"Kreon", "Times New Roman", serif;
+	top:12px;
+}
+
+
+
+.nav-list li {
+	padding:20px 5px;
+}
+
+.nav-list li a {
+	vertical-align:middle;
+	padding:0 10px;
+	color:#7f8291;
+	font-weight:700;
+	text-decoration:none;
 }
 
 ul.top-list {
@@ -48,13 +74,16 @@ ul.top-list {
 	height:35px;
 }
 
-.nav-list.top-list li {
-	font-size:15px;
+.top-list li {
+	font-size:12px;
+	margin-left:30px;
 }
 
-ul.nav-list {
-	list-style-type: none;
-	font-family:"Kreon", "Times New Roman", serif;
+.top-list li a {
+	color:#7f8291;
+	font-family:"Roboto", "Helvetica", sans-serif;
+	line-height:2.5;
+	text-decoration:underline dotted;
 }
 
 .list-inline li {
@@ -62,9 +91,69 @@ ul.nav-list {
 }
 
 #main-header {
-	background-color:blue;
-	height:100px;
+	background-color:#9cdcf2;
+	padding: 85px 0 0 0;
 	
+}
+
+.wwh {
+	position:relative;
+	text-align: center;
+	padding-bottom:130px;
+}
+
+.wwh h1 {
+	font-family:"Kreon", "Times New Roman", serif;
+	color:#fff;
+	font-size:34px;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.wwh p {
+	font-family:"Kreon", "Times New Roman", serif;
+	color:#fff;
+	font-size:20px;
+	line-height:2;
+	font-weight: 400;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    margin: 15px 0 0 0;
+}
+
+body .button {
+	background-color: #ee7541;
+	font-size:18px;
+	font-family:"Roboto", "Helvetica", sans-serif;
+	color:#fff;
+	font-weight:700;
+	font-style:italic;
+	padding: 10px 20px 12px 20px;
+	display:inline-block;
+	margin:20px 0 0 0;
+	border-radius: 0 10px 0 10px;
+}
+
+.connect {
+	height:200px;
+	position:relative;
+	background:url("https://www.nchannel.com/wp-content/themes/nchannel/images/dot-pat.png") repeat;
+}
+
+.connect .img {
+	display:block;
+	height:296px;
+	width:100%;
+	position:absolute;
+	bottom:0;
+	background:url("https://www.nchannel.com/wp-content/themes/nchannel/images/connect.png") no-repeat center bottom;
+	
+}
+.dots {
+	background-image:url(https://www.nchannel.com/wp-content/themes/nchannel/images/dot-pat.png);
+	background-repeat:repeat;
+	position:absolute;
+	height:55px;
+	width:100%;
+	bottom:0;
 }
 
 main {
