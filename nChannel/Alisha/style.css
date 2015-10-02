@@ -164,7 +164,7 @@ main {
 	
 }
 
-article.content-area.features {
+article.content-area.multichannel {
 	background-color:#EE7541;
 	color:#fff;
 	line-height:1;
@@ -172,7 +172,7 @@ article.content-area.features {
 	text-align:center;
 }
 
-article.content-area.features h2 {
+article.content-area.multichannel h2 {
 	font-size:34px;
 	font-family: "Kreon", "Times New Roman", serif;
 	font-weight:normal;
