@@ -2,12 +2,14 @@
 
 ==Reference==
 =nChannel colors=
-dark gray--#3B3E4B
-light blue-- #9CDCF2
-orange--#EE7541
+Dark gray--#3B3E4B
+Light blue-- #9CDCF2
+Orange--#EE7541
 light gray--#F4F4F4
 Mega dark gray--#333643
 Question button yellow--#EAAC15
+==
+Box shading--#181a20;
 
 */
 
@@ -138,20 +140,13 @@ body
 
 .QuestionButtonBottom
 {
-	/*
-	position: fixed;
-	float: bottom;
-	top: 4950px;
-	height: 50px;
-	width: 20%;
-	*/
 	position: fixed;
 	right: 2%;
 	height: 6%;
 	width: 20%;
 	bottom: 0px;
 	border-radius: 20px 20px 0px 0px;
-	box-shadow: 2px -2px 5px darkgrey;
+	box-shadow: 2px -2px 5px #181A20;
 	background-color: #EAAC15;
 
 	font-family: Helvetica;
@@ -160,6 +155,7 @@ body
 	color: white;
 	text-decoration: none;
 }
+
 .QuestionButtonBottom:hover
 {
 	height: 7%;
