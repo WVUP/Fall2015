@@ -9,6 +9,9 @@ light gray--#F4F4F4
 Mega dark gray--#333643
 Question button yellow--#EAAC15
 ==
+Button colors:
+Top yellow button--#EBAD06
+Top blue button--#00B2EE
 Box shading--#181a20;
 
 */
@@ -43,7 +46,7 @@ body
 	height: 50px;
 	width: 50px;
 	border-radius: 0px 0px 20px 20px;
-	background-color: #EAAC15;
+	background-color: #EBAD06;
 }
 
 .TopButton2
@@ -54,7 +57,7 @@ body
 	height: 50px;
 	width: 50px;
 	border-radius: 0px 0px 20px 20px;
-	background-color: #9CDCF2;
+	background-color: #00B2EE;
 }
 
 .TopButton3
