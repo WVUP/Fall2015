@@ -42,10 +42,10 @@ body
 {
 	position: fixed;
 	top: 100px;
-	left: 50%;
-	height: 50px;
-	width: 50px;
-	border-radius: 0px 0px 20px 20px;
+	left: 60%;
+	height: 35px;
+	width: 90px;
+	border-radius: 0px 0px 5px 5px;
 	background-color: #EBAD06;
 }
 
@@ -53,10 +53,10 @@ body
 {
 	position: fixed;
 	top: 100px;
-	left: 60%;
-	height: 50px;
-	width: 50px;
-	border-radius: 0px 0px 20px 20px;
+	left: 68%;
+	height: 35px;
+	width: 90px;
+	border-radius: 0px 0px 5px 5px;
 	background-color: #00B2EE;
 }
 
@@ -64,11 +64,22 @@ body
 {
 	position: fixed;
 	top: 100px;
-	left: 70%;
-	height: 50px;
-	width: 50px;
-	border-radius: 0px 0px 20px 20px;
+	left: 76%;
+	height: 35px;
+	width: 180px;
+	border-radius: 0px 0px 5px 5px;
 	background-color: #EE7541;
+}
+
+.TopButton4
+{
+	position: fixed;
+	top: 100px;
+	left: 91%;
+	height: 35px;
+	width: 45px;
+	border-radius: 0px 0px 5px 5px;
+	background-color: #3B3E4B;
 }
 
 .BlueSection2
@@ -148,11 +159,11 @@ body
 	height: 6%;
 	width: 20%;
 	bottom: 0px;
-	border-radius: 20px 20px 0px 0px;
+	border-radius: 0px 20px 0px 0px;
 	box-shadow: 2px -2px 5px #181A20;
 	background-color: #EAAC15;
 
-	font-family: Helvetica;
+	font-family: 'Roboto';
 	font-weight: bolder;
 	text-align: center;
 	color: white;
@@ -170,6 +181,16 @@ body
 {
 	text-decoration: none;
 	color: inherit;
+}
+
+.whitefont
+{
+	font-family: 'Roboto';
+	font-weight: bolder;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	font-style: italic;
 }
 
 
