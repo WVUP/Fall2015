@@ -202,4 +202,11 @@ body
 	font-style: italic;
 }
 
+.centerimageblock
+{
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
 
