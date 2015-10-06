@@ -25,7 +25,7 @@ body
 	/*seeing lime green is bad...*/
 	background-color: lime;
 	/*Default font for whole page*/
-	font-family: 'Roboto';
+	font-family: 'Kreon';
 
 }
 
@@ -121,7 +121,7 @@ body
 	margin: 0 auto;
 	line-height: 30px;
 
-	font-family: 'Roboto';
+	font-family: 'Kreon';
 	font-weight: bolder;
 	text-align: center;
 	color: white;
@@ -137,6 +137,14 @@ body
 	height: 2%;
 	width: 100%;
 	background-color: #EE7541;
+
+	font-family: 'Kreon';
+	font-weight: bolder;
+	text-align: center;
+	font-size: 200%;
+	color: white;
+	text-decoration: none;
+	line-height: 100px;
 }
 
 .WhiteSection4
@@ -208,7 +216,7 @@ body
 	background-color: #EAAC15;
 	line-height: 40px;
 
-	font-family: 'Roboto';
+	font-family: 'Kreon';
 	font-weight: bolder;
 	text-align: center;
 	color: white;
@@ -242,6 +250,15 @@ body
 .whitefontnotitalic
 {
 	font-family: 'Roboto';
+	font-weight: bolder;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+}
+
+.whitefontnotitalickreon
+{
+	font-family: 'Kreon';
 	font-weight: bolder;
 	text-align: center;
 	color: white;
