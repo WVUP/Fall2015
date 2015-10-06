@@ -26,7 +26,6 @@ body
 	background-color: lime;
 	/*Default font for whole page*/
 	font-family: 'Kreon';
-
 }
 
 .TopBar1
@@ -152,6 +151,23 @@ body
 	height: 14%;
 	width: 100%;
 	background-color: #FFFFFF;
+
+}
+.section4toptext
+{
+	font-family: 'Kreon';
+	color: #333643;
+	font-size: 125%;
+	margin: 0;
+	padding: 0;
+}
+.section42text
+{
+	font-family: 'Kreon';
+	color: #EE7541;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 .LightGraySection5
