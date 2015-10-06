@@ -14,6 +14,7 @@ Button colors:
 Top yellow button--#EBAD06
 Top blue button--#00B2EE
 Another blue button--#22B0E6
+Dark orange button--#A74F28
 Box shading--#181a20;
 
 */
@@ -210,7 +211,35 @@ body
 {
 	height: 14%;
 	width: 100%;
+	background-image: url("orange-back.JPG");
 	background-color: #EE7541;
+}
+
+.sec7text
+{
+	font-family: 'Kreon';
+	font-weight: bolder;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.sec7Button
+{
+	color: white;
+	background-color: #A74F28;
+	border-radius: 20px 20px 20px 20px;
+}
+
+.phonetext
+{
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-size: 200%;
+	display: inline-block;
 }
 
 .WhiteSection8
