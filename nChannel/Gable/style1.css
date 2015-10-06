@@ -112,6 +112,26 @@ body
 	background-color: #9CDCF2;
 }
 
+.SectionButton
+{
+	height: 5%;
+	width: 10%;
+	background-color: #EE7541;
+	border-radius: 0px 5px 0px 5px;
+	margin: 0 auto;
+	line-height: 30px;
+
+	font-family: 'Roboto';
+	font-weight: bolder;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+}
+.SectionButton:hover
+{
+	background-color: darkgrey;
+}
+
 .OrangeSection3
 {
 	height: 2%;
