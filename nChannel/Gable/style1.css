@@ -13,6 +13,7 @@ Light gray text--#787B8A
 Button colors:
 Top yellow button--#EBAD06
 Top blue button--#00B2EE
+Another blue button--#22B0E6
 Box shading--#181a20;
 
 */
@@ -168,6 +169,27 @@ body
 	font-size: 100%;
 	margin: 0;
 	padding: 0;
+}
+
+.Section4Button
+{
+	height: 5%;
+	width: 13%;
+	background-color: #22B0E6;
+	border-radius: 0px 5px 0px 5px;
+	margin: 0 auto;
+	line-height: 30px;
+	margin-top: 5%;
+
+	font-family: 'Kreon';
+	font-weight: bolder;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+}
+.Section4Button:hover
+{
+	background-color: darkgrey;
 }
 
 .LightGraySection5
