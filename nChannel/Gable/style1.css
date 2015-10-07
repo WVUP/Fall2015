@@ -405,6 +405,19 @@ body
 	display: inline-block;
 }
 
+.nolinkstuffbottom
+{
+	padding-right: 1%;
+	text-decoration: none;
+	color: #787B8A;
+	font-size: 75%;
+}
+
+.paddingsection10
+{
+	margin: 30px;
+}
+
 .MegaDarkGraySection11
 {
 	height: 2%;
