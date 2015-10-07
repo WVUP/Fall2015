@@ -207,6 +207,48 @@ body
 	background-color: #FFFFFF;
 }
 
+.section6text1
+{
+	font-size: 125%;
+	text-align: left;
+	color: #787B8A;
+	font-weight: bolder;
+	margin-top: 10%;
+	margin-right: 10%;
+}
+
+.section6text2
+{
+	font-family: 'Roboto';
+	font-size: 100%;
+	text-align: left;
+	color: #787B8A;
+	font-weight: normal;
+	margin-top: 10%;
+}
+
+.Section6Button
+{
+	height: 40%;
+	width: 30%;
+	background-color: #22B0E6;
+	border-radius: 0px 10px 0px 10px;
+	/*margin: 0 auto;*/
+	margin-left: 5px;
+	line-height: 40px;
+	margin-top: 5%;
+
+	font-family: 'Kreon';
+	font-weight: bolder;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+}
+.Section6Button:hover
+{
+	background-color: darkgrey;
+}
+
 .OrangeSection7
 {
 	height: 14%;
