@@ -383,6 +383,27 @@ body
 	width: 100%;
 	background-color: #3B3E4B;
 }
+.section10texta
+{
+	color: white;
+	font-size: 150%;
+	text-align: center;
+
+}
+
+.section10fonta
+{
+	background-color: #A74F28;
+	color:  #3B3E4B;
+	border-radius: 15px;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+}
 
 .MegaDarkGraySection11
 {
