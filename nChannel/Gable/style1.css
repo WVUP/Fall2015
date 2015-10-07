@@ -413,9 +413,19 @@ body
 	font-size: 75%;
 }
 
+.nolinkstuffbottom:hover
+{
+	color: white;
+}
+
 .paddingsection10
 {
 	margin: 30px;
+}
+.cells
+{
+	border-spacing: 50px 0;
+	text-align: left;
 }
 
 .MegaDarkGraySection11
