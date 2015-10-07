@@ -46,6 +46,7 @@ body
 {
 	padding-right: 1%;
 	text-decoration: none;
+	font-size: 90%;
 	color: #787B8A;
 }
 
@@ -208,10 +209,35 @@ body
 	height: 70%; 
 	background-color: #F4F4F4; 
 	display: inline-block;
+	vertical-align:top;
 }
+
+.Section5Button
+{
+	height: 10%;
+	width: 50%;
+	background-color: white;
+	border-radius: 5px 5px 5px 5px;
+	margin: 0 auto;
+	line-height: 50px;
+	margin-top: 5%;
+	border: solid lightgray 2px;
+
+	font-family: 'Kreon';
+	font-weight: bolder;
+	text-align: center;
+	color: #3B3E4B;
+	text-decoration: none;
+}
+.Section5Button:hover
+{
+	color: #00B2EE;
+}
+
 .sec5stackdiv
 {
 	float: right;
+	padding: 3px;
 }
 
 .WhiteSection6
