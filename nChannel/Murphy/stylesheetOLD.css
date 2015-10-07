@@ -1,0 +1,111 @@
+html, body, div
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+body
+{
+	position: relative;
+	background-color: #ffffff;
+	line-height: 1;
+}
+
+.contain
+{
+	margin: 0px auto;
+    max-width: 940px;
+    padding: 0px 20px;
+    position: relative;	
+}
+/*----------------------------------------------------header*/
+.header-section
+{
+	height: 120px;
+	width: 100%;
+	position: fixed;
+	right: 0;
+	left: 0;
+	display: block;
+	z-index: 10000000;
+	width: 100%;
+	background-color: 3b3e4b;
+}
+
+.head
+{
+	height: 35px;
+	overflow: hidden;
+	background-color: #3b3e4b;
+}
+
+.contact
+{
+	text-align: right;
+}
+
+.nav
+{
+	position: relative;
+	height: 85px;
+	margin-top: 0px;
+	background-color: #3b3e4b;
+	text-align: right;
+}
+
+ul.list-unstyled li
+{
+	list-style-type: none;
+	float: right;
+	height: 35px;
+	color: #7f8291;
+}
+
+.list-inline li
+{
+	text-align: right;
+	display: inline-block;
+}
+
+.under
+{
+	height: 36px;
+	position: absolute;
+	bottom: -36px;
+	right: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100000;
+	margin-top: 0px;
+	margin-right: auto;
+	max-width: 970px;
+	padding-top: 0px;
+	padding-right: 13px;
+}
+/*----------------------------------------------------footer*/
+
+.footer-container
+{
+	background-color: #3b3e4b;
+	overflow: hidden;
+	padding: 35px 0px 0px 0px;
+	text-align: center;
+}
+
+.footer-social
+{
+	overflow: hidden;
+}
+
+.footer-copyright
+{
+	font-family: "Roboto", "Helvetica", sans-serif;
+	font-weight: 900;
+	text-align: center;
+	background-color: #333643;
+	padding-top: 20px 0px 0px 0px;
+	margin: 35px 0px 0px 0px;
+}
