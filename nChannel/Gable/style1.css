@@ -200,11 +200,32 @@ body
 	background-color: #F4F4F4;
 }
 
+.sec5maindiv
+{
+	margin-left: 0px;
+	margin-right: 0px; 
+	width: 45%; 
+	height: 70%; 
+	background-color: #F4F4F4; 
+	display: inline-block;
+}
+.sec5stackdiv
+{
+	float: right;
+}
+
 .WhiteSection6
 {
 	height:10%;
 	width: 100%;
 	background-color: #FFFFFF;
+}
+
+.sec5text1
+{
+	color: #3B3E4B;
+	text-align: center;
+	font-size: 150%;
 }
 
 .section6text1
