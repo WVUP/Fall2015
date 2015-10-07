@@ -233,6 +233,18 @@ body
 	border-radius: 20px 20px 20px 20px;
 }
 
+
+.cleardiv
+{
+	border-style: solid;
+	border-width: 4px;
+	border-color: white;
+	border-radius: 0px 25px 0px 25px;
+	margin: auto;
+	width: 300px;
+	height: 100px;
+}
+
 .phonetext
 {
 	margin: 0;
@@ -240,6 +252,47 @@ body
 	color: white;
 	font-size: 200%;
 	display: inline-block;
+}
+
+.Section7Button
+{
+	height: 40%;
+	width: 30%;
+	background-color: #22B0E6;
+	border-radius: 0px 10px 0px 10px;
+	/*margin: 0 auto;*/
+	margin-left: 5px;
+	line-height: 40px;
+	margin-top: 5%;
+
+	font-family: 'Kreon';
+	font-weight: bolder;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+}
+.Section7Button:hover
+{
+	background-color: darkgrey;
+}
+
+.sec7buttonfont
+{
+	font-family: 'Kreon';
+	font-weight: bolder;
+	text-align: left;
+	color: white;
+	text-decoration: none;
+	font-size: 125%;
+}
+
+.sec7liltext
+{
+	float: right;
+	margin-right: 25px;
+	margin-top: -50px;
+	font-family: 'Roboto';
+	font-size: 80%;
 }
 
 .WhiteSection8
