@@ -295,11 +295,36 @@ body
 	font-size: 80%;
 }
 
+.section8text1
+{
+	font-size: 200%;
+	text-align: right;
+	color: #787B8A;
+	font-weight: bolder;
+	margin-top: 10%;
+	margin-right: 10%;
+}
+
+.section8text2
+{
+	font-family: 'Roboto';
+	font-size: 100%;
+	text-align: left;
+	color: #787B8A;
+	font-weight: normal;
+	margin-top: 10%;
+}
+
 .WhiteSection8
 {
 	height: 16%;
 	width: 100%;
 	background-color: #FFFFFF;
+}
+.center8
+{
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .LightGraySection9
