@@ -404,6 +404,12 @@ hr
 		color: #6b6b6b;
 		margin: 0 0 35 0;
 	}
+
+	.ltGrey-explore img
+	{
+		padding: 50px 0 0 0;
+	}
+
 	/*------------------------------------------------------------*/
 	.white-help
 	{
@@ -518,31 +524,16 @@ hr
 		background-color: #f4f4f4;
 	}
 	
-	.wrap
-	{
-		margin: 0 -25px;
-		overflow: hidden;
-	}
-
-	.stretch
+	.ltGrey-top 
 	{
 		width: 100%;
-		display: inline-block;
-		font-size: 0;
-		line-height: 0;
-		padding: 0;
+		margin: 20 auto;
+		padding: 20px 20px 0 20px;
+		position: relative;
+		display: block;
 	}
 
-	.ltGrey-logos span
-	{
-		width: 24%;
-		vertical-align: top;
-		display: inline-block;
-		zoom: 1;
-		padding: 25px 25px;
-	}
-
-	.ltGrey-logos span img
+	.ltGrey-bottom
 	{
 		width: 100%;
 		display: block;
