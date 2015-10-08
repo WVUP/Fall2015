@@ -37,7 +37,7 @@ hr
 	border-top: 1px solid #333333;
 	border-bottom: none;
 }
-
+/*------------------------------------------------------------*/
 .contain
 {
 	margin: 0 auto;
@@ -45,7 +45,7 @@ hr
 	padding: 0 20px;
 	position: relative;
 }
-
+/*------------------------------------------------------------*/
 .header-section
 {
 	height: 120px;
@@ -56,7 +56,7 @@ hr
 	z-index: 10000000;
 	width: 100%;
 }
-
+/*------------------------------------------------------------*/
 	.header-contact
 	{
 		height: 35px;
@@ -213,7 +213,7 @@ hr
 {
 
 }
-
+/*------------------------------------------------------------*/
 	.cyan-splash
 	{
 		background-color: #9cdcf2;
@@ -253,7 +253,7 @@ hr
 		line-height: 22pt;	
 		z-index: 10;
 	}
-
+/*------------------------------------------------------------*/
 	.orange-banner
 	{
 		height: 98px;
@@ -270,7 +270,7 @@ hr
 	{
 		padding: 28px 0 30px 0;
 	}
-
+/*------------------------------------------------------------*/
 	.white-features
 	{
 		height: 386px;
@@ -347,7 +347,7 @@ hr
 		display: block;
 		margin: 0 auto;
 	}
-
+/*------------------------------------------------------------*/
 	.ltGrey-explore
 	{
 		height: 599px;
@@ -364,12 +364,27 @@ hr
 		color: #6b6b6b;
 		margin: 0 0 35 0;
 	}
+	/*------------------------------------------------------------*/
 	.white-help
 	{
 		height: 380px;
 		z-index: 100;
 	}
 
+	.wh-row
+	{
+		width: 100%;
+		padding: 60px 0;
+	}
+
+	.wh-div
+	{
+		width: 30%;
+		float: left;
+		margin: 0 1.5%;
+		overflow: hidden;
+	}
+/*------------------------------------------------------------*/
 	.orange-support
 	{
 		min-height: 500px;
@@ -402,13 +417,49 @@ hr
 		line-height: 22pt;	
 		z-index: 10;
 	}
-
+/*------------------------------------------------------------*/
 	.white-reviews
 	{
 		height: 882px;
 		padding: 70px 0;
 	}
 
+	.white-reviews h2
+	{
+		color: #6b6b6b;
+		font-family: "Kreon", "Times New Roman", serif;
+		font-weight: 700;
+		line-height: 39pt;
+		font-size: 34px;
+		text-align: right;
+		width: 34%;
+		float: left;
+	}
+
+	.white-reviews p
+	{
+		color: #6b6b6b;
+		font-family: "Roboto", "Helvetica", sans-serif;
+		font-weight: 300;
+		line-height: 18pt;
+		font-size: 16px;
+		width: 66%;
+		float: left;
+		padding: 7px 0 0 40px;
+		max-width: 525px;
+	}
+
+	.wh-img
+	{
+		text-align: center;
+		padding: 0;
+	}
+
+	.wh-img img
+	{
+		margin: 45px 35px;
+	}
+/*------------------------------------------------------------*/
 	.ltGrey-logos
 	{
 		height: 378px;
@@ -417,7 +468,39 @@ hr
 		overflow: hidden;
 		background-color: #f4f4f4;
 	}
+	
+	.wrap
+	{
+		margin: 0 -25px;
+		overflow: hidden;
+	}
 
+	.stretch
+	{
+		width: 100%;
+		display: inline-block;
+		font-size: 0;
+		line-height: 0;
+		padding: 0;
+	}
+
+	.ltGrey-logos span
+	{
+		width: 24%;
+		vertical-align: top;
+		display: inline-block;
+		zoom: 1;
+		padding: 25px 25px;
+	}
+
+	.ltGrey-logos span img
+	{
+		width: 100%;
+		display: block;
+		height: auto;
+		max-width: 198px;
+		max-height: 107px;
+	}
 /*------------------------------------------------------------*/
 
 .footer-section
@@ -428,7 +511,7 @@ hr
 	padding: 35px 0 0 0;
 	position: relative;
 }
-
+/*------------------------------------------------------------*/
 .footer-section h3
 {
 	font-family: "Kreon", "Time New Roman", serif;
