@@ -253,6 +253,46 @@ hr
 		line-height: 22pt;	
 		z-index: 10;
 	}
+
+	.cs-con
+	{
+		height: 198px;
+		width: 100%;
+		position: relative;
+		margin: 0 auto;
+		padding: 0 20px;
+		background: url(images/dot-pat.png);
+		background-repeat: repeat;
+		background-position: center center;
+	}
+
+	.cs-img
+	{
+		height: 296px;
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		background: url(images/connect.png);
+		background-repeat: no-repeat;
+		background-position: center bottom;
+		margin: 0 auto;
+		bottom: 0;
+		right: 0;
+		left: 0;
+	}
+
+	.cs-img img
+	{
+		display: block;
+		height: auto;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+
+	.cs-connect
+	{
+
+	}
 /*------------------------------------------------------------*/
 	.orange-banner
 	{
@@ -505,7 +545,7 @@ hr
 
 .footer-section
 {
-	height: 315px;
+	height: 280px;
 	background-color: #3b3e4b;
 	overflow: hidden;
 	padding: 35px 0 0 0;
@@ -527,7 +567,7 @@ hr
 	width: 33.33%;
 	float: left;
 	overflow: hidden;
-	padding: 20px 2px 0;
+	padding: 0px 2px 0;
 }
 
 .footer-links-insights
@@ -535,7 +575,7 @@ hr
 	width: 33.33%;
 	float: left;
 	overflow: hidden;
-	padding: 20px 2px 0;
+	padding: 0px 2px 0;
 }
 
 .footer-links-explore
@@ -543,7 +583,7 @@ hr
 	
 	float: left;
 	overflow: hidden;
-	padding: 20px 0 0 0;
+	padding: 0px 0 0 0;
 }
 
 .footer-copyright
