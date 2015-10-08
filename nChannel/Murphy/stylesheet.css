@@ -1,4 +1,4 @@
-html, body, div
+html, body, div, h1, h2, h3, h4
 {
 	margin: 0;
 	padding: 0;
@@ -118,8 +118,28 @@ hr
     	right: 10px;
     	height: 100%;
     	top: 0px;
+    	list-style-type: none;
+    	display: inline;
 		}
 		
+		.nav li
+		{
+			font-size: 15px;
+			display: table;
+			height: 100%;
+			float: right;
+			padding: 20px 7px;
+		}
+
+		.nav li a
+		{
+			font-weight: 700;
+			vertical-align: middle;
+			display: table-cell;
+			position: relative;
+			padding: 0 10px;
+		}
+
 		.nav a:hover
 		{
 				color: #ffffff;
@@ -137,16 +157,6 @@ hr
 			opacity: 0.7;
 		}
 
-		.nav ul
-		{
-			list-style-type: none;
-		}
-
-		.nav ul li
-		{
-			display: inline;
-		}
-
 		.header-under
 		{
 			height: 36px;
@@ -157,28 +167,185 @@ hr
 			z-index: 100000;
 			padding: 0 13px;
 		}
+
+			.header-button
+			{
+				position: relative;
+				height: 100%;
+				display: inline-block;
+				padding: 0 11px;
+				line-height: 24pt;
+				font-family: "Roboto", "Helvetica", sans-serif;
+				font-weight: 700;
+				font-style: italic;
+				color: #ffffff;
+				margin: 0 0 0 5px;
+				float: right;
+				overflow: hidden;
+				border-radius: 0px 0px 4px 4px;
+				vertical-align: top;
+			}
+
+			.number
+			{
+				background-color: #ee7541;
+			}
+
+			.email
+			{
+				background-color: #00b2ee;
+			}
+
+			.chat
+			{
+				background-color: #ebad06;
+			}
+
+			.question
+			{
+				color: #7f8291;
+				background-color: #3b3e4b;
+			}
 		
 /*------------------------------------------------------------*/
+
+.content-section
+{
+
+}
 
 	.cyan-splash
 	{
 		background-color: #9cdcf2;
 		width: 100%;
 		padding: 120px 0 0 0;
-		height: 703px;
+		height: 583px;
+	}
+
+	.cs-welcome
+	{
+		font-weight: 700;
+		max-width: 660px;
+		margin: 0 auto;
+		text-align: center;
+		z-index: 10;
+		position: relative;
+		padding: 80px 0 130px 0;
 	}
 	
+	.cs-welcome h1
+	{
+		color: #ffffff;
+		font-family: "Kreon", "Times New Roman", serif;
+		font-size: 34px;
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+		line-height: 30pt;
+	}
+
+	.cs-welcome p
+	{
+		color: #ffffff;
+		font-weight: 400;
+		font-family: "Kreon", "Times New Roman", serif;
+		font-size: 20px;
+		margin: 15px 0 0 0;
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+		line-height: 22pt;	
+		z-index: 10;
+	}
+
 	.orange-banner
 	{
 		height: 98px;
 		background-color: #ee7541;
 		text-align: center;
+		color: #ffffff;
+		font-family: "Kreon", "Times New Roman", serif;
+		font-size: 34px;
+		line-height: 30pt;
+		display: block;
+	}
+
+	.orange-banner h2
+	{
+		padding: 28px 0 30px 0;
 	}
 
 	.white-features
 	{
-		height: 486px;
+		height: 386px;
 		margin: 50px 0;
+	}
+
+	.row tr
+	{
+		overflow: hidden;
+		width: 100%;
+	}
+
+	.half td
+	{
+		width: 40%;
+		overflow: hidden;
+		float: left;
+		margin: 45px 6% 0 4%;
+		color: #6b6b6b;
+		position: relative;
+		padding: 0 0 0 13px;
+	}
+
+	.half img
+	{
+		float: left;
+		position: relative;
+		top: 5px;
+		left: 0;
+	}
+
+	.text
+	{
+		float: right;
+		width: 70%
+	}	
+
+	.text h2
+	{
+		font-family: "Kreon", "Times New Roman", serif;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 19pt;
+		margin: 0 0 3px 0;
+		color: #6b6b6b;
+	}
+
+	.text h3
+	{
+		font-family: "Roboto", "Helvetica", sans-serif;
+		font-weight: 900;
+		color: #ee7541;
+		font-size: 12px;
+		text-transform: uppercase;
+		margin: 0 0 5px 0;
+	}
+
+	.text p
+	{
+		font-family: "Roboto", "Helvetica", sans-serif;
+		font-weight: 300;
+		line-height: 18pt;
+		font-size: 16px;
+	}
+
+	.wf-holder
+	{
+		width: 100%;		
+	}
+
+	.wf-holder a
+	{
+		text-align: center;
+		display: block;
+		margin: 0 auto;
 	}
 
 	.ltGrey-explore
@@ -186,23 +353,54 @@ hr
 		height: 599px;
 		background-color: #f4f4f4;
 		padding: 75px 0 0 0;
+		text-align: center;
+		font-family: "Kreon", "Times New Roman", serif;
 	}
 
+	.ltGrey-explore h3
+	{
+		font-weight: 400;
+		font-size: 30px;
+		color: #6b6b6b;
+		margin: 0 0 35 0;
+	}
 	.white-help
 	{
 		height: 380px;
 		z-index: 100;
 	}
 
-	.orange-custserv
+	.orange-support
 	{
-		height: 615px;
-		background-image: "";
+		min-height: 500px;
+		background-image: url("images/orange-back.jpg");
 		background-position: top center;
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-color: #ee7541;
 		padding: 115px 0 0 0;
+		text-align: center;
+	}
+
+		.orange-support h1
+	{
+		color: #ffffff;
+		font-family: "Kreon", "Times New Roman", serif;
+		font-size: 34px;
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+		line-height: 30pt;
+	}
+
+	.orange-support p
+	{
+		color: #ffffff;
+		font-weight: 400;
+		font-family: "Kreon", "Times New Roman", serif;
+		font-size: 20px;
+		margin: 15px 160px 0 160px;
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+		line-height: 22pt;	
+		z-index: 10;
 	}
 
 	.white-reviews
@@ -228,24 +426,104 @@ hr
 	background-color: #3b3e4b;
 	overflow: hidden;
 	padding: 35px 0 0 0;
+	position: relative;
 }
 
-.footer-links
+.footer-section h3
 {
-	height: 184px;
+	font-family: "Kreon", "Time New Roman", serif;
+	color: #ffffff;
+	font-size: 20px;
+	line-height: 19pt;
+	font-weight: 700;
+	margin: 0 0 15px 0;
+}
+
+.footer-links-connect
+{
+	width: 33.33%;
+	float: left;
 	overflow: hidden;
-	position: relative;
+	padding: 20px 2px 0;
+}
+
+.footer-links-insights
+{
+	width: 33.33%;
+	float: left;
+	overflow: hidden;
+	padding: 20px 2px 0;
+}
+
+.footer-links-explore
+{
+	
+	float: left;
+	overflow: hidden;
+	padding: 20px 0 0 0;
 }
 
 .footer-copyright
 {
-	height: 131px;
+	height: 61px;
+	width: 100%;
 	font-family: "Roboto", "Helvetica", sans-serif;
-	position: relative;
-	bottom: 100;
+	position:absolute;
+	bottom: 0;
 	font-weight: 900;
 	text-align: center;
 	background-color: #333643;
-	padding-top: 20px 0px 0px 0px;
+	padding-top: 5px 0px;
 	margin: 35px 0px 0px 0px;
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 16pt;
+}
+
+.footer-copyright p
+{
+	padding: 20px 0px;
+}
+
+/*------------------------------------------------------------*/
+
+.bottom-button a
+{
+	position: fixed;
+	display: block;
+	bottom: 0px;
+	right: 75px;
+}
+
+.button
+{
+	font-family: "Roboto", "Helvetica", sans-serif;
+	font-weight: 700;
+	font-style: italic;
+	padding: 1px 20px 2px 20px;
+	display: inline-block;
+	margin: 20px 0 0 0;
+	color: #ffffff;
+	text-shadow: none;
+	border-radius: 0px 10px;
+}
+
+.orange-button
+{
+	background-color: #ee7541;
+	font-size: 18px;
+}
+
+.blue-button
+{
+	background-color: #22b0e6;
+	font-size: 18px;
+	padding: 10px 20px 12px 20px;
+	margin: 20 0;
+}
+
+.button:hover
+{
+	background-color: #6b6b6b;
 }
