@@ -414,15 +414,24 @@ hr
 	.wh-row
 	{
 		width: 100%;
-		padding: 60px 0;
 	}
 
 	.wh-div
 	{
 		width: 30%;
 		float: left;
-		margin: 0 1.5%;
+		margin: 65px 1.5%;
 		overflow: hidden;
+		color: #6b6b6b;
+		font-family: "Roboto", "Helvetica", sans-serif;
+		font-weight: 300;
+		line-height: 18pt;
+		font-size: 16px;
+	}
+
+	.wh-div ul
+	{
+		list-style-type: circle;
 	}
 /*------------------------------------------------------------*/
 	.orange-support
