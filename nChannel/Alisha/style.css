@@ -13,11 +13,19 @@ body {
 	margin:0 auto;
 }
 
+<<<<<<< HEAD
 .contain {
 	max-width:940px;
 	position:relative;
 	margin:0 auto;
 	height:200px;
+=======
+.wrap {
+	max-width:940px;
+	position:relative;
+	margin:0 auto;
+	height:526px;
+>>>>>>> origin/master
 }
 
 #logo {
@@ -99,7 +107,11 @@ ul.top-list {
 .wwh {
 	position:relative;
 	text-align: center;
+<<<<<<< HEAD
 	height:100%;
+=======
+	padding-bottom:130px;
+>>>>>>> origin/master
 }
 
 .wwh h1 {
@@ -116,8 +128,42 @@ ul.top-list {
 	line-height:2;
 	font-weight: 400;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+<<<<<<< HEAD
 }
 
+=======
+    margin: 15px 0 0 0;
+}
+
+body .button {
+	background-color: #ee7541;
+	font-size:18px;
+	font-family:"Roboto", "Helvetica", sans-serif;
+	color:#fff;
+	font-weight:700;
+	font-style:italic;
+	padding: 10px 20px 12px 20px;
+	display:inline-block;
+	margin:20px 0 0 0;
+	border-radius: 0 10px 0 10px;
+}
+
+.connect {
+	height:200px;
+	position:relative;
+	background:url("https://www.nchannel.com/wp-content/themes/nchannel/images/dot-pat.png") repeat;
+}
+
+.connect .img {
+	display:block;
+	height:296px;
+	width:100%;
+	position:absolute;
+	bottom:0;
+	background:url("https://www.nchannel.com/wp-content/themes/nchannel/images/connect.png") no-repeat center bottom;
+	
+}
+>>>>>>> origin/master
 .dots {
 	background-image:url(https://www.nchannel.com/wp-content/themes/nchannel/images/dot-pat.png);
 	background-repeat:repeat;
@@ -135,8 +181,23 @@ main {
 	
 }
 
+<<<<<<< HEAD
 article.content-area.features {
 	background-color:red;
+=======
+article.content-area.multichannel {
+	background-color:#EE7541;
+	color:#fff;
+	line-height:1;
+	padding: 28px 0 30px 0;
+	text-align:center;
+}
+
+article.content-area.multichannel h2 {
+	font-size:34px;
+	font-family: "Kreon", "Times New Roman", serif;
+	font-weight:normal;
+>>>>>>> origin/master
 }
 
 #footer-content {
