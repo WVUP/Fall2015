@@ -370,10 +370,16 @@ ul.list-unstyled li
 .schedule li a
 {
 	text-decoration: none;
-	text-align: left;
+	font-size: 13px;
 	font-weight: bold;
 	padding-left: 15px;
 	color: #111683;
+}
+
+.schedule li i
+{
+	font-size: 13px;
+	padding-left: 15px;
 }
 
 .social img
