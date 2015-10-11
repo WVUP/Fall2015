@@ -55,7 +55,7 @@ ul.list-unstyled li
 	background: linear-gradient(to bottom,  #4651c9 0%,#111683 90%);
 	box-shadow: 0 0 5px 2px rgba(0, 0, 0, .35);
 	position: fixed;
-	z-index: 100;
+	z-index: 2;
 	width: 1100px;
 }
 
@@ -137,14 +137,12 @@ ul.list-unstyled li
 
 .logo
 {
-	/*position: fixed;*/
+	position: fixed;
 	width: 220px;
 	height: 250px;
 	bottom: 10%;
 	background-image: url(images/bell.gif);
-	background-position: 0 0;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
 }
 
 .side-nav
@@ -152,6 +150,7 @@ ul.list-unstyled li
 	border: none;
 	text-align: right;
 	padding: 20px 0 0 0;
+	z-index: 1;
 }
 
 .side-nav li
@@ -176,6 +175,11 @@ ul.list-unstyled li
 	transition-duration: 0.3s;
 	transition-timing-function: ease-in-out;
 	transition-delay: initial;
+}
+
+.banners
+{
+	z-index: 1;
 }
 
 .banners img
@@ -280,13 +284,22 @@ ul.list-unstyled li
 {
 	text-align: center;
 	font-size: 10px;
+	bottom: 0;
+	right: 0;
+	margin-top: 1700px;
+}
+
+.return a
+{
+	text-decoration: none;
 }
 
 /*********************************************************************************/
 
 .calendar-container /* inside of parent*/
 {
-	background-color: #5392ce;
+	
+	background: linear-gradient(to bottom,#5392ce 0%,#dde9f5 100%);
 	text-align: center;
 	color: #111683;
 	padding: 25px;
@@ -294,8 +307,79 @@ ul.list-unstyled li
 	width: 210px;
 	float: left;
 	margin: -60px 0 0 15px;
+	box-shadow: 0 0 5px 2px rgba(0, 0, 0, .35);
 }
 
+.calendar
+{
+	margin: 5px 0;
+	border-top-color: #111683;
+	border-radius: 14px;
+	border: 1px solid;
+	box-shadow: 0 3px 7px rgba(0, 0, 0, .25);
+	width: 210px;
+	text-align: center;
+	font-family: "Arial", "Helvetica", sans-serif;
+	font-size: 13px;
+}
+
+.calendar-top
+{
+	background-color: #111683;
+	color: #e3b11f;
+}
+
+.calendar thead
+{
+	color: #e3b11f;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.calendar thead a
+{
+	color: #e3b11f;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.calendar thead td
+{
+	padding: 2px 4px;
+}
+
+.days
+{
+	color: #e3b11f;
+	background-color: #111683;
+	font-weight: bold;
+}
+
+.schedule
+{
+	border-left: 3px solid;	
+	margin: 0 5px;
+}
+
+.schedule li
+{
+	text-align: left;
+	padding: 10px 0 10px 5px;
+}
+
+.schedule li a
+{
+	text-decoration: none;
+	text-align: left;
+	font-weight: bold;
+	padding-left: 15px;
+	color: #111683;
+}
+
+.social img
+{
+	width: 55px;
+}
 /*********************************************************************************/
 
 .footer
