@@ -23,6 +23,13 @@ ul
 	padding: 0;
 }
 
+hr
+{
+	background: #dddddd;
+	border: none;
+	color: #dddddd;
+	height: 1px;
+}
 /*********************************************************************************/
 
 .contain
@@ -102,7 +109,7 @@ ul.list-unstyled li
 {
 	margin: auto auto;
 	height: 100%;
-	min-height: 1600px;
+	min-height: 1900px;
 	padding: 45px 0 0 0;
 	border-bottom-right-radius: 20px;
 	border-bottom-left-radius: 20px;
@@ -130,7 +137,7 @@ ul.list-unstyled li
 
 .logo
 {
-	position: fixed;
+	/*position: fixed;*/
 	width: 220px;
 	height: 250px;
 	bottom: 10%;
@@ -185,12 +192,14 @@ ul.list-unstyled li
 .right-content
 {
 	width: 80%;
-	height: 100%;
+	height: 93%;
 	min-height: 800px;
 	float: right;
 	margin: 0;
 	overflow: hidden;
 	background: #ffffff;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
 }
 
 .header
@@ -214,14 +223,97 @@ ul.list-unstyled li
 .wrapper
 {
 	min-height: 652px;
-	border-bottom-right-radius: 20px;
-	border-bottom-left-radius: 20px;
 	margin: 20px auto;
 	padding: 0 20px 20px 20px;
 	float: left;
 }
 
-.footer
+.content
+{
+	width: 100%;
+	max-width: 546px;
+	float: left;
+	margin: 0 0 20px 0;
+}
+
+.content a
+{
+	color: #111683;
+	text-decoration: none;
+}
+
+.content a:hover
+{
+	color: #444444;
+}
+
+.content h2
+{
+	font-weight: 700;
+	line-height: 1.0em;
+	word-wrap: break-word;
+}
+
+.news1 p
+{
+	color: #444444;
+	font-size: 14px;
+	line-height: 1.5em;
+}
+
+.news1 img
+{
+	margin: 0 10px 0 0;
+}
+
+.news2
 {
 
 }
+
+.content-icons img
+{
+	margin: 20px 20px 0 0;
+}
+
+.return
+{
+	text-align: center;
+	font-size: 10px;
+}
+
+/*********************************************************************************/
+
+.calendar-container /* inside of parent*/
+{
+	background-color: #5392ce;
+	text-align: center;
+	color: #111683;
+	padding: 25px;
+	border-radius: 7px;
+	width: 210px;
+	float: left;
+	margin: -60px 0 0 15px;
+}
+
+/*********************************************************************************/
+
+.footer
+{
+	color: #555555;
+	width: 80%;
+	float: right;
+	background: white;
+	text-align: center;
+	line-height: 1.1;
+	margin-top: 5px;
+	border-radius: 20px;
+	font-size: 10px;
+	padding: 20px 0;
+}
+
+.footer-text
+{
+	margin: 0 20px;
+}
+
