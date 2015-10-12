@@ -332,8 +332,8 @@ ul.list-unstyled li
 {
 	margin: 5px 0;
 	border-top-color: #111683;
-	/*border: 1px solid;
-	border-color: #111683;*/
+	/*border: 1px solid;*/
+	border-color: #111683;
 	border-collapse: collapse;
 	border-radius: 14px;
 	border-spacing: 0;
@@ -357,11 +357,6 @@ ul.list-unstyled li
 	color: #e3b11f;
 	text-decoration: none;
 	font-weight: bold;
-}
-
-.calendar-top td
-{
-	
 }
 
 td.month
