@@ -359,6 +359,26 @@ ul.list-unstyled li
 	font-weight: bold;
 }
 
+.calendar-top td
+{
+	
+}
+
+td.month
+{
+	border-radius: 0;
+}
+
+td.prev
+{
+	border-radius: 14px 0 0 0;
+}
+
+td.next
+{
+	border-radius: 0 14px 0 0;
+}
+
 .calendar thead a
 {
 	color: #e3b11f;
