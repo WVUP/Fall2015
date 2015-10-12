@@ -129,10 +129,16 @@ ul.list-unstyled li
 	background-repeat: no-repeat;
 }
 
-.space
+.left-pane-container
 {
-	margin: 250px 0 0 0;
-	display: block;
+	position: relative;
+	z-index: 1;
+}
+
+.logo-container
+{
+	position: absolute;
+	z-index: 0;
 }
 
 .logo
@@ -145,12 +151,17 @@ ul.list-unstyled li
 	background-repeat: no-repeat;
 }
 
+.space
+{
+	margin: 250px 0 0 0;
+	display: block;
+}
+
 .side-nav
 {
 	border: none;
 	text-align: right;
 	padding: 20px 0 0 0;
-	z-index: 1;
 }
 
 .side-nav ul
