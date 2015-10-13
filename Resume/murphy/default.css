@@ -9,6 +9,7 @@
 		padding: 0px;
 		background-color: #202020;
 		background-image: url("images/background.jpg");
+		background-size: cover;
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		font-family: 'Source Sans Pro', sans-serif;
