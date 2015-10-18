@@ -1,0 +1,47 @@
+.navbar-color
+{
+	background-color: #1C2023;
+}
+
+.theme
+{
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.t-dkgrey
+{
+	background-color: #282C2F;
+	color: #9b9b9b;
+}
+
+.t-ltgrey
+{
+	background-color: #606568;
+	color: #fff;
+}
+
+.t-yellow
+{
+	background-color: #E3B11F;
+	color: #00457D;
+}
+
+.t-blue
+{
+	background-color: #00457D;
+	color: #ccc;
+}
+
+hr
+{
+	/*width: 90%;*/
+	height: 2px;
+	border: 0;
+    background-image: linear-gradient(to right, rgba(204, 204, 204, 0), rgba(204, 204, 204, 0.75), rgba(204, 204, 204, 0));
+}
+
+h1
+{
+	font-family: 'Jura', sans-serif;
+	text-shadow: 2px 2px 2px #000;
+}
