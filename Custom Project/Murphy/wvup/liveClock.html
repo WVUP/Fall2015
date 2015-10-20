@@ -1,0 +1,59 @@
+
+<form name="Tick">
+<input type="text" size="11" name="Clock">
+</form>
+<script>
+<!--
+/*By George Chiang (JK's JavaScript tutorial)
+http://javascriptkit.com
+Credit must stay intact for use*/
+function show(){
+var Digital=new Date()
+var hours=Digital.getHours()
+var minutes=Digital.getMinutes()
+var seconds=Digital.getSeconds()
+var dn="AM" 
+if (hours>12){
+dn="PM"
+hours=hours-12
+}
+if (hours==0)
+hours=12
+if (minutes<=9)
+minutes="0"+minutes
+if (seconds<=9)
+seconds="0"+seconds
+document.Tick.Clock.value=hours+":"+minutes+":"
++seconds+" "+dn
+setTimeout("show()",1000)
+}
+show()
+//-->
+</script>
+
+<!-- http://www.javascriptkit.com/script/cut2.shtml -->
+
+<p id="timedate" style="text-align: right;"></p>
+					<script>document.getElementById("timedate").innerHTML = (new Date()).toString().split(' ').splice(0,4).join(' ');
+					</script>
+						<form name="Tick">
+							<input type="text" style="border:none; background-color: transparent; width: 120px;" size="12" name="Clock">
+						</form>
+						<script>
+							function show()
+							{
+								var now=new Date()
+								var hours=now.getHours()
+								var minutes=now.getMinutes()
+								var seconds=now.getSeconds()
+								if (hours==0)
+								hours="0"+hours
+								if (minutes<=9)
+								minutes="0"+minutes
+								if (seconds<=9)
+								seconds="0"+seconds
+								document.Tick.Clock.value=hours+":"+minutes+":"+seconds+""
+								setTimeout("show()",1000)
+							}
+							show()
+						</script>

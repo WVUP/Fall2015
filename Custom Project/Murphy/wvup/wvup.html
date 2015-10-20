@@ -23,7 +23,32 @@
 		<div class="theme t-trans">
 			<div class="container">
 				<div class="jumbotron t-blue" style="margin-top: 300px;">
+
 					<h1 style="text-align: right;">WVU @ Parkersburg</h1>
+					<p id="timedate" style="text-align: right;"></p>
+					<script>document.getElementById("timedate").innerHTML = (new Date()).toString().split(' ').splice(0,4).join(' ');
+					</script>
+						<form name="Tick">
+							<input type="text" style="border:none; background-color: transparent; width: 120px;" size="12" name="Clock">
+						</form>
+						<script>
+							function show()
+							{
+								var now=new Date()
+								var hours=now.getHours()
+								var minutes=now.getMinutes()
+								var seconds=now.getSeconds()
+								if (hours==0)
+								hours="0"+hours
+								if (minutes<=9)
+								minutes="0"+minutes
+								if (seconds<=9)
+								seconds="0"+seconds
+								document.Tick.Clock.value=hours+":"+minutes+":"+seconds+""
+								setTimeout("show()",1000)
+							}
+							show()
+						</script>
 					<hr />
 					<p>
 						<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero officiis adipisci magnam eveniet sapiente delectus. Recusandae amet laborum deleniti. Eius nesciunt facilis cum reiciendis maxime mollitia aperiam, labore in voluptatibus.</span>
@@ -91,6 +116,10 @@
 				<div>Minus natus repellat quibusdam. Cum, perspiciatis maxime voluptatum nulla laboriosam vero ut optio in perferendis, ab quam nesciunt aut, laudantium. Quasi quis neque nulla ad, voluptas sed natus distinctio aut.</div>
 				<div>Commodi labore consectetur tenetur in dolorum cupiditate quas possimus asperiores obcaecati. Deleniti commodi doloremque omnis voluptatum reiciendis impedit quae, dicta et iusto provident sequi laborum excepturi magnam officiis earum, molestiae!</div>
 			</div>
+		</div>
+
+		<div class="float-tab">
+			test
 		</div>
 	</div>
 
