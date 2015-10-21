@@ -20,7 +20,11 @@ Base purple: #FFC8FF;
 
 .btn-bottom
 {
-	background-color: #337AB7;
+	background-color: #99BCDB;
+	margin-right: 2%;
+	margin-left: 2%;
+	margin-bottom: 2%;
+	width: 20%;
 }
 
 .btn
