@@ -1,11 +1,29 @@
+/*
+Link blue: #337AB7
+Base purple: #FFC8FF;
+
+*/
+
+
+
+
 .nolinkstuff
 {
 	color: inherit;
 	text-decoration: none;
 }
 
+.btn-top
+{
+	background-color: #FFE4FF;
+}
+
+.btn-bottom
+{
+	background-color: #337AB7;
+}
+
 .btn
 {
 	border-radius: 1px;
-	background-color: red;
 }
