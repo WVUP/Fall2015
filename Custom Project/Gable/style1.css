@@ -2,6 +2,8 @@
 Link blue: #337AB7
 Base purple: #FFC8FF;
 
+St. Lucia Color Palette:
+http://www.color-hex.com/color-palette/11187
 */
 
 .nolinkstuff
@@ -12,12 +14,12 @@ Base purple: #FFC8FF;
 
 .btn-top
 {
-	background-color: #FFE4FF;
+	background-color: #41b8f2;
 }
 
 .btn-bottom
 {
-	background-color: #99BCDB;
+	background-color: #fdc411;
 	margin-right: 2%;
 	margin-left: 2%;
 	margin-bottom: 2%;
@@ -31,6 +33,6 @@ Base purple: #FFC8FF;
 
 .framestyle
 {
-	width: 500px;
-	height: 200px;
+	width: 450px;
+	height: 500px;
 }
