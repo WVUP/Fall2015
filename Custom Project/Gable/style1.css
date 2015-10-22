@@ -28,3 +28,9 @@ Base purple: #FFC8FF;
 {
 	border-radius: 1px;
 }
+
+.framestyle
+{
+	width: 500px;
+	height: 200px;
+}
