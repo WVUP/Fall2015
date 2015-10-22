@@ -1,16 +1,39 @@
-html
+html, body
 {
+	margin: 0;
+	height: 100%;
 	width: 100%;
+}
+
+
+.header
+{
+	margin: 0;
+
 }
 
 .topHeader
 {
-	height: 60px;
- 	margin: 0;
-   	padding: 0;
-   	background-color: gray;
-   	
+	height: 60px ;
 	
-	
+	background-color: gray;
+ }
 
-}
+
+ .bottomHeader
+ {
+ 	background-color: yellow;
+ 	margin: 0;
+ 	padding: 0;
+ 	display: block;
+ 	text-align: center;
+
+
+ }
+
+ .bottomHeader ul, li
+ {
+ 	list-style-type: none;
+ 	display: inline;
+
+ }
