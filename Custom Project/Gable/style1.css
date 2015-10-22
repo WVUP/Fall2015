@@ -6,6 +6,11 @@ St. Lucia Color Palette:
 http://www.color-hex.com/color-palette/11187
 */
 
+.html
+{
+	font-family: 'Signika';
+}
+
 .nolinkstuff
 {
 	color: inherit;
@@ -15,6 +20,11 @@ http://www.color-hex.com/color-palette/11187
 .btn-top
 {
 	background-color: #41b8f2;
+}
+
+.btn-top:hover
+{
+	background-color: #fdc411;
 }
 
 .btn-bottom
