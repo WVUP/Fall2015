@@ -10,6 +10,7 @@ html, body
 {
 	margin: 0;
 
+
 }
 
 #homeButton
@@ -19,14 +20,16 @@ html, body
 	height: 60px; 
 	margin-top: 20px; 
 	margin-left: 60px;"
+	width: 100px;
+ 
 }
-
 
 .topHeader
 {
 	height: 50px ;
 	background-color: #2d2d2d;
 	text-align: center;
+
 	
 
 	
@@ -37,7 +40,7 @@ html, body
  	margin-left: 100px;
  	display:inline;
  	padding: 350px;
- 	font-family: 'Bad Script', cursive;
+ 	font-family: 'Quicksand', sans-serif;
  	color: #FFFF4F;
 
 
@@ -80,16 +83,28 @@ html, body
 
 }
 
+.content
+{
+
+}
+
 .pictureHeading
 {
 	background-image: url("http://www.praisestock.org/wp-content/uploads/2012/11/music-wide.jpg");
+	background-size: 1400px 400px;
+	background-repeat: no-repeat;
 	height: 300px;
-	width: 100%;
+	box-shadow: 10px 10px 5px gray;
+	text-align: center;
 }
 
-.keyboardHeader
+.headerWords
 {
-	background-repeat: no-repeat;
+	display: inline-block;
+	text-align: center;
+	
+
 }
+
 
 
