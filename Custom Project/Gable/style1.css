@@ -58,7 +58,13 @@ http://www.color-hex.com/color-palette/11187
 
 .framestyle
 {
-	width: 450px;
-	height: 500px;
+	width: 400px;
+	height: 250px;
 	box-shadow: 7px 7px 5px #888888;
+}
+
+.dataScreen
+{
+	outline: #6B6464 solid 5px;
+	border-radius: 5px;
 }
