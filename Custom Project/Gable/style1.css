@@ -19,7 +19,7 @@ http://www.color-hex.com/color-palette/11187
 
 .btn-top
 {
-	background-color: #BBC2B4;
+	background-color: #C6C1AE;
 	/*box-shadow: 5px 5px 5px #888888;*/
 	width: 100%;
 	text-decoration: none;
@@ -31,9 +31,18 @@ http://www.color-hex.com/color-palette/11187
 	background-color: #fdc411;
 }
 
+.btn-mid
+{
+	background-color: #C6C1AE;
+	margin-bottom: 2px;
+	width: 100%;
+	box-shadow: 7px 7px 5px #888888;
+	text-decoration: none;
+}
+
 .btn-bottom
 {
-	background-color: #BBC2B4;
+	background-color: #C6C1AE;
 	margin-right: 2%;
 	margin-left: 2%;
 	margin-bottom: 2%;
@@ -44,7 +53,7 @@ http://www.color-hex.com/color-palette/11187
 
 .btn
 {
-	border-radius: 1px;
+	border-radius: 7px;
 }
 
 .framestyle
