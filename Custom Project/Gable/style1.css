@@ -19,8 +19,8 @@ http://www.color-hex.com/color-palette/11187
 
 .btn-top
 {
-	background-color: #41b8f2;
-	box-shadow: 5px 5px 5px #888888;
+	background-color: #BBC2B4;
+	/*box-shadow: 5px 5px 5px #888888;*/
 	width: 100%;
 	text-decoration: none;
 	color: black;
@@ -33,12 +33,13 @@ http://www.color-hex.com/color-palette/11187
 
 .btn-bottom
 {
-	background-color: #fdc411;
+	background-color: #BBC2B4;
 	margin-right: 2%;
 	margin-left: 2%;
 	margin-bottom: 2%;
 	width: 20%;
 	box-shadow: 7px 7px 5px #888888;
+	text-decoration: none;
 }
 
 .btn
