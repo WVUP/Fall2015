@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Tourney Jocks</title>
+		<link rel="stylesheet" type="text/css" href="egtHomePageStyle.css">
+		<link href='https://fonts.googleapis.com/css?family=Raleway|Open+Sans+Condensed:300|Poiret+One|Playfair+Display' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	</head>
+
+	<body>
+		<div class="header">
+		<h2><p>E</p> L I T E |  <p>G</p> A M I N G | <p>T</p> O U R N A M E N T S </h2>
+		</div>
+		<div class="contentCreate">
+
+			<script type="text/JavaScript">
+				function getInfo(){
+
+					var user = 
+					{
+						ID: "Isaac",
+						PW: "1234",
+					}
+				
+
+					if (document.logIn.userName.value == (user.ID) && document.logIn.passWord.value == (user.PW))
+						{
+							window.open("egtPlaystationT.html")
+						}
+					else
+						{
+							alert("Wrong Username/Password!")
+						}
+
+				}
+				
+			</script>
+
+			<center>
+			<div class="text">
+				<h2>Welcome back! :)</h2>
+			</div>
+			<form name="logIn" class="logIn">
+				<h3>Username</h3>
+				<input class="usrPw"type="text" name="userName">
+				<h3>Password</h3>
+				<input class ="usrPw" type="password" name="passWord">
+				<input class = "input" type="submit" value="Log In" onClick="getInfo()">
+				<input class="input" type="reset" value="Reset">
+			</form>
+			</center>
+
+		</div>
+
+	</body>
+
+</html>

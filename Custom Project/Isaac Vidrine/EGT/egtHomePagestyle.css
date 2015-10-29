@@ -1,0 +1,291 @@
+html, body
+{
+	margin: 0;
+	height: 100%;
+	width: 100%;
+
+}
+
+body
+{
+	background-color: white;
+	width: 100%;
+	height: 100%;
+	
+
+}
+
+.header
+{
+	width: 100%;
+	height: 55px;
+	background-color: #1A1929;
+	box-shadow: 3px 3px 100px gray;
+	
+
+}
+
+.header h2
+{
+	font-family: 'Raleway', sans-serif;
+	padding: 10px;
+	color: white;
+	font-weight: lighter;
+	text-shadow: 10px 10px 10px gray;
+	text-align: center;
+}
+
+.header p
+{
+	display: inline;
+	color: #F1ED49;
+}
+
+
+
+.consoles p
+{
+	text-align: center;
+	font-family: 'Open sans condensed', sans-serif;
+	color: black;
+	font-size: 30pt;
+	text-shadow: 5px 5px 10px ;
+
+}
+
+.consoles
+{
+	height: 500px;
+	text-align: center;
+	
+
+	
+	
+}
+
+.playStation
+{
+	width: 250px;
+	height: 250px;
+	padding: 40px;
+	transition: opacity 0.5s ease;
+
+}
+
+.playStation:hover
+{
+	opacity: 0.4;
+}
+
+.pc
+{
+	height: 270px;
+	width: 210px;
+	padding: 20px;
+	display: inline-block;
+	transition: opacity 0.5s ease;
+
+}
+
+.pc:hover
+{
+	opacity: 0.6;
+}
+
+.xbox
+{
+	height: 160px;
+	width: 160px;
+	padding: 70;
+	transition: opacity 0.5s ease;
+	margin-left: 20px;
+
+
+}	
+
+.xbox:hover
+{
+	
+	opacity: 0.4;
+}
+
+.logos
+{
+	text-align: center;
+	width: 100%;
+	height: 250px;
+	display: block;
+	background-color: #1A1929;
+}
+
+.logos h2
+{
+	font-family: 'Open sans condensed', sans-serif;
+	color: white;
+	font-size: 20pt;
+	text-shadow: 3px 3px 20px ;
+	padding: 40;
+}
+
+.fa-circle
+{
+	color: white;
+	display: inline;
+	position: absolute;
+	margin-top: 200px;
+}
+
+
+.myButton
+{
+	text-decoration: none;
+	color: #16161F;
+	display: inline-block;
+	transition: background-color 0.3s ease;
+	background-color: white;
+	padding: 20;
+	margin: 20;
+	margin-top: -20px;
+	font-family: 'Raleway', sans-serif;
+	border-radius: 10px;
+	width: 150px;
+	font-weight: bold;
+}
+
+.mybutton:hover
+{
+	background-color: black;
+	color: gray;
+}
+
+.bottomBar
+{
+	width: 100%;
+	height: 50px;
+	background-color:#1A1929;
+	text-align: center;
+	display: block;
+	margin-top: 0;
+
+
+}
+
+.bottomBar h2
+{
+	font-family: 'Open sans condensed', sans-serif;
+	color: gray;
+	font-size: 10pt;
+	
+	display: inline-block;
+	
+
+}
+
+.bottomBar p
+{
+	color: gray;
+	display: inline;
+}
+
+.logIn
+{
+	display: inline-block;
+}
+
+.usrPw
+{
+	background-color: black;
+	color: white;
+	display: block;
+	box-shadow: 10px 10px 40px black;
+	border-style: none;
+	height: 30px;
+}
+
+.logIn p
+{
+	font-family: 'Open sans condensed', sans-serif;
+	display: block;
+	font-size: 20pt;
+	color: white;
+
+
+}
+
+.logIn h3
+{
+	width: 20%;
+	font-family: "poiret one", cursive;
+	font-weight: bold;
+	font-size: 17px;
+	color: white;
+}
+
+.input 
+{
+	font-family: 'Raleway', sans-serif;
+	background-color: #1A1929;
+	color: white;
+	height: 40px;
+	width: 80px;
+	border-style: none;
+	border-radius: 5px;
+	margin-top: 60px;
+	margin-left: 10px;
+	margin-right: 10px;
+	transition: background-color 0.5s ease;
+	display: inline;
+}
+
+.input:hover
+{
+	background-color: #FFFF99;
+	color: black;
+}
+.text
+{
+	display: block;
+	padding: 50px;
+
+}
+
+.text h2
+{
+	font-size: 40px;
+	font-family: "poiret one", cursive;
+	display: inline;
+	color: #FF9966;
+	padding-top: 40px;
+	
+
+
+}
+
+.text h3
+{
+	display: inline;
+	font-family: "poiret one", cursive;
+	font-size: 30px;
+	margin: 10;
+	color: white;
+
+}
+
+.text p
+{
+	width: 20%;
+	font-family: "poiret one", cursive;
+	font-weight: bold;
+	font-size: 17px;
+	color: white;
+
+}
+
+.contentCreate
+{
+	background-color: #585858;
+	
+	height: 800px;
+	margin-top: 30px;
+
+}

@@ -1,0 +1,286 @@
+html, body
+{
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #FF9966;
+}
+
+.leftNavBar
+{
+	height: 1000px;
+	width: 230px;
+	background-color: gray;
+	position: fixed;
+	box-shadow: 20px 0px 100px black;
+	float: left;
+	display: inline-block;
+}
+
+.create h2
+{
+	font-family: 'Open sans condensed', sans-serif;
+	padding: 20px;
+	font-size: 20px;
+}
+
+.fa-check-square
+{
+	
+	margin-left: 20px;
+
+}
+
+.offers
+{
+	padding-bottom: 10;
+}
+
+.offers p
+{
+	font-family: 'Open sans condensed', sans-serif;
+	color: white;
+	list-style: none;
+	display: inline;
+	margin-left: 10px;
+	
+}
+
+.myButton
+{
+	text-decoration: none;
+	font-size: 10pt;
+	color: #16161F;
+	transition: background-color 0.3s ease;
+	background-color: white;
+	padding: 20;
+	margin-top: 40px;
+	margin-left: 20px;
+	float: left;
+	font-family: 'Raleway', sans-serif;
+	border-radius: 10px;
+	width: 120px;
+	font-weight: bold;
+}
+
+.mybutton:hover
+{
+	background-color: black;
+	color: gray;
+}
+
+.rightNavBar
+{
+	height: 1000px;
+	width: 230px;
+	background-color: gray;
+	position: fixed;
+	right: 0px;
+	box-shadow: 0px 0px 100px 20px black;
+	display: inline-block;	
+}
+
+input
+{
+	font-family: 'Open sans condensed', sans-serif;
+	border: 1px solid #363636;
+	border-radius: 3px;
+	background-color: black;
+	color: #bebebe;
+	box-shadow: 10px 10px 20px black;
+	width: 150px;
+}
+
+.search
+{
+	text-align: center;
+	margin-top: 20px;
+	margin-left: -10px;
+
+
+}
+
+.switch h3
+{
+	color: #16161F;
+	font-family: 'Open sans condensed', sans-serif;
+	font-size: 9pt;
+	margin-left: 20px;
+	margin-top: 40px;
+	text-align: left;
+
+}
+
+.switch h2
+{
+	font-family: 'Open sans condensed', sans-serif;
+	text-align: center;
+	background-color: #FFFFCC;
+	color: black;
+	margin: 0;
+	padding: 10px;
+	font-size: 16px;
+	font-weight: lighter;
+
+	
+
+	
+	
+}
+
+.switch a
+{
+	font-family: 'Open sans condensed', sans-serif;
+	text-decoration: none;
+	font-size: 14px;
+	text-align: left;
+	color: white;
+	display: block;
+	line-height: 0px;
+	padding: 5px;
+	transition: background-color 0.5s ease;
+
+
+
+}
+
+
+
+.switch a:hover
+{
+	background-color: #FFFFCC;
+	font-weight: bold;
+	color: black;
+}
+
+.switch p
+{
+	margin-left: 80px;
+}
+
+.switch h5
+{
+	text-align: center;
+	opacity: 0.4;
+	margin: 10;
+}
+
+.explore h3
+{
+	color: #16161F;
+	font-family: 'Open sans condensed', sans-serif;
+	font-size: 9pt;
+	margin-left: 40px;
+	margin-top: 20px;
+	text-align: left;
+
+}
+
+.explore h2
+{
+	font-family: 'Open sans condensed', sans-serif;
+	text-align: center;
+	background-color: #FFFFCC;
+	color: black;
+	margin: 0;
+	padding: 10px;
+	font-size: 16px;
+	font-weight: lighter;
+}
+
+.explore a
+{
+	font-family: 'Open sans condensed', sans-serif;
+	text-decoration: none;
+	font-size: 14px;
+	text-align: left;
+	color: white;
+	display: block;
+	line-height: 0px;
+	padding: 5px;
+	transition: background-color 0.5s ease;
+}
+
+.explore a:hover
+{
+	background-color: #FFFFCC;
+	font-weight: bold;
+	color: black;
+}
+
+.explore p
+{
+	margin-left: 80px;
+}
+
+.explore h5
+{
+	text-align: center;
+	opacity: 0.4;
+	margin: 10;
+}
+
+.teams h3
+{
+	color: #16161F;
+	font-family: 'Open sans condensed', sans-serif;
+	font-size: 9pt;
+	margin-left: 40px;
+	margin-top: 20px;
+	text-align: left;
+
+}
+
+.teams a
+{
+	font-family: 'Open sans condensed', sans-serif;
+	font-size: 14px;
+	text-decoration: none;
+	text-align: left;
+	color: white;
+	display: block;
+	line-height: 0px;
+	padding: 5px;
+	transition: background-color 0.5s ease;
+}
+
+.teams a:hover
+{
+	background-color: #FFFFCC;
+	font-weight: bold;
+	color: black;
+}
+
+.teams p
+{
+	margin-left: 80px;
+}
+
+.teams h5
+{
+	text-align: center;
+	opacity: 0.3;
+	margin: 10;
+}
+
+.mylogo
+{
+	text-align: center;
+	width: 80px;
+}
+
+.middleContent
+{
+	display: inline-block;
+	width: 72%;
+	height: 1500px;
+	background-color: #1A1929;
+
+}
+
+.tournaments h2
+{
+	color: white;
+	font-family: 'Open sans condensed', sans-serif;
+}
+
