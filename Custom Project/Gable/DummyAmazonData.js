@@ -1,6 +1,7 @@
-//Dummy data objects
+//Dummy data object records
 
-var record1 = {
+var record1 = 
+{
 	ProductID: 'FinalFantasy7',
 	SKU: '12774',
 	Price: '50',
@@ -10,15 +11,7 @@ var record1 = {
 	Tags: 'video game, vintage, FF'
 }
 
-
-// function printAmazonRecords()
-// {
-// 	document.write('</br> Vendor: AMAZON');
-// 	document.write('</br>Product ID: ' + record1.ProductID);
-// 	document.write('</br>Name of the Product: ' + record1.Name);
-// 	document.write('</br>Price of the Product: ' + record1.Price);
-// 	document.write('</br>Number sold: ' + record1.NumberSold);
-// }
+//Functions
 
 function giveAmazonRecords()
 {
@@ -52,4 +45,9 @@ function giveBuyRecommendation()
 	{
 		return 'Buy? No';
 	}
+}
+
+function giveRawRecordKeys ()
+{
+	return Object.keys(record1);
 }
