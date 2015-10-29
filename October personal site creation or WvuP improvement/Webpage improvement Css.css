@@ -1,0 +1,131 @@
+.body-background{
+	background-color: #9CBCDA;
+}
+.nav-custom{
+	color: #E3B11F;
+	background-color: #111683;
+	font-weight: bold;
+	margin: -3px;
+	padding: 10px;
+	text-decoration: none; 
+}
+.nav-custom:hover{
+	color: #E3B11F;
+	background-color:#3B44AD;
+	text-decoration: none; 
+
+}
+.nav-custom:active{
+	color:#111683;
+	background-color: #E3B11F;
+	text-decoration: none; 
+}
+.list-custom{
+	color: #111683;
+}
+.list-custom:hover{
+	color: white;
+	background-color:#3B44AD;
+	text-decoration: none;
+}
+.list-custom:active{
+}
+.table-custom{
+	border-style: solid;
+	border-color: red;
+	padding: 5px;
+	border-radius: 5px;
+}
+.image-custom{
+	width: 100%;
+	padding: 10;
+
+}
+.media-custom2{
+	background-color: white;
+	height: 1090px;
+	width: 395px;
+	position: relative;
+	top: -1090px;
+	left: 40px;
+}
+.media-custom1{
+	background-color: white;
+	height: 1090px;
+	position: relative;
+	top: 0;
+}
+.right-nav-custom{
+	background: linear-gradient(to bottom, #5392ce 0%,#dde9f5 100%);
+	height: 900px;
+	width: 250px;
+	position: relative;
+	top: -2250;
+	left: 900;
+	border-radius: 30px 30px 30px 30px;
+
+}
+.table-custom2{
+	background-color: #111683;
+	color: #E3B11F;
+	font-size: 80%
+}
+.table-custom3{
+	background-color: #111683;
+	color: #E3B11F;
+	position: relative;
+	top: 10;
+	padding: 10;
+	font-size: 90%;
+}
+.table-custom4{
+	border-style: solid;
+	border-left-color: #111683;
+	border-right-color: #111683;
+	border-left-width: 2;
+	border-right-width: 2;
+	font-size: 90%;
+}
+.table-custom5{
+	border-style: solid;
+	border-left-color: #111683;
+	border-right-color: #111683;
+	border-left-width: 2;
+	border-right-width: 2;
+	border-bottom-color: #111683;
+	border-bottom-width: 2;
+	font-size: 90%;
+}
+.footer{
+	position: relative;
+	top: -2150;
+	left: 250;
+	background-color: white;
+	width: 800;
+	height: 50;
+	font-size: 80%;
+
+}
+.header-image-custom{
+	position: relative;
+	left: 40;
+	width: 400px;
+	height: 100px;
+}
+.header-background-custom{
+	position: relative;
+	left: 40;
+	width: 1122;
+}
+.media-header-custom{
+	color: #111683;
+	font-weight: bold;
+}
+.image-media-custom{
+	width: 600;
+	height: 200;
+}
+.media-custom3{
+	position: relative;
+	top: -30;
+}
