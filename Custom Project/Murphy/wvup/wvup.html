@@ -1,127 +1,231 @@
 <html>
+
 <head>
 	<meta charset="UTF-8">
-	<title>nuvo WVUP - Murphy</title>
+	<title>WVUP revamp - Murphy</title>
+	<!-- CDNs -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="myBootstrap.css">
-	<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Jura' rel='stylesheet' type='text/css'>
+	<!-- fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Cuprum' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+	<!-- locals -->
 	<link rel="stylesheet" type="text/css" href="wvup.css">
+	<!-- JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
-<body>
 
-	<nav class="navbar navbar-default navbar-fixed-top theme navbar-style" style="border-width: 0;">
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">
-			<div class="navbar-header">
-				
-			</div>
+			<a href="#" class="navbar-brand"><img src="images/home-icon-white.png" width="30px" height="30px"></a>
+			<ul class="nav navbar-nav">
+				<li><a href="#">faculty</a></li>
+				<li><a href="#">staff</a></li>
+				<li><a href="#">students</a></li>
+				<li><a href="#">alumni</a></li>
+				<li><a href="#">academics</a></li>
+				<li><a href="#">apply</a></li>
+			</ul>
+			<form class="navbar-form navbar-right" role="search">
+				<div class="form-group">
+					<input type="text" class"form-control" placeholder="Search">
+				</div>
+				<button type="submit" class="btn btn-primary btn-trans"><i class="fa fa-search"></i></button>
+			</form>
 		</div>
 	</nav>
-	<div>
-		<div class="theme t-trans">
-			<div class="container">
-				<div class="jumbotron t-blue" style="margin-top: 300px;">
 
-					<h1 style="text-align: right;">WVU @ Parkersburg</h1>
-					<p id="timedate" style="text-align: right;"></p>
+	<header>
+		<div class="container">
+			<div class="intro-text">
+				<div class="intro-lead-in">
+					
+				</div>
+				<div class="intro-heading">
+					WVU @ Parkersburg
+				</div>
+				<a href="#" class="btn btn-primary btn-trans">
+					Student Login
+				</a>
+				<a href="#" class="btn btn-primary btn-trans">
+					Faculty Login
+				</a>
+			</div>
+		</div>
+	</header>
+	
+	<div class="content">
+		
+		<div class="separator">
+			<div class="container">
+				<div class="row">
+				<div class="col-md-6">
+					<p id="timedate"></p>
 					<script>document.getElementById("timedate").innerHTML = (new Date()).toString().split(' ').splice(0,4).join(' ');
-					</script>
-						<form name="Tick">
-							<input type="text" style="border:none; background-color: transparent; width: 120px;" size="12" name="Clock">
-						</form>
-						<script>
-							function show()
-							{
-								var now=new Date()
-								var hours=now.getHours()
-								var minutes=now.getMinutes()
-								var seconds=now.getSeconds()
-								if (hours==0)
-								hours="0"+hours
-								if (minutes<=9)
-								minutes="0"+minutes
-								if (seconds<=9)
-								seconds="0"+seconds
-								document.Tick.Clock.value=hours+":"+minutes+":"+seconds+""
-								setTimeout("show()",1000)
-							}
-							show()
-						</script>
-					<hr />
-					<p>
-						<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero officiis adipisci magnam eveniet sapiente delectus. Recusandae amet laborum deleniti. Eius nesciunt facilis cum reiciendis maxime mollitia aperiam, labore in voluptatibus.</span>
-						<span>Quos aspernatur quia voluptatibus! Dignissimos saepe ex necessitatibus facere in animi quas debitis corporis, repudiandae tempora accusamus, totam aliquid omnis, doloribus aliquam repellat eligendi. Asperiores, veritatis quis reprehenderit voluptatum neque.</span>
-						<span>Sit debitis aut itaque, iusto iure ipsam maxime consectetur doloribus nam culpa quisquam, esse nesciunt eius dolor rerum sed minima fugiat! Perferendis aspernatur ex recusandae, dolore vero saepe corrupti voluptatum.</span>
-					</p>
-				</div>	
-			</div>
-		</div>
-
-		<div class="theme t-dkgrey">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-3">test</div>
-					<div class="col-lg-3">test</div>
-					<div class="col-lg-3">test</div>
+							</script>
 				</div>
-				<div class="row">
-					<div class="col-lg-2" style="background-color:silver">test</div>
-					<div class="col-lg-2" style="background-color:orange">test</div>
-					<div class="col-lg-2" style="background-color:violet">test</div>
-					<div class="col-lg-2" style="background-color:green">test</div>
+				<div class="col-md-6">
+					<form name="Tick">
+					<input type="text" style="border:none; background-color: transparent; width: 90px;" name="Clock">
+					</form>
+					<script>
+					function show()
+					{
+						var now=new Date()
+						var hours=now.getHours()
+						var minutes=now.getMinutes()
+						if (hours<=9)
+							hours="0"+hours
+						if (minutes<=9)
+							minutes="0"+minutes
+						document.Tick.Clock.value=hours+":"+minutes+""
+						setTimeout("show()",10000)
+					}
+					show()
+				</script>
 				</div>
 			</div>
-		</div>
-
-		<div class="theme t-white">
-			<div class="container">
-				<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo blanditiis voluptatem vero in quia, voluptate, ullam perferendis tempora modi voluptatum aperiam debitis laboriosam necessitatibus sequi aliquam unde officiis quisquam enim.</div>
-				<div>Minus natus repellat quibusdam. Cum, perspiciatis maxime voluptatum nulla laboriosam vero ut optio in perferendis, ab quam nesciunt aut, laudantium. Quasi quis neque nulla ad, voluptas sed natus distinctio aut.</div>
-				<div>Commodi labore consectetur tenetur in dolorum cupiditate quas possimus asperiores obcaecati. Deleniti commodi doloremque omnis voluptatum reiciendis impedit quae, dicta et iusto provident sequi laborum excepturi magnam officiis earum, molestiae!</div>
-			</div>
-		</div>
-
-		<div class="theme t-blue">
-			<div class="container">
-				<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo blanditiis voluptatem vero in quia, voluptate, ullam perferendis tempora modi voluptatum aperiam debitis laboriosam necessitatibus sequi aliquam unde officiis quisquam enim.</div>
-				<div>Minus natus repellat quibusdam. Cum, perspiciatis maxime voluptatum nulla laboriosam vero ut optio in perferendis, ab quam nesciunt aut, laudantium. Quasi quis neque nulla ad, voluptas sed natus distinctio aut.</div>
-				<div>Commodi labore consectetur tenetur in dolorum cupiditate quas possimus asperiores obcaecati. Deleniti commodi doloremque omnis voluptatum reiciendis impedit quae, dicta et iusto provident sequi laborum excepturi magnam officiis earum, molestiae!</div>
-			</div>
-		</div>
-
-		<div class="theme t-yellow">
-			<div class="container">
-				<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo blanditiis voluptatem vero in quia, voluptate, ullam perferendis tempora modi voluptatum aperiam debitis laboriosam necessitatibus sequi aliquam unde officiis quisquam enim.</div>
-				<div>Minus natus repellat quibusdam. Cum, perspiciatis maxime voluptatum nulla laboriosam vero ut optio in perferendis, ab quam nesciunt aut, laudantium. Quasi quis neque nulla ad, voluptas sed natus distinctio aut.</div>
-				<div>Commodi labore consectetur tenetur in dolorum cupiditate quas possimus asperiores obcaecati. Deleniti commodi doloremque omnis voluptatum reiciendis impedit quae, dicta et iusto provident sequi laborum excepturi magnam officiis earum, molestiae!</div>
-				<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus nulla, mollitia, explicabo dolor repellat officiis. Quasi repudiandae, pariatur nobis, omnis optio unde sequi at veniam, provident, tempore iusto voluptatibus voluptates!</div>
-				<div>Consectetur excepturi ullam aperiam mollitia, aut magnam saepe voluptatibus, doloribus repudiandae harum exercitationem debitis, odit assumenda ratione consequatur dolorum quam quos! Nesciunt, mollitia consectetur nisi, perspiciatis consequatur officiis natus neque.</div>
-				<div>Quae corporis perspiciatis ad dignissimos eveniet omnis repudiandae harum, dolorem. Ducimus aut perferendis, ut modi odio obcaecati, aliquid eligendi minima eveniet quidem at veniam suscipit fuga quam officiis, labore? Dolorem!</div>
-				<div>Repudiandae quod esse neque! Similique culpa voluptate quaerat, aliquid eos enim saepe, veniam distinctio, suscipit aliquam laborum reprehenderit sed! Obcaecati rem eligendi laudantium, nam vitae enim neque. Alias, beatae, dolore!</div>
-				<div>Placeat odit reiciendis minus accusantium sint tempore, itaque aliquid vel eveniet, laboriosam perferendis amet nisi, culpa reprehenderit voluptates vero deserunt! Ad provident temporibus odio pariatur optio, facilis et. Ipsa, voluptas.</div>
-				<div>Cupiditate blanditiis dicta possimus dolor, magni fuga veniam vitae perferendis neque delectus quia non, facere magnam officia rem adipisci nobis fugiat quam voluptatum sunt vel mollitia necessitatibus! Ratione, non, labore.</div>
-				<div>Quam, ex voluptates. Minima hic ipsa beatae, veniam sint dolorum. Nam eos expedita inventore nulla consectetur excepturi autem accusamus commodi delectus incidunt, sapiente, voluptates veniam porro maxime quas, animi iste.</div>
-				<div>Qui id voluptatum et sunt blanditiis vero officia nesciunt praesentium tempore modi pariatur necessitatibus veniam facere perspiciatis fuga ad quam tenetur, rem cum explicabo! Quo quod accusamus repudiandae, nisi et.</div>
-				<div>Recusandae consectetur optio nesciunt voluptates mollitia cupiditate fugit, incidunt eveniet, autem officia eius eaque consequatur facilis repellendus ab vitae. Nam incidunt doloribus officiis, obcaecati distinctio adipisci voluptatem eos enim sed.</div>
-				<div>Repellat saepe, quibusdam velit laboriosam odit eveniet quidem quae nam libero corrupti quod sint veritatis harum eum quas, reiciendis minima, provident cumque dolor assumenda. Minus, ipsam, praesentium? Incidunt, iure, nobis.</div>
-				<div>Iste non culpa similique, ipsam sed odio iure sunt dolores mollitia, earum, hic labore? Ratione itaque laborum beatae qui doloremque nemo, omnis sit laboriosam rem quas praesentium, molestiae minima, a.</div>
 			</div>
 		</div>
 		
-		<div class="theme t-dkgrey">
+		<div class="t-blue banner">
 			<div class="container">
-				<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo blanditiis voluptatem vero in quia, voluptate, ullam perferendis tempora modi voluptatum aperiam debitis laboriosam necessitatibus sequi aliquam unde officiis quisquam enim.</div>
-				<div>Minus natus repellat quibusdam. Cum, perspiciatis maxime voluptatum nulla laboriosam vero ut optio in perferendis, ab quam nesciunt aut, laudantium. Quasi quis neque nulla ad, voluptas sed natus distinctio aut.</div>
-				<div>Commodi labore consectetur tenetur in dolorum cupiditate quas possimus asperiores obcaecati. Deleniti commodi doloremque omnis voluptatum reiciendis impedit quae, dicta et iusto provident sequi laborum excepturi magnam officiis earum, molestiae!</div>
+				<div class="featured">
+					<div class="well">
+						<h1>Featured Content</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="t-yellow">
+			<div class="container">
+				<h1>News &amp Events</h1>
+				<br>
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+						<li data-target="#myCarousel" data-slide-to="3"></li>
+					</ol>
+				<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img src="images/6.jpg" alt="">
+						</div>
+						<div class="item">
+							<img src="images/16.jpg" alt="">
+						</div>
+						<div class="item">
+							<img src="images/3.gif" alt="">
+						</div>
+						<div class="item">
+							<img src="images/9.jpg" alt="">
+						</div>
+					</div>
+				<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" ></span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+					</a>
+				</div><!-- end carousel -->
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="card text-center">
+							<div class="card-block">
+								<h4 class="card-title">Thanksgiving Break</h4>
+								<p class="card-text">Join us for a special Thanksgiving dinner before the break!</p>
+								<a href="#" class="btn btn-primary">Read More</a>
+							</div>
+							<div class="card-footer text-muted">
+								2 days ago
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="card text-center">
+							<div class="card-block">
+								<h4 class="card-title">Veteran Food Drive</h4>
+								<p class="card-text">The Veterans Corps is hosting a food drive.  Come be part of the fun!</p>
+								<a href="#" class="btn btn-primary">Read More</a>
+							</div>
+							<div class="card-footer text-muted">
+								6 days ago
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4"><div class="card text-center">
+							<div class="card-block">
+								<h4 class="card-title">Campus Security Announcement</h4>
+								<p class="card-text">In lieu of the recent school shootings our security chief has a message for you!</p>
+								<a href="#" class="btn btn-primary">Read More</a>
+							</div>
+							<div class="card-footer text-muted">
+								16 days ago
+							</div>
+						</div></div>
+				</div>
 			</div>
 		</div>
 
-		<div class="float-tab">
-			test
-		</div>
-	</div>
+		<div class="separator"></div>
 
+		<div class="t-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<img src="images/student.jpg">
+					</div>
+					<div class="col-sm-8">
+						<blockquote>I saw the best minds of my generation destroyed by madness, starving hysterical naked, dragging themselves through the negro streets at dawn looking for an angry fix, angelheaded hipsters burning for the ancient heavenly connection to the starry dynamo in the machinery of night.</blockquote>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div><!-- end content -->
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h5>300 Campus Drive<br>
+					Parkersburg, WV<br>
+					26104-8647</h5>
+					<h6>Voice: 304.424.8000<br>
+					Fax: 304.424.8315<br>
+					Toll-Free: 800.WVA.WVUP</h6>
+				</div>
+				<div class="col-md-4">
+					<a href="http://www.wvup.edu/site-map/">Sitemap</a><br>
+					<a href="#">Directory</a><br>
+					<a href="#">Campus Security</a><br>
+					<a href="#">Library</a><br>
+					<a href="#">Calendar</a>
+				</div>
+				<div class="col-md-4">
+					<a href="http://www.facebook.com/wvuparkersburg"><i class="fa fa-facebook-official"></i></a>
+					<a href="http://www.twitter.com/wvuparkersburg"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.linkedin.com/edu/school?id=32329&trk=edu-cp-logo"><i class="fa fa-youtube"></i></a>
+					<a href="https://www.linkedin.com/edu/school?id=32329&trk=edu-cp-logo"><i class="fa fa-linkedin"></i></a>
+				</div>
+			</div>
+			<div class="copyright">
+				<hr>
+				&copy; 2015 | West Virginia University at Parkersburg
+			</div>
+		</div>
+	</footer>
 </body>
+
 </html>
