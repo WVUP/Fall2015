@@ -42,11 +42,11 @@
 			<div class="dataScreen" id="dataScreenAmazon">Amazon product information here...</div>
 		</div>
 		<div class="col-md-1">
-			<button type="button" class="btn btn-mid"><a href="https://www.amazon.com/gp/gw/ajax/s.html"><i class="fa fa-times fa-3x" style="color: #FF8080;"></i></a></button>
+			<button type="button" class="btn btn-mid" onclick="location.href='https://www.amazon.com/gp/gw/ajax/s.html'"><i class="fa fa-times fa-3x" style="color: #FF8080;"></i></button>
 			<button type="button" class="btn btn-mid" onclick="document.getElementById('dataScreenAmazon').innerHTML=giveAmazonRecords()"><i class="fa fa-info-circle fa-3x"></i></button>
 			<button type="button" class="btn btn-mid" onclick="document.getElementById('dataScreenAmazon').innerHTML=giveAmazonFinancials()"><i class="fa fa-money fa-3x"></i></button>
-			<button type="button" class="btn btn-mid"><a href="https://www.facebook.com/"><i class="fa fa-thumbs-o-up fa-3x"></i></a></button>
-			<button type="button" class="btn btn-mid"><a href="text.txt"><i class="fa fa-th-large fa-3x"></i></a></button>
+			<button type="button" class="btn btn-mid" onclick="location.href='https://www.amazon.com/gp/gw/ajax/s.html'"><i class="fa fa-shopping-cart fa-3x"></i></button>
+			<button type="button" class="btn btn-mid" onclick="document.getElementById('dataScreenAmazon').innerHTML=giveAmazonTags()"><i class="fa fa-tags fa-3x"></i></button>
 			<button type="button" class="btn btn-mid"><a href="text.txt"><i class="fa fa-th-list fa-3x"></i></a></button>
 			<button type="button" class="btn btn-mid"><a href="https://www.amazon.com/gp/gw/ajax/s.html"><i class="fa fa-star fa-3x"></i></a></button>
 			<button type="button" class="btn btn-mid"><a href="http://www.amazon.com/gp/help/customer/display.html"><i class="fa fa-truck fa-3x"></i></a></button>
@@ -96,19 +96,6 @@
 
 	<script src="DummyAmazonData.js">
 	</script>
-
-	<script>
-	printAmazonRecords();
-	</script>
-
-	<div id="amazonDisplay" style="height: 100px; width: 100%; background-color: lightblue;">Display here</div>
-
-	<button type="button" onclick="document.getElementById('amazonDisplay').innerHTML=giveAmazonRecords()"></button>
-
-	<button type="button" onclick="document.getElementById('dataScreenAmazon').innerHTML=giveAmazonRecords()"></button>
-
-
-
 
 </body>
 

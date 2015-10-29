@@ -7,7 +7,7 @@ var record1 = {
 	Name: 'FinalFantasy7',
 	NumberSold: '512334',
 	SellingHot: 'Yes',
-	Tags: 34,
+	Tags: 'video game, vintage, FF'
 }
 
 
@@ -34,4 +34,10 @@ function giveAmazonFinancials()
 			'</br>Price of the Product: ' + record1.Price +
 			'</br>NumberSold:' + record1.NumberSold +
 			'</br>Selling well: ' + record1.SellingHot;
+}
+
+function giveAmazonTags()
+{
+	return	'Vendor: AMAZON' +
+			'</br>Tags: ' + record1.Tags;
 }
