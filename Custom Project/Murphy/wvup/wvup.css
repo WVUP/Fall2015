@@ -171,10 +171,19 @@ header .intro-text .intro-heading
 
 .featured .well
 {
-	background-color: transparent;
+	background-image: url('images/download.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
 	border-width: 3px;
 	border-radius: 10px;
 	border-color: #ccc;
+}
+
+.featured .jumbotron
+{
+	background:rgba(0,0,0,0.5);
+	color: white;
+	text-align: center;
 }
 
 .t-white
