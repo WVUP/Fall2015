@@ -11,14 +11,14 @@ var record1 = {
 }
 
 
-function printAmazonRecords()
-{
-	document.write('</br> Vendor: AMAZON');
-	document.write('</br>Product ID: ' + record1.ProductID);
-	document.write('</br>Name of the Product: ' + record1.Name);
-	document.write('</br>Price of the Product: ' + record1.Price);
-	document.write('</br>Number sold: ' + record1.NumberSold);
-}
+// function printAmazonRecords()
+// {
+// 	document.write('</br> Vendor: AMAZON');
+// 	document.write('</br>Product ID: ' + record1.ProductID);
+// 	document.write('</br>Name of the Product: ' + record1.Name);
+// 	document.write('</br>Price of the Product: ' + record1.Price);
+// 	document.write('</br>Number sold: ' + record1.NumberSold);
+// }
 
 function giveAmazonRecords()
 {
@@ -40,4 +40,16 @@ function giveAmazonTags()
 {
 	return	'Vendor: AMAZON' +
 			'</br>Tags: ' + record1.Tags;
+}
+
+function giveBuyRecommendation()
+{
+	if (record1.SellingHot == 'Yes')
+	{
+		return 'Buy? Yes';
+	}
+	else
+	{
+		return 'Buy? No';
+	}
 }
