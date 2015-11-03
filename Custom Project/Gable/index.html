@@ -41,6 +41,7 @@
 			<iframe class="framestyle" src="amazonimg.png"></iframe></br>
 			<div class="dataScreen" id="dataScreenAmazon">Amazon product information here...</div>
 		</div>
+		<!-- AMAZON ANALYSIS BUTTONS -->
 		<div class="col-md-1">
 			<button type="button" class="btn btn-mid" onclick="location.href='https://www.amazon.com/gp/gw/ajax/s.html'"><i class="fa fa-times fa-3x" style="color: #FF8080;"></i></button>
 			<button type="button" class="btn btn-mid" onclick="document.getElementById('dataScreenAmazon').innerHTML=giveAmazonRecords()"><i class="fa fa-info-circle fa-3x"></i></button>
@@ -51,15 +52,16 @@
 			<button type="button" class="btn btn-mid" onclick="document.getElementById('dataScreenAmazon').innerHTML=addToAmazonPreferredProducts()"><i class="fa fa-star fa-3x"></i></button>
 			<button type="button" class="btn btn-mid" onclick="document.getElementById('dataScreenAmazon').innerHTML=giveAmazonRawRecordKeys()"><i class="fa fa-file fa-3x"></i></button>
 		</div>
+		<!-- EBAY ANALYSIS BUTTONS -->
 		<div class="col-md-1">
 			<button type="button" class="btn btn-mid" onclick="location.href='https://www.amazon.com/gp/gw/ajax/s.html'"><i class="fa fa-times fa-3x" style="color: #FF8080;"></i></button>
-			<button type="button" class="btn btn-mid" onclick="document.getElementById('dataScreenAmazon').innerHTML=giveAmazonRecords()"><i class="fa fa-info-circle fa-3x"></i></button>
-			<button type="button" class="btn btn-mid" onclick="document.getElementById('dataScreenAmazon').innerHTML=giveAmazonFinancials()"><i class="fa fa-money fa-3x"></i></button>
-			<button type="button" class="btn btn-mid" onclick="document.getElementById('dataScreenAmazon').innerHTML='AMAZON Cart and Shopping Information[DEMO]'"><i class="fa fa-shopping-cart fa-3x"></i></button>
-			<button type="button" class="btn btn-mid" onclick="document.getElementById('dataScreenAmazon').innerHTML=giveAmazonTags()"><i class="fa fa-tags fa-3x"></i></button>
-			<button type="button" class="btn btn-mid" onclick="document.getElementById('dataScreenAmazon').innerHTML=giveBuyRecommendation()"><i class="fa fa-database fa-3x"></i></button>
-			<button type="button" class="btn btn-mid" onclick="document.getElementById('dataScreenAmazon').innerHTML='Added ' + record1.SKU + ' to preferred products![DEMO]'"><i class="fa fa-star fa-3x"></i></button>
-			<button type="button" class="btn btn-mid" onclick="document.getElementById('dataScreenAmazon').innerHTML=giveRawRecordKeys()"><i class="fa fa-file fa-3x"></i></button>
+			<button type="button" class="btn btn-mid" onclick="document.getElementById('dataScreenEbay').innerHTML=giveEbayRecords()"><i class="fa fa-info-circle fa-3x"></i></button>
+			<button type="button" class="btn btn-mid" onclick="document.getElementById('dataScreenEbay').innerHTML=giveEbayFinancials()"><i class="fa fa-money fa-3x"></i></button>
+			<button type="button" class="btn btn-mid" onclick="document.getElementById('dataScreenEbay').innerHTML=queryEbayRecords()"><i class="fa fa-shopping-cart fa-3x"></i></button>
+			<button type="button" class="btn btn-mid" onclick="document.getElementById('dataScreenEbay').innerHTML=giveEbayTags()"><i class="fa fa-tags fa-3x"></i></button>
+			<button type="button" class="btn btn-mid" onclick="document.getElementById('dataScreenEbay').innerHTML=giveEbayBuyRecommendation()"><i class="fa fa-database fa-3x"></i></button>
+			<button type="button" class="btn btn-mid" onclick="document.getElementById('dataScreenEbay').innerHTML=addToEbayPreferredProducts()"><i class="fa fa-star fa-3x"></i></button>
+			<button type="button" class="btn btn-mid" onclick="document.getElementById('dataScreenEbay').innerHTML=giveEbayRawRecordKeys()"><i class="fa fa-file fa-3x"></i></button>
 		</div>
 		<div class="col-md-5">
 			<iframe class="framestyle" src="ebayimg.png"></iframe>
@@ -99,6 +101,8 @@
 	</div>
 
 	<script src="DummyAmazonData.js">
+	</script>
+	<script src="DummyEbayData.js">
 	</script>
 
 </body>
