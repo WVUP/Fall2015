@@ -1,8 +1,2 @@
-Amazon image:
-
-http://www.amazon.com/Final-Fantasy-VII-Playstation/dp/B00000JRSB
-
-
-Ebay image:
- 
-http://www.ebay.com/itm/Final-Fantasy-VII-7-Y-Fold-Black-Label-Masterpiece-Misprint-Brand-New-Sealed-PS1-/281828110493?hash=item419e43b09d:g:-eYAAOSwqu9VLdd5
+Source for Amazon and Ebay images:
+http://www.gamefaqs.com/ps/197341-final-fantasy-vii/images/188285
