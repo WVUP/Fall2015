@@ -1,43 +1,71 @@
 //Dummy data object records
 
-var record1 = 
-{
+var records = 
+[
+	{
 	ProductID: 'FinalFantasy7',
 	SKU: '12774',
 	Price: '50',
-	Name: 'FinalFantasy7',
+	Name: 'FinalFantasy 7',
 	NumberSold: '512334',
 	SellingHot: 'Yes',
 	Tags: 'video game, vintage, FF'
-}
+	},
+
+	{
+	ProductID: 'FinalFantasy9',
+	SKU: '12774',
+	Price: '50',
+	Name: 'FinalFantasy 9',
+	NumberSold: '438999',
+	SellingHot: 'No',
+	Tags: 'video game, PS1, FF9, old school'
+	},
+
+	{
+	ProductID: 'FinalFantasy10',
+	SKU: '12774',
+	Price: '50',
+	Name: 'FinalFantasy 10',
+	NumberSold: '32445',
+	SellingHot: 'No',
+	Tags: 'video game, vintage, FF10, linear'
+	}
+
+
+];
+
+var preferredProducts = 
+[
+];
 
 //Functions
 
 function giveAmazonRecords()
 {
 	return 	'Vendor: AMAZON' +
-			'</br>Product ID: ' + record1.ProductID +
-			'</br>Name of the Product: ' + record1.Name + 
-			'</br>SKU: ' + record1.SKU;
+			'</br>Product ID: ' + records[0].ProductID +
+			'</br>Name of the Product: ' + records[0].Name + 
+			'</br>SKU: ' + records[0].SKU;
 }
 
 function giveAmazonFinancials()
 {
 	return 	'Vendor: AMAZON' + 
-			'</br>Price of the Product: ' + record1.Price +
-			'</br>NumberSold:' + record1.NumberSold +
-			'</br>Selling well: ' + record1.SellingHot;
+			'</br>Price of the Product: ' + records[0].Price +
+			'</br>NumberSold:' + records[0].NumberSold +
+			'</br>Selling well: ' + records[0].SellingHot;
 }
 
 function giveAmazonTags()
 {
 	return	'Vendor: AMAZON' +
-			'</br>Tags: ' + record1.Tags;
+			'</br>Tags: ' + records[0].Tags;
 }
 
 function giveBuyRecommendation()
 {
-	if (record1.SellingHot == 'Yes')
+	if (records[0].SellingHot == 'Yes')
 	{
 		return 'Buy? Yes';
 	}
@@ -47,7 +75,12 @@ function giveBuyRecommendation()
 	}
 }
 
+function addToPreferredProducts()
+{
+	return 'Added to preferred products!'
+}
+
 function giveRawRecordKeys ()
 {
-	return Object.keys(record1);
+	return Object.keys(records[0]);
 }
