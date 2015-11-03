@@ -77,6 +77,8 @@ function giveBuyRecommendation()
 
 function addToPreferredProducts()
 {
+	preferredProducts.push(records[0]);
+
 	return 'Added to preferred products!'
 }
 
