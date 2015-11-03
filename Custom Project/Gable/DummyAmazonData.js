@@ -1,6 +1,6 @@
 //Dummy data object records
 
-var records = 
+var amazonRecords = 
 [
 	{
 	ProductID: 'FinalFantasy7',
@@ -35,7 +35,7 @@ var records =
 
 ];
 
-var preferredProducts = 
+var amazonpreferredProducts = 
 [
 ];
 
@@ -44,28 +44,35 @@ var preferredProducts =
 function giveAmazonRecords()
 {
 	return 	'Vendor: AMAZON' +
-			'</br>Product ID: ' + records[0].ProductID +
-			'</br>Name of the Product: ' + records[0].Name + 
-			'</br>SKU: ' + records[0].SKU;
+			'</br>Product ID: ' + amazonRecords[0].ProductID +
+			'</br>Name of the Product: ' + amazonRecords[0].Name + 
+			'</br>SKU: ' + amazonRecords[0].SKU;
+}
+
+function queryAmazonRecords()
+{
+	return 	'You currently have ' + 
+			amazonpreferredProducts.length +
+			' items in your preferred products.';
 }
 
 function giveAmazonFinancials()
 {
 	return 	'Vendor: AMAZON' + 
-			'</br>Price of the Product: ' + records[0].Price +
-			'</br>NumberSold:' + records[0].NumberSold +
-			'</br>Selling well: ' + records[0].SellingHot;
+			'</br>Price of the Product: ' + amazonRecords[0].Price +
+			'</br>NumberSold:' + amazonRecords[0].NumberSold +
+			'</br>Selling well: ' + amazonRecords[0].SellingHot;
 }
 
 function giveAmazonTags()
 {
 	return	'Vendor: AMAZON' +
-			'</br>Tags: ' + records[0].Tags;
+			'</br>Tags: ' + amazonRecords[0].Tags;
 }
 
-function giveBuyRecommendation()
+function giveAmazonBuyRecommendation()
 {
-	if (records[0].SellingHot == 'Yes')
+	if (amazonRecords[0].SellingHot == 'Yes')
 	{
 		return 'Buy? Yes';
 	}
@@ -75,14 +82,14 @@ function giveBuyRecommendation()
 	}
 }
 
-function addToPreferredProducts()
+function addToAmazonPreferredProducts()
 {
-	preferredProducts.push(records[0]);
+	amazonpreferredProducts.push(amazonRecords[0]);
 
 	return 'Added to preferred products!'
 }
 
-function giveRawRecordKeys ()
+function giveAmazonRawRecordKeys()
 {
-	return Object.keys(records[0]);
+	return Object.keys(amazonRecords[0]);
 }
