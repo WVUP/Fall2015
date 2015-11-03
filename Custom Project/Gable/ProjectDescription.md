@@ -1,3 +1,10 @@
-#Comparative Shopping Website: A Skeleton Draft
+#**ShopSmartSocial is a website designed to appeal to shoppers of many types. [Draft]**
 
-This rough outline (complete with high-contrast color scheme—for now at least!) shows what a simple, potentially mobile-friendly site for comparative/social shopping might entail. By using an interface on desktops that is mobile-friendly, this site (and a companion app) might appeal to a broader audience. Along with this skeleton site demo, mockups are also in this folder. 
+#**For Social Shoppers:**
+Our social network functionality makes sure shoppers are connected to their favorite social networks such as Pinterest and Facebook. Our planned chat applet allows subscribed users to chat about products in our secure chat spaces and forums. 
+
+#**For Shoppers Looking for a Deal**
+For shoppers looking for a good deal, we have process and selling information taken directly from the big sites such as Ebay or Amazon. 
+
+#**For Businesses**
+For reselling or other businesses, our data analytics tools help determine the best prices on items direct from industry information (APIs). ShopSmartSocial data analytics provide tag information, real-time, data-driven comparative analysis, and much more. 
