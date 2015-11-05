@@ -245,7 +245,7 @@ header .intro-text .intro-heading
 
 .featured .jumbotron
 {
-  background:rgba(0,0,0,0.5);
+  background:rgba(0,0,0,0.6);
   color: white;
   text-align: center;
 }
@@ -258,6 +258,11 @@ header .intro-text .intro-heading
   text-align: center;
   font-family: "Montserrat";
   font-size: 20px;
+}
+
+.glow
+{
+  text-shadow: 2px 2px 15px;
 }
 
 .overlay{
