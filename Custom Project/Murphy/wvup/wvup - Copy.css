@@ -7,11 +7,6 @@ body
   color: #ccc;
 }
 
-ul
-{
-  list-style-type: none;
-}
-
 h1
 {
   font-family: "Kaushan","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -160,6 +155,13 @@ header .intro-text .intro-heading
   padding: 15px;
 }
 
+.news
+{
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
 .t-yellow h1 a
 {
   color: #00457D;
@@ -192,23 +194,6 @@ header .intro-text .intro-heading
   background:rgba(255,255,255,0.2);
 }
 
-.card-title
-{
-  font-family: "Montserrat", Helvetica,Arial,sans-serif;
-  font-weight: bold;
-}
-
-.card-text
-{
-  font-size: 14;
-}
-
-.text-muted
-{
-  font-size: 12;
-  padding-top: 5px;
-}
-
 .separator
 {
   height: 30px;
@@ -236,7 +221,7 @@ header .intro-text .intro-heading
 {
   background-image: url('images/featured.jpg');
   background-repeat: no-repeat;
-  background-size: 107%;
+  background-size: cover;
   border-width: 3px;
   border-radius: 10px;
   border-color: #ccc;
