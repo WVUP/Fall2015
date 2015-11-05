@@ -8,9 +8,9 @@ html, body
 
 .leftNavBar
 {
-	height: 1000px;
+	height: 100%;
 	width: 230px;
-	background-color: gray;
+	background-color: white;
 	position: fixed;
 	box-shadow: 20px 0px 100px black;
 	float: left;
@@ -39,7 +39,8 @@ html, body
 .offers p
 {
 	font-family: 'Open sans condensed', sans-serif;
-	color: white;
+	color: #FF9966;
+	font-weight: bold;
 	list-style: none;
 	display: inline;
 	margin-left: 10px;
@@ -51,8 +52,9 @@ html, body
 	text-decoration: none;
 	font-size: 10pt;
 	color: #16161F;
+	text-align: center;
 	transition: background-color 0.3s ease;
-	background-color: white;
+	background-color: gray;
 	padding: 20;
 	margin-top: 40px;
 	margin-left: 20px;
@@ -73,7 +75,7 @@ html, body
 {
 	height: 1000px;
 	width: 230px;
-	background-color: gray;
+	background-color: white;
 	position: fixed;
 	right: 0px;
 	box-shadow: 0px 0px 100px 20px black;
@@ -113,10 +115,10 @@ input
 
 .switch h2
 {
-	font-family: 'Open sans condensed', sans-serif;
+	font-family: 'Poiret one', cursive;
 	text-align: center;
-	background-color: #FFFFCC;
-	color: black;
+	background-color: #1A1929;
+	color: white;
 	margin: 0;
 	padding: 10px;
 	font-size: 14px;
@@ -130,16 +132,20 @@ input
 
 .switch a
 {
-	font-family: 'Open sans condensed', sans-serif;
+	font-family: 'Poiret one', cursive;
+	background-color: #C5C5C5;
+	margin-top: 5px;
+	margin-bottom: 5px;
 	text-decoration: none;
 	font-size: 14px;
+	font-weight: bold;
 	text-align: left;
-	color: white;
+	color: black;
 	display: block;
 	line-height: 0px;
 	padding: 5px;
 	transition: background-color 0.5s ease;
-
+	transition: font-size 0.2s ease;
 
 
 }
@@ -148,9 +154,10 @@ input
 
 .switch a:hover
 {
-	background-color: #FFFFCC;
-	font-weight: bold;
-	color: black;
+	background-color: #1A1929;
+	color: white;
+	font-size: 18px;
+	font-weight: lighter;
 }
 
 .switch p
@@ -161,8 +168,8 @@ input
 .switch h5
 {
 	text-align: center;
+	margin: 0;
 	opacity: 0.4;
-	margin: 10;
 }
 
 .explore h3
@@ -178,34 +185,39 @@ input
 
 .explore h2
 {
-	font-family: 'Open sans condensed', sans-serif;
+	font-family: 'Poiret one', cursive;
 	text-align: center;
-	background-color: #FFFFCC;
-	color: black;
+	background-color: #1A1929;
+	color: white;
 	margin: 0;
 	padding: 10px;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: lighter;
 }
 
 .explore a
 {
-	font-family: 'Open sans condensed', sans-serif;
+	font-family: 'Poiret one', cursive;
+	background-color: #C5C5C5;
+	font-weight: bold;
+	margin-bottom: 5px;
 	text-decoration: none;
 	font-size: 14px;
 	text-align: left;
-	color: white;
+	color: black;
 	display: block;
 	line-height: 0px;
-	padding: 5px;
+	padding: 4px;
 	transition: background-color 0.5s ease;
+	transition: font-size 0.2s ease;
 }
 
 .explore a:hover
 {
-	background-color: #FFFFCC;
-	font-weight: bold;
-	color: black;
+	background-color: #1A1929;
+	color: white;
+	font-size: 18px;
+	font-weight: lighter;
 }
 
 .explore p
@@ -217,7 +229,7 @@ input
 {
 	text-align: center;
 	opacity: 0.4;
-	margin: 10;
+	margin: 0;
 }
 
 .teams h3
@@ -233,22 +245,27 @@ input
 
 .teams a
 {
-	font-family: 'Open sans condensed', sans-serif;
+	font-family: 'Poiret one', cursive;
+	font-weight: bold;
+	background-color: #C5C5C5;
+	margin-bottom: 5px;
 	font-size: 14px;
 	text-decoration: none;
 	text-align: left;
-	color: white;
+	color: black;
 	display: block;
 	line-height: 0px;
 	padding: 5px;
 	transition: background-color 0.5s ease;
+	transition: font-size 0.2s ease;
 }
 
 .teams a:hover
 {
-	background-color: #FFFFCC;
-	font-weight: bold;
-	color: black;
+	background-color: #1A1929;
+	color: white;
+	font-size: 18px;
+	font-weight: lighter;
 }
 
 .teams p
@@ -260,13 +277,15 @@ input
 {
 	text-align: center;
 	opacity: 0.3;
-	margin: 10;
+	margin: 0;
 }
 
 .mylogo
 {
 	text-align: center;
 	width: 80px;
+	margin-top: 10px;
+
 }
 
 .middleContent
@@ -275,13 +294,14 @@ input
 	width: 63%;
 	height: 1500px;
 	background-color: #1A1929;
+	box-shadow: 0 0 50px 10px black;
 
 }
 
 .tournaments h2
 {
 	color: #FF9966;
-	font-family: 'Open sans condensed', sans-serif;
+	font-family: 'Poiret one', cursive;
 }
 
 
@@ -292,14 +312,44 @@ input
 
 .account p
 {
-	color: white;
+	color: #FF9966;
 	font-family: 'Open sans condensed', sans-serif;
+	font-weight: bolder;
 }
 
 .picture
 {
 	width: 70%;
 	height: 15%;
-	border-radius: 900px;
+	border-radius: 30px;
 	box-shadow: 5px 5px 30px black;
+}
+
+.leftContent
+{
+	margin-top: 30px;
+}
+
+.leftContent a
+{
+	font-family: 'Poiret one', cursive;
+	background-color: #C5C5C5;
+	font-weight: bold;
+	margin-bottom: 10px;
+	font-size: 20px;
+	text-decoration: none;
+	text-align: center;
+	color: black;
+	display: block;
+	padding: 10px;
+	transition: background-color 0.5s ease;
+	transition: font-size 0.2s ease;
+}
+
+.leftContent a:hover
+{
+	background-color: #1A1929;
+	color: white;
+	font-size: 25px;
+	font-weight: lighter;
 }
