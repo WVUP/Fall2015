@@ -113,6 +113,11 @@ header .intro-text .intro-heading
   font-family: "Montserrat";
 }
 
+.navbar-nav li a:hover
+{
+  text-shadow: 2px 2px 15px;
+}
+
 .navbar-right
 {
   padding-top: 15px;
