@@ -1,0 +1,57 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Validation Example</title>
+
+	<style type="text/css">
+
+	  input:required:invalid, input:focus:invalid {
+	    background-image: url(./noGood.png);
+	    background-position: right top;
+	    background-repeat: no-repeat;
+	  }
+	  input:required:valid {
+	    border-color: lime;
+	  }
+
+	</style>
+</head>
+<body>
+
+
+	<form>
+		
+
+		first name:
+		<input type="text" name="firstName" placeholder="Your Username" required>
+		<br><br>
+
+		email:
+		<input type="email" name="email">
+		<br><br>
+
+
+		your website:
+		<input type="text" name="url" pattern="^http://" >
+		<br><br>
+
+		age:
+		<input type="number" size="6" name="age" min="18" max="99" value="21"><br>
+		<br><br>
+
+		satisfaction:
+		<input type="range" size="2" name="satisfaction" min="1" max="5" value="3">
+		<br><br>
+
+		start date:
+		<input type="date" name="startDate" required>
+
+
+
+
+	<br /><br />
+		<button type="submit">Submit</button>
+	</form>
+	
+</body>
+</html>
