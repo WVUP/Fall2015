@@ -1,9 +1,6 @@
 body
 {
-  /*background: url('images/riverhawksy.png') 
-  no-repeat top center fixed;*/
   background-color: #E3B11F;
-  /*color: #00457D;*/
   color: #ccc;
 }
 
@@ -21,10 +18,10 @@ h1
 
 hr
 {
-    border: 0;
-    height: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 header
@@ -145,13 +142,13 @@ header .intro-text .intro-heading
 
 }
 
-.banner
+/*.banner
 {
   background-image: url('images/banner.png');
   background-repeat: no-repeat;
   background-position: top center;
   padding-top: 40px;
-}
+}*/
 
 .t-trans
 {
@@ -234,10 +231,10 @@ header .intro-text .intro-heading
 
 .featured
 {
-  padding-top: 210px;
+  padding-top: 40px;
 }
 
-.featured .well
+/*.featured .well
 {
   background-image: url('images/featured.jpg');
   background-repeat: no-repeat;
@@ -246,7 +243,7 @@ header .intro-text .intro-heading
   border-radius: 10px;
   border-color: #ccc;
   margin-bottom: 35px;
-}
+}*/
 
 .featured .jumbotron
 {
