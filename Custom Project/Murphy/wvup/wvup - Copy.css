@@ -78,7 +78,8 @@ header .intro-text .intro-heading
 
 .btn-trans
 {
-  background: none;
+  /*background: none;*/
+  background-color: rgba(0,0,0,0.3);
   border-style: solid;
   border-color: #ccc;
   border-width: 1px;
@@ -97,9 +98,11 @@ header .intro-text .intro-heading
   color: #fff;
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active
+.btn-primary:hover, .btn-primary:focus, 
+.btn-primary.active, .btn-trans:hover, 
+.btn-trans:focus, .btn-trans:active
 {
-  background: rgba(0,0,0,0.3);
+  background: rgba(0,0,0,0.6);
   color: white;
   border-color: white;
 }
@@ -120,7 +123,8 @@ header .intro-text .intro-heading
   padding-top: 15px;
 }
 
-.form-text{
+.form-text
+{
   border-radius: 3px;
   background: none;
   border-style: solid;
@@ -141,14 +145,6 @@ header .intro-text .intro-heading
 {
 
 }
-
-/*.banner
-{
-  background-image: url('images/banner.png');
-  background-repeat: no-repeat;
-  background-position: top center;
-  padding-top: 40px;
-}*/
 
 .t-trans
 {
@@ -229,27 +225,98 @@ header .intro-text .intro-heading
   color: #ccc;
 }
 
-.featured
+.item img
 {
-  padding-top: 40px;
+  border-radius: 10px;
 }
 
-/*.featured .well
+.featured
 {
-  background-image: url('images/featured.jpg');
-  background-repeat: no-repeat;
-  background-size: 107%;
-  border-width: 3px;
-  border-radius: 10px;
-  border-color: #ccc;
-  margin-bottom: 35px;
-}*/
+  margin: 35px auto;
+}
 
-.featured .jumbotron
+.well
 {
-  background:rgba(0,0,0,0.6);
-  color: white;
+  background: none;
+  border-style: none;
+ /* padding: 25px;
+  box-shadow: inset 0px 0px 5px 5px rgba(0,0,0,0.34);
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 11px 3px 
+    rgba(231,166,26,1);*/
+}
+
+.well-left
+{
+  padding: 15px;
+  margin: 15px;
   text-align: center;
+}   
+
+.well-left button
+{
+  width: 100%;
+}
+
+.btn-group
+{
+  margin: 15px;
+}
+
+.btn-lg, .btn-lg:focus
+{
+  background-color: #333;
+  color: #E3B11F;
+  border: none;
+}
+
+.btn-lg:hover, .btn-lg:active
+{
+  background-color: #222;
+  color: #E3B11F;
+}
+
+.dropdown-menu
+{
+  background-color: #222;
+}
+
+.dropdown-menu li a
+{
+  color: #337ab7;
+}
+
+.open>.dropdown-toggle.btn-default:hover,
+.open>.dropdown-toggle.btn-default:active,
+.open>.dropdown-toggle.btn-default:focus,
+.open>.dropdown-toggle.btn-default:visited
+{
+  background-color: #222;
+  color: #E3B11F;
+}
+
+.btn-default.active.focus, .btn-default.active:focus, 
+.btn-default.active:hover, .btn-default:active.focus, 
+.btn-default:active:focus, .btn-default:active:hover, 
+.open>.dropdown-toggle.btn-default.focus, 
+.open>.dropdown-toggle.btn-default:focus, 
+.open>.dropdown-toggle.btn-default:hover
+{
+  background-color: #222;
+  color: #E3B11F;
+}
+
+.btn-default.active, .btn-default:active, 
+.open>.dropdown-toggle.btn-default
+{
+  background-color: #222;
+  color: #E3B11F;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover
+{
+  background-color: #222;
+  color: #E3B11F;
 }
 
 .t-grey
@@ -260,6 +327,11 @@ header .intro-text .intro-heading
   text-align: center;
   font-family: "Montserrat";
   font-size: 20px;
+}
+
+.t-grey a:hover
+{
+  font-weight: bolder;
 }
 
 .glow
@@ -285,21 +357,54 @@ header .intro-text .intro-heading
   text-decoration: none;
 }
 
-.float-tab
+audio 
 {
   position: fixed;
   padding: 10px auto 0 auto;
   display: block;
-  top: 50px;
-  float: right;
-  /*right: 75px;*/
-  font-family: "Abel", "Helvetica", sans-serif;
-  font-weight: 700;
-  width: 160px;
-  color: white;
-  text-align: center;
-  /*background-color: #585b5d;*/
+  top: 7px;
+  left: 50%;
   border-radius: 10px;
+  z-index: 9999;
+}
+
+.wvupradio a
+{
+  position: fixed;
+  display: block;
+  top: 40px;
+  left: 53.5%;
+  z-index: 9999;
+  color: #9d9d9d;
+  font-family: "Montserrat";
+  font-size: 11px;
+}
+
+.wvupradio a:hover
+{
+  color: white;
+  text-decoration: none;
+}
+
+.alert 
+{
+  position: relative;
+  /*transform: perspective(3px) rotateX(1deg);*/
+  border-radius: 0 0 10px 10px;
+  padding: auto;
+  display: block;
+  top: 55px;
+  left: -50%;
+  z-index: 999;
+  background-color: #222;
+  color: #ccc;
+}
+
+.alert:hover
+{
+  color: white;
+  box-shadow: 2px 2px 15px;
+  text-decoration: none;
 }
 
 footer
@@ -325,6 +430,7 @@ footer a
 footer a:hover
 {
   color: white;
+  text-decoration: none;
 }
 
 footer .left
@@ -339,75 +445,76 @@ footer ul
 
 /*----------------------------------------------*/
 
-/*#content {  float: left; width: 100%;}
-
-.post { margin: 0 auto; padding-bottom: 50px; float: left; width: 960px; }
-
-.btn-sign {
-  width:460px;
-  margin-bottom:20px;
-  margin:0 auto;
-  padding:20px;
-  border-radius:5px;
-  background:  -o-linear-gradient(top, #00c6ff, #018eb6);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#00c6ff', EndColorStr='#018eb6');
-  text-align:center;
-  font-size:36px;
-  color:#fff;
-  text-transform:uppercase;
+.post
+{
+  margin: 0 auto; 
+  /*padding-bottom: 50px; */
+  float: left; 
+  width: 960px; 
 }
 
-.btn-sign a { color:#fff; text-shadow:0 1px 2px #161616; }
-
-#mask {
+#mask
+{
   display: none;
   background: #000; 
-  position: fixed; left: 0; top: 0; 
+  position: fixed; 
+  left: 0; 
+  top: 0; 
   z-index: 10;
-  width: 100%; height: 100%;
+  width: 100%; 
+  height: 100%;
   opacity: 0.8;
   z-index: 999;
 }
 
-.login-popup{
+.login-popup
+{
   display:none;
-  background: #333;
+  background: #222;
   padding: 10px;  
   border: 2px solid #ddd;
   float: left;
   font-size: 1.2em;
   position: fixed;
-  top: 50%; left: 50%;
+  top: 50%; 
+  left: 50%;
   z-index: 99999;
   box-shadow: 0px 0px 20px #999;
-  border-radius:3px 3px 3px 3px;
+  border-radius:3px;
 }
 
-img.btn_close {
+img.btn_close
+{
   float: right; 
   margin: -28px -28px 0 0;
 }
 
-fieldset { 
+fieldset
+{
   border:none; 
 }
 
-form.signin .textbox label { 
+form.signin .textbox label
+{
   display:block; 
   padding-bottom:7px; 
 }
 
-form.signin .textbox span { 
+form.signin .textbox span
+{
   display:block;
 }
 
-form.signin p, form.signin span { 
-  color:#999; 
-  font-size:11px; 
+form.signin p, form.signin span
+{
+  color:#E3B11F; 
+  font-size:12px; 
   line-height:18px;
+  font-family: "Montserrat";
 } 
 
-form.signin .textbox input { 
+form.signin .textbox input
+{
   background:#666666; 
   border-bottom:1px solid #333;
   border-left:1px solid #000;
@@ -420,23 +527,91 @@ form.signin .textbox input {
   width:200px;
 }
 
-form.signin input:-moz-placeholder { color:#bbb; text-shadow:0 0 2px #000; }
-form.signin input::-webkit-input-placeholder { color:#bbb; text-shadow:0 0 2px #000;  }
+form.signin input
+{
+ color:#bbb; 
+ text-shadow:0 0 2px #000; 
+}
 
-.button { 
-  background:  -o-linear-gradient(top, #f3f3f3, #dddddd);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f3f3f3', EndColorStr='#dddddd');
-  border-color:#000; 
+.button
+{
+  background: rgba(0,0,0,0.2);
+  border-color:#fff; 
   border-width:1px;
-  border-radius:4px 4px 4px 4px;
-  color:#333;
+  border-radius:4px;
+  color:#ccc;
   cursor:pointer;
   display:inline-block;
   padding:6px 6px 4px;
-  margin-top:10px;
-  font:12px; 
-  width:214px;
+  margin:10px 10px;
+  font:8px; 
+  width:auto;
 }
 
-.button:hover { background:#ddd; }
+.button:hover
+{
+ background: rgba(0,0,0,0.5);
+ color: white;
+}
+
+.forgot:hover
+{
+  color: #337ab7;
+}
+
+/*
+  Bootstrap Carousel Fade Transition (for Bootstrap 3.3.x)
+  CSS from:       http://codepen.io/transportedman/pen/NPWRGq
+  and:            http://stackoverflow.com/questions/18548731/bootstrap-3-carousel-fading-to-new-slide-instead-of-sliding-to-new-slide
+  Inspired from:  http://codepen.io/Rowno/pen/Afykb 
 */
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/*
+  WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+  Need to override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}

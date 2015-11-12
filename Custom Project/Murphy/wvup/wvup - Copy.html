@@ -13,31 +13,103 @@
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-  <!-- locals -->
+  <!-- local css-->
   <link rel="stylesheet" type="text/css" href="wvup.css">
   <!-- JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('a.login-window').click(function() {
+        
+        // Getting the variable's value from a link 
+        var loginBox = $(this).attr('href');
+
+        //Fade in the Popup and add close button
+        $(loginBox).fadeIn(300);
+        
+        //Set the center alignment padding + border
+        var popMargTop = ($(loginBox).height() + 24) / 2; 
+        var popMargLeft = ($(loginBox).width() + 24) / 2; 
+        
+        $(loginBox).css({ 
+          'margin-top' : -popMargTop,
+          'margin-left' : -popMargLeft
+        });
+        
+        // Add the mask to body
+        $('body').append('<div id="mask"></div>');
+        $('#mask').fadeIn(300);
+        
+        return false;
+      });
+      
+      // When clicking on the button close or the mask layer the popup closed
+      $('a.close, #mask').live('click', function() { 
+        $('#mask , .login-popup').fadeOut(300 , function() {
+        $('#mask').remove();  
+      }); 
+      return false;
+      });
+    });
+  </script>
+
+  <script type="text/javascript">
+  function logIn(){
+    //var html = 'Hello ' + email;
+    var user = [
+      {
+        email: '',
+        password: ''
+      }
+    ];
+
+    user.email = document.email;
+    user.password = document.password;
+    window.open("helloWorld.html")
+    //document.getElementById('body').innerHTML = html;
+  }
+  </script>
+
+  <script>
+    function alertStatus(color){
+      if(color == red)
+        var html = 'alert status: <i class="fa fa-circle" style="color: red;"></i> ( cancelled )';
+      if(color == yellow)
+        var html = 'alert status: <i class="fa fa-circle" style="color: yellow;"></i> ( delayed - morning )';
+      if(color == blue)
+        var html = 'alert status: <i class="fa fa-circle" style="color: blue;"></i> ( delayed - evening )';
+      if(color == green)
+        var html = 'alert status: <i class="fa fa-circle" style="color: green;"></i> ( in session )';
+      
+      document.getElementById('p').innerHTML = html;
+    };
+  </script>
+
 </head>
 
 <body>
 
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
-      <a href="#" class="navbar-brand"><img src="images/home-icon-white.png" width="30px" height="30px"></a>
+      <a href="wvup.html" class="navbar-brand"><img src="images/home-icon-white.png" width="30px" height="30px" title="home"></a>
       <ul class="nav navbar-nav">
-        <li><a href="http://www.wvup.edu/academics/">academics</a></li>
-        <li><a href="http://your.wvup.edu/">apply</a></li>
-        <li><a href="http://www.wvup.edu/current-students/">students</a></li>
-        <li><a href="http://www.wvup.edu/faculty-staff/">faculty</a></li>
-        <li><a href="http://www.wvup.edu/alumni-giving/">alumni</a></li>
+        <li><a href="http://www.wvup.edu/academics/" target="_blank">academics</a></li>
+        <li><a href="http://your.wvup.edu/" target="_blank">apply</a></li>
+        <li><a href="http://www.wvup.edu/current-students/" target="_blank">students</a></li>
+        <li><a href="http://www.wvup.edu/faculty-staff/" target="_blank">faculty</a></li>
+        <li><a href="http://www.wvup.edu/alumni-giving/" target="_blank">alumni</a></li>
       </ul>
+
       <div class="form-group">
-        <form class="navbar-right" action="http://google.com/search">
+        <form class="navbar-right" action="http://google.com/search" target="_blank">
           <fieldset>
             <input type="hidden" name="q" value="site:wvup.edu" />
-            <input class="search form-text" name="q"placeholder="search WVUP..."/>
-            <button type="submit" class="btn btn-primary btn-trans" style="margin-top: -4px;">
+            <input class="search form-text" name="q"placeholder="search WVUP..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'search WVUP...'"/>
+            <button type="submit" class="btn btn-primary btn-trans fa" style="margin-top: -4px;">
               <i class="fa fa-search"></i>
             </button>
           </fieldset>
@@ -45,6 +117,27 @@
       </div>
       </div>
   </nav>
+  
+  <span class="wvupradio">
+    <audio controls>
+      <source src="http://208.77.223.186:8000/wpkm" type="audio/mpeg" />
+      <em>Sorry, your browser doesn't support HTML5 audio.</em>
+    </audio>
+    <a href="http://wpkmradio.com/">96.3 FM WPKM - WVUP Radio</a>
+  </span>
+
+  <div style="position: absolute; left: 50%;">
+    <a href="legend.html" target="_blank">
+    <div class="alert">
+      <p class="render">
+        alert status: 
+        <i class="fa fa-circle" style="color:green;"></i> ( in session )
+      <!-- script type="text/javascript">
+      alertStatus('green')</script> -->
+      </p>
+    </div>
+    </a>
+  </div>
 
   <header>
     <div class="container">
@@ -54,9 +147,34 @@
         <div class="intro-heading">
           WVU @ Parkersburg
         </div>
-        <a href="#" class="btn btn-primary btn-trans">
-          Student/Faculty Login</a>
-        <a href="images\campusmap.gif" class="btn btn-primary btn-trans">
+
+          <a href="#login-box" class="login-window btn btn-trans">
+          Log in to WVUP</a>
+          <div id="login-box" class="login-popup">
+            <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+            <form method="post" class="signin" action="#">
+              <fieldset class="textbox">
+                <label class="email">
+                  <span>WVUP Email Address</span>
+                  <input id="email" name="email" value="" type="email" autocomplete="on" placeholder="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'email'"required>
+                </label>
+
+                <label class="password">
+                  <span>Password</span>
+                  <input id="password" name="password" value="" type="password" placeholder="password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'password'"required>
+                </label>
+                
+                <button class="submit button" type="submit" onclick="logIn()">Sign in</button>
+                <button class="submit button" type="reset" value="Clear">Clear</button>
+
+                <p>
+                  <a class="forgot" href="#">Forgot your password?</a>
+                </p>
+
+              </fieldset>
+            </form>
+          </div>
+        <a href="images\campusmap.gif" target="_blank" class="btn btn-primary btn-trans">
           Take a Tour</a>
       </div>
     </div>
@@ -64,7 +182,7 @@
   
   <div class="content">
     
-    <div class="separator">
+    <div class="separator overlay">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -86,45 +204,94 @@
       <div class="container">
         <div class="featured">
           <div class="well">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-              <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-              </ol>
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                  <img src="images/6.jpg" height="100%" alt="Chania">
-                  <div class="container">
-                    <div class="carousel-caption">
-                      <div class="jumbotron">
-                        <h4>We want to hear from you! Share your story with ‪#‎IStayedHomeBecause‬ for the chance to be featured!</h4>
-                        <div class="row" style="padding-top: 15px;">
-                        <div class="col-sm-6" >
-                          <a href="https://www.facebook.com/wvuparkersburg/videos/vb.28588786747/10153336916261748/?type=2&theater" class="btn btn-primary btn-trans">Share your Story</a>
-                        </div>
-                        <div class="col-sm-6">
-                        <a href="https://www.youtube.com/watch?v=rPIVhI5yKrU" class="btn btn-primary btn-trans">Hear from Others</a>
-                        </div>
-                      </div>
-                    </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="well-left">
+                 <div class="btn-group">
+                    <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Programs of Study
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="http://www.wvup.edu/academics/programs-of-study/majors-complete-listing/" target="_blank">Bachelor Degrees</a></li>
+                      <li><a href="http://www.wvup.edu/academics/programs-of-study/majors-complete-listing/" target="_blank">Associate Degrees</a></li>
+                      <li><a href="http://www.wvup.edu/academics/programs-of-study/online-degree-programs/" target="_blank">Online Degrees</a></li>
+                      <li><a href="http://www.wvup.edu/academics/programs-of-study/nontraditional-programs/" target="_blank">Degree Completion</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Certifications</a></li>
+                    </ul>
                   </div>
+
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Course Catalogs
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="http://www.wvup.edu/academics/course-catalog/2011-2012-catalog/" target="_blank">2011-2012</a></li>
+                      <li><a href="http://www.wvup.edu/academics/course-catalog/2012-2013-catalog/" target="_blank">2012-2013</a></li>
+                      <li><a href="http://www.wvup.edu/academics/course-catalog/2013-2014-catalog/" target="_blank">2013-2014</a></li>
+                      <li><a href="http://www.wvup.edu/academics/course-catalog/2014-2015-catalog/" target="_blank">2014-2015</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="http://www.wvup.edu/academics/course-catalog/2015-2016-catalog/" target="_blank">Current School Year</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Course Schedules
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="http://schedules.wvup.edu/fall.htm" target="_blank">Fall 2015</a></li>
+                      <li><a href="http://schedules.wvup.edu/spring.htm" target="_blank">Spring 2016</a></li>
+                      <li><a href="http://schedules.wvup.edu/summer.htm" target="_blank">Summer 2016</a></li>
+                    </ul>
                   </div>
                 </div>
-                <div class="item">
-                  <img src="images/16.jpg" alt="Chania">
-                </div>
-                <div class="item">
-                  <img src="images/3.gif" alt="Flower">
-                </div>
-                <div class="item">
-                  <img src="images/9.jpg" alt="Flower">
-                </div>
-            </div> <!-- end carousel -->
-            <br><br>
+              </div>
+              <div class="col-md-8">
+                <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                  <li data-target="#myCarousel" data-slide-to="3"></li>
+                  <li data-target="#myCarousel" data-slide-to="4"></li>
+                  <li data-target="#myCarousel" data-slide-to="5"></li>
+                  <li data-target="#myCarousel" data-slide-to="6"></li>
+                  <li data-target="#myCarousel" data-slide-to="7"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="images/3.gif">
+                  </div>
+                  <div class="item">
+                    <img src="images/4.jpg">
+                  </div>
+                  <div class="item">
+                    <img src="images/6.jpg">
+                  </div>
+                  <div class="item">
+                    <img src="images/9.jpg">
+                  </div>
+                  <div class="item">
+                    <img src="images/14.jpg">
+                  </div>
+                  <div class="item">
+                    <img src="images/15.jpg">
+                  </div>
+                  <div class="item">
+                    <img src="images/16.jpg">
+                  </div>
+                  <div class="item">
+                    <img src="images/20.jpg">
+                  </div>
+              </div> <!-- end carousel -->
+            </div>
+          </div>
             
           </div>
         </div>
@@ -138,11 +305,11 @@
             <br><br>
             <ul>
               <li><span class="glow"><h2>WVUP Channels:</h2></span></li>
-              <li><a href="https://www.youtube.com/channel/UCSqW9PINXHDoNLUUi9LEfHw">WVU at Parkersburg</a></li>
-              <li><a href="https://www.youtube.com/channel/UCTSvZB8k-3qPVVLGng-JPzA">WVUP CTT</a></li>
-              <li><a href="https://www.youtube.com/channel/UCLP58-DVl3j-waz0p9FRHHA">WVUP Library</a></li>
-              <li><a href="https://www.youtube.com/user/WVUParkersburg">Old WVUP Videos</a></li>
-              <li><a href="https://www.youtube.com/channel/UC7szVTiqT6cALdEiq1u8q6g">Commencement</a></li>
+              <li><a href="https://www.youtube.com/channel/UCSqW9PINXHDoNLUUi9LEfHw" target="_blank">WVU at Parkersburg</a></li>
+              <li><a href="https://www.youtube.com/channel/UCTSvZB8k-3qPVVLGng-JPzA" target="_blank">WVUP CTT</a></li>
+              <li><a href="https://www.youtube.com/channel/UCLP58-DVl3j-waz0p9FRHHA" target="_blank">WVUP Library</a></li>
+              <li><a href="https://www.youtube.com/user/WVUParkersburg" target="_blank">Old WVUP Videos</a></li>
+              <li><a href="https://www.youtube.com/channel/UC7szVTiqT6cALdEiq1u8q6g" target="_blank">Commencement</a></li>
             </ul>
           </div>
           <div class="col-md-6">
@@ -185,7 +352,7 @@
               <div class="card-block">
                 <h4 class="card-title">Recent News</h4>
                 <p class="card-text">President Lamkin recognized the Facilities and Grounds staff for going above and beyond to prepare for the implementation of the one-stop student services center.</p>
-                <a href="http://www.wvup.edu/category/general-news/" class="btn btn-blue">Read More</a>
+                <a href="http://www.wvup.edu/category/general-news/" target="_blank" class="btn btn-blue">Read More</a>
               </div>
               <div class="card-footer text-muted">
                 6 days ago
@@ -197,7 +364,9 @@
               <div class="card-block">
                 <h4 class="card-title">Chronicle</h4>
                 <p class="card-text">School Newspaper</p>
-                <a href="http://issuu.com/wvuparkersburgchronicle" class="btn btn-blue">WVUP Chronicle</a>
+                <a href="http://issuu.com/wvuparkersburgchronicle" target="_blank" class="btn btn-blue" style="margin: 10px;">WVUP Chronicle</a>
+
+                <a href="https://www.facebook.com/wvup.chronicle/"  target="_blank" class="btn btn-blue">WVUP Chronicle on Facebook</a>
               </div>
               <div class="card-footer text-muted">
                 Last Issue: 2 days ago
@@ -210,7 +379,7 @@
                 <p class="card-text">Check out all of the upcoming events and important dates at WVUP!</p>
                 <h1>
                 <hr>
-                <a href="http://www.wvup.edu/current-students/announcements/events/"><i class="fa fa-calendar" class="btn btn-primary" style="text-shadow: none;"></i></a>
+                <a href="http://www.wvup.edu/current-students/announcements/events/" target="_blank"><i class="fa fa-calendar" class="btn btn-primary" style="text-shadow: none;"></i></a>
                 </h1>
               </div>
             </div>
@@ -234,35 +403,35 @@
         </div>
         <div class="col-md-3">
           <ul>
-            <li><a href="http://www.wvup.edu/site-map/">Sitemap</a></li>
-            <li><a href="http://www.wvup.edu/faculty-staff/directories/">Directory</a></li>
-            <li><a href="http://www.wvup.edu/current-students/library/">Library</a></li>
-            <li><a href="http://www.wvup.edu/about/safety-security/campus-security/">Campus Police</a></li>
-            <li><a href="http://www.wvup.edu/current-students/services/disability-services/">Disability Services</a></li>
+            <li><a href="http://www.wvup.edu/site-map/" target="_blank">Sitemap</a></li>
+            <li><a href="http://www.wvup.edu/faculty-staff/directories/" target="_blank">Directory</a></li>
+            <li><a href="http://www.wvup.edu/current-students/library/" target="_blank">Library</a></li>
+            <li><a href="http://www.wvup.edu/about/safety-security/campus-security/" target="_blank">Campus Police</a></li>
+            <li><a href="http://www.wvup.edu/current-students/services/disability-services/" target="_blank">Disability Services</a></li>
           </ul>
         </div>
         <div class="col-md-3">
           <ul>
-          <li><a href="https://rand.wvnet.edu:9920/">OLSIS</a></li>
-          <li><a href="https://findmyid.wvup.edu/">Find My ID</a></li>
-          <li><a href="http://webmail.wvup.edu/">WVUP Email</a></li>
-          <li><a href="https://login.wvup.edu/Account/Login.aspx">LearningStudio</a></li>
-          <li><a href="http://it.wvup.edu/">Tech Resources</a></li>
+          <li><a href="https://rand.wvnet.edu:9920/" target="_blank">OLSIS</a></li>
+          <li><a href="https://findmyid.wvup.edu/" target="_blank">Find My ID</a></li>
+          <li><a href="http://webmail.wvup.edu/" target="_blank">WVUP Email</a></li>
+          <li><a href="https://login.wvup.edu/Account/Login.aspx" target="_blank">LearningStudio</a></li>
+          <li><a href="http://it.wvup.edu/" target="_blank">Tech Resources</a></li>
           </ul>
         </div>
         <div class="col-md-3">
           <a href="#"><img src="images/riverhawksbanner.png" height="50" alt=""></a>
           <br><br>
-          <a href="http://www.facebook.com/wvuparkersburg"><i class="fa fa-facebook-official"></i></a>
-          <a href="http://www.twitter.com/wvuparkersburg"><i class="fa fa-twitter"></i></a>
-          <a href="https://www.youtube.com/channel/UCSqW9PINXHDoNLUUi9LEfHw"><i class="fa fa-youtube"></i></a>
-          <a href="https://www.linkedin.com/edu/school?id=32329&trk=edu-cp-logo"><i class="fa fa-linkedin"></i></a>
-          <a href="https://instagram.com/wvuparkersburg/"><i class="fa fa-instagram"></i></a>
+          <a href="http://www.facebook.com/wvuparkersburg" target="_blank"><i class="fa fa-facebook-official"></i></a>
+          <a href="http://www.twitter.com/wvuparkersburg" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.youtube.com/channel/UCSqW9PINXHDoNLUUi9LEfHw" target="_blank"><i class="fa fa-youtube"></i></a>
+          <a href="https://www.linkedin.com/edu/school?id=32329&trk=edu-cp-logo" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="https://instagram.com/wvuparkersburg/" target="_blank"><i class="fa fa-instagram"></i></a>
         </div>
       </div>
       <hr>
       <div class="copyright">
-        &copy; 2015 | <a href="http://www.wvup.edu">West Virginia University at Parkersburg</a>
+        &copy; 2015 | <a href="http://www.wvup.edu" target="_blank">West Virginia University at Parkersburg</a>
       </div>
     </div>
   </footer>

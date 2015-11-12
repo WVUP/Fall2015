@@ -430,6 +430,7 @@ footer a
 footer a:hover
 {
   color: white;
+  text-decoration: none;
 }
 
 footer .left
