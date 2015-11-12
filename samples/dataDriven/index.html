@@ -1,0 +1,33 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>data driven</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script src="./script.js"></script>
+</head>
+<body>
+
+	<div class="container">
+		<div class="panel">
+			<div class="panel-heading">
+				Here are the results
+			</div>
+			<div class="panel-body" id="updateMe">
+				Body content here
+			</div>
+			<div class="panel-footer">
+				<div class="btn btn-default" onClick="filter()">All</div>
+				<div class="btn btn-default" onClick="filter('online')">Online</div>
+				<div class="btn btn-default" onClick="filter('shooter')">Shooter</div>
+				<div class="btn btn-success" onClick="addGame()">Add Title</div>
+				<div class="btn btn-primary" onClick="renderGames();">Preview</div>
+			</div>
+		</div>
+	</div>
+	
+	
+</body>
+</html>
