@@ -398,6 +398,7 @@ audio
   z-index: 999;
   background-color: #222;
   color: #ccc;
+  box-shadow: 2px 2px 15px rgba(0,0,0,0.8);
 }
 
 .alert:hover
