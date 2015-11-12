@@ -5,9 +5,14 @@
 	color: #E3B11F;
 	background-color: #111683;
 	font-weight: bold;
-	margin: -3px;
+	margin: -7px;
 	padding: 10px;
 	text-decoration: none; 
+}
+.nav-custom-dropdown{
+	color: #E3B11F;
+	background-color: #111683;
+	font-weight: bold;
 }
 .nav-custom:hover{
 	color: #E3B11F;
@@ -80,14 +85,18 @@
 }
 .table-custom4{
 	border-style: solid;
+	border-color: #111683;
 	border-left-color: #111683;
 	border-right-color: #111683;
+	border-bottom-color: #111683;
+	border-bottom-width: 2;
 	border-left-width: 2;
 	border-right-width: 2;
 	font-size: 90%;
 }
 .table-custom5{
 	border-style: solid;
+	border-color: #111683;
 	border-left-color: #111683;
 	border-right-color: #111683;
 	border-left-width: 2;

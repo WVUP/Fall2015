@@ -2,6 +2,8 @@
   <head>
     <link href="bootstrap.min.css" rel="stylesheet">
     <link href="Webpage improvement Css.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="bootstrap.min.js"></script>
   </head>
   <body class="container body-background">
     <div class="row">
@@ -13,16 +15,75 @@
       <div class="col-md-15">
           <ul class="nav-pills" style="display:block">
             <li><a class="nav-custom" href="#">Home</a></li>
-            <li><a class="nav-custom" href="#">About</a></li>
-            <li><a class="nav-custom" href="#">Academics</a></li>
-            <li><a class="nav-custom" href="#">Curremt Students</a></li>
-            <li><a class="nav-custom" href="#">Future Students</a></li>
-            <li><a class="nav-custom" href="#">High School Students</a></li>
-            <li><a class="nav-custom" href="#">Faculty & Staff</a></li>
-            <li><a class="nav-custom" href="#">Alumni & Giving</a></li>
-            <li><a class="nav-custom" href="#">Workforce Development</a></li>
+              <li role="presentation" class="dropdown"><a href="#" class=" dropdown-toggle nav-custom" data-toggle="dropdown"role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a style="color:#E3B11F; background-color:#111683; padding:10px" href="#">Directories</a></li>
+              <li><a style="color:#E3B11F; background-color:#111683; padding:10px" href="#">About WVU Parkersburg</a></li>
+              <li><a style="color:#E3B11F; background-color:#111683; padding:10px" href="#">Marketing & Communications</a></li>
+              <li><a style="color:#E3B11F; background-color:#111683; padding:10px" href="#">Board of Governors</a></li>
+              <li><a style="color:#E3B11F; background-color:#111683; padding:10px" href="#">Policies & Procedures</a></li>
+              <li><a style="color:#E3B11F; background-color:#111683; padding:10px" href="#">Office of the President</a></li>
+              <li><a style="color:#E3B11F; background-color:#111683; padding:10px" href="#">Business Office</a></li>
+            </ul>
+              <li role="presentation" class="dropdown"><a href="#" class=" dropdown-toggle nav-custom" data-toggle="dropdown"role="button" aria-haspopup="true" aria-expanded="false">Academics<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a style="color:#E3B11F; background-color:#111683;padding:10px" href="#">Office of Academic Affairs</a></li>
+              <li><a style="color:#E3B11F; background-color:#111683;padding:10px" href="#">Academic Divisions</a></li>
+              <li><a style="color:#E3B11F; background-color:#111683;padding:10px" href="#">Avising</a></li>
+              <li><a style="color:#E3B11F; background-color:#111683;padding:10px" href="#">Programs of Study</a></li>
+              <li><a style="color:#E3B11F; background-color:#111683;padding:10px" href="#">Distance Learning</a></li>
+            </ul>
+              <li role="presentation" class="dropdown"><a href="#" class=" dropdown-toggle nav-custom" data-toggle="dropdown"role="button" aria-haspopup="true" aria-expanded="false">Current Students<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a style="color:#E3B11F; background-color:#111683;padding:10px" href="#">Services</a></li>
+              <li><a style="color:#E3B11F; background-color:#111683;padding:10px" href="#">Registrar/Records</a></li>
+              <li><a style="color:#E3B11F; background-color:#111683;padding:10px" href="#">Library</a></li>
+              <li><a style="color:#E3B11F; background-color:#111683;padding:10px" href="#">Veterans</a></li>
+              <li><a style="color:#E3B11F; background-color:#111683;padding:10px" href="#">Resources</a></li>
+              <li><a style="color:#E3B11F; background-color:#111683;padding:10px" href="#">Academics</a></li>
+              <li><a style="color:#E3B11F; background-color:#111683;padding:10px" href="#">Life at WVU Parkersburg</a></li>
+            </ul>
+              <li role="presentation" class="dropdown"><a href="#" class=" dropdown-toggle nav-custom" data-toggle="dropdown"role="button" aria-haspopup="true" aria-expanded="false">Future Students<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a style="color:#E3B11F; background-color:#111683;padding:10px" href="#">Resources</a></li>
+              <li><a style="color:#E3B11F; background-color:#111683;padding:10px" href="#">Admission</a></li>
+              <li><a style="color:#E3B11F; background-color:#111683;padding:10px" href="#">Degree Completion & Extended Learning</a></li>
+              <li><a style="color:#E3B11F; background-color:#111683;padding:10px" href="#">Costs, Scholarships & Financial Aid</a></li>
+              <li><a style="color:#E3B11F; background-color:#111683;padding:10px" href="#">Get Started</a></li>
+            </ul>
+              <li role="presentation" class="dropdown"><a href="#" class=" dropdown-toggle nav-custom" data-toggle="dropdown"role="button" aria-haspopup="true" aria-expanded="false">High School Students<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a style="color:#E3B11F; background-color:#111683;padding:10px" href="#">EDGE</a></li>
+              <li><a style="color:#E3B11F; background-color:#111683;padding:10px" href="#">Early Admission</a></li>
+            </ul>
+              <li role="presentation" class="dropdown"><a href="#" class=" dropdown-toggle nav-custom" data-toggle="dropdown"role="button" aria-haspopup="true" aria-expanded="false">Faculty & Staff<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a style="color:#E3B11F; background-color:#111683;padding:10px" href="#">Links</a></li>
+              <li><a style="color:#E3B11F; background-color:#111683;padding:10px" href="#">Travel</a></li>
+              <li><a style="color:#E3B11F; background-color:#111683;padding:10px" href="#">Directories</a></li>
+              <li><a style="color:#E3B11F; background-color:#111683;padding:10px" href="#">Committees</a></li>
+              <li><a style="color:#E3B11F; background-color:#111683;padding:10px" href="#">Adjunct Faculty</a></li>
+              <li><a style="color:#E3B11F; background-color:#111683;padding:10px" href="#">Institution Data</a></li>
+            </ul>
+              <li role="presentation" class="dropdown"><a href="#" class=" dropdown-toggle nav-custom" data-toggle="dropdown"role="button" aria-haspopup="true" aria-expanded="false">Alumni & Giving<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a style="color:#E3B11F; background-color:#111683;padding:10px" href="#">Alumni</a></li>
+              <li><a style="color:#E3B11F; background-color:#111683;padding:10px" href="#">Ways to Give</a></li>
+              <li><a style="color:#E3B11F; background-color:#111683;padding:10px" href="#">Scholarships</a></li>
+            </ul>
+              <li role="presentation" class="dropdown"><a href="#" class=" dropdown-toggle nav-custom" data-toggle="dropdown"role="button" aria-haspopup="true" aria-expanded="false">Workforce Development<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a style="color:#E3B11F; background-color:#111683;padding:10px" href="#">Short Term Programs</a></li>
+              <li><a style="color:#E3B11F; background-color:#111683;padding:10px" href="#">Community Education</a></li>
+              <li><a style="color:#E3B11F; background-color:#111683;padding:10px" href="#">Corporate Training</a></li>
+              <li><a style="color:#E3B11F; background-color:#111683;padding:10px" href="#">Online Training</a></li>
+              <li><a style="color:#E3B11F; background-color:#111683;padding:10px" href="#">Small Business Development Center</a></li>
+              <li><a style="color:#E3B11F; background-color:#111683;padding:10px" href="#">Kid's College/Teen Academies</a></li>
+            </ul>
             <li><a class="nav-custom" href="#">Search</a></li>
-          </ul>
+        </ul>
+        
+          
       </div>
     </div>
     <div class="row">
@@ -61,6 +122,11 @@
           </ul>
           <a href=""><img class="image-custom" src="virtualtourbutton2.gif"></a>
           <a href=""><img class="image-custom" src="foundation_web_button.gif"></a>
+          <br>
+          <br>
+          <br>
+          <h4 style="font-weight:bold">Contact/Reach us at</h4>
+          <p>300 Campus Drive, Parkersburg, WV 26104-8647 Voice: 304-424-8000 Fax: 304-424-8315 Toll-Free: 1-800-WVA-WVUP (WV/OH)</p>
         </div>
         <div class="media media-custom3">
           <div class="media-middle media-custom1">
@@ -73,87 +139,31 @@
           <br>
           <br>
           <br>
-          <h4 class="media-heading media-header-custom">WVU Parkersburg to host annual Career Fair featuring more than 50 employers</h4>
-          <p class="" style="font-size:90%;">West Virginia University at Parkersburg is partnering with Workforce West Virginia to host its 2015 Career Fair on Oct. 28 at 10 a.m. The annual career fair will be held at the WVU Parkersburg College Activities Center. The first hour is exclusively for students, and then the event will open</p>
+          <h4 class="media-heading media-header-custom" style="max-width:500">WVU Parkersburg to host annual Career Fair featuring more than 50 employers</h4>
+          <p class="" style="font-size:90%; max-width:500;">West Virginia University at Parkersburg is partnering with Workforce West Virginia to host its 2015 Career Fair on Oct. 28 at 10 a.m. The annual career fair will be held at the WVU Parkersburg College Activities Center. The first hour is exclusively for students, and then the event will open</p>
           <br>
           <br>
           <br>
+          <p>_________________________________________________________________________________________________________</p>
           <br>
           <br>
           <br>
           <h4 class="media-heading media-header-custom">WVU Parkersburg at the mall</h4>
-          <p style="font-size:90%;">Hopefully you were able to join us at the mall on Oct. 24 as we showcased our academic programs and encouraged students and alumni to share their stories about why they chose WVU Parkersburg. Share your story about why you stayed home to attend WVU Parkersburg using #IStayedHomeBecause on your</p>
+          <p style="font-size:90%;max-width:500">Hopefully you were able to join us at the mall on Oct. 24 as we showcased our academic programs and encouraged students and alumni to share their stories about why they chose WVU Parkersburg.</p>
+          <br>
+          <br>
+          <br>
+          <p>_________________________________________________________________________________________________________</p>
          
           </div>
         </div>
         <div class="row">
             <div class="col-md-1 right-nav-custom" style="padding:5">
-                <h4 class="text-center table-custom3 class="table-custom4"" style="">Oct 2015</h4>
-                <table class="table" style="">
-                <thead>
-                <tr style="">
-                  <th class="table-custom2">S</th>
-                  <th class="table-custom2">M</th>
-                  <th class="table-custom2">T</th>
-                  <th class="table-custom2">W</th>
-                  <th class="table-custom2">T</th>
-                  <th class="table-custom2">F</th>
-                  <th class="table-custom2">S</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr class="table-custom4">
-                  <td>27</td>
-                  <td>28</td>
-                  <td>29</td>
-                  <td>30</td>
-                  <td>1</td>
-                  <td>2</td>
-                  <td>3</td>
-                </tr>
-                <tr class="table-custom4">
-                  <td>4</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>7</td>
-                  <td>8</td>
-                  <td>9</td>
-                  <td>10</td>
-                </tr>
-                <tr class="table-custom4">
-                  <td>11</td>
-                  <td>12</td>
-                  <td>13</td>
-                  <td>14</td>
-                  <td>15</td>
-                  <td>16</td>
-                  <td>17</td>
-                </tr>
-                <tr class="table-custom4">
-                  <td>18</td>
-                  <td>19</td>
-                  <td>20</td>
-                  <td>21</td>
-                  <td>22</td>
-                  <td>23</td>
-                  <td>24</td>
-                </tr>
-                <tr class="table-custom5">
-                  <td>25</td>
-                  <td>26</td>
-                  <td>27</td>
-                  <td>28</td>
-                  <td>29</td>
-                  <td>30</td>
-                  <td>31</td>
-                </tr>
-                </tbody>
-                </table>
+              <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=240&amp;wkst=1&amp;bgcolor=%2333ccff&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%23125A12&amp;ctz=America%2FNew_York" style="border-width:0" width="240" height="240" frameborder="0" scrolling="no"></iframe>
             </div>
         </div>
     </div>
     <div class="footer">
-      <p>300 Campus Drive, Parkersburg, WV 26104-8647 Voice: 304-424-8000 Fax: 304-424-8315 Toll-Free: 1-800-WVA-WVUP (WV/OH)</p>
       <p>Accredited by <a href="">The Higher Learning Commission</a> and a member of the North Central Association of Colleges and Schools.</p>
       <p>A member institution of the <a href="">Community and Technical College System of West Virginia</a></p>
       <p>WVU Parkersburg is an Affiliated institution of <a href="">West Virginia University</a> An <a href="">Equal Opportunity/Affirmative Action</a> institution</p>
