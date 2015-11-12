@@ -4,6 +4,7 @@ html, body
 	width: 100%;
 	height: 100%;
 	background-color: #FF9966;
+	overflow: hidden;
 }
 
 .leftNavBar
@@ -291,17 +292,46 @@ input
 .middleContent
 {
 	display: inline-block;
-	width: 63%;
-	height: 1500px;
+	width: 60%;
+	height: 100%;
 	background-color: #1A1929;
 	box-shadow: 0 0 50px 10px black;
+	overflow-y: scroll;
+	overflow-x: hidden;
+
+}
+
+::-webkit-scrollbar
+{
+	height: 200px;
+	width: 2px;
+}
+
+::-webkit-scrollbar-track
+{
+	background-color: #222222;
+
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #ff934d;
+	border-radius: 10px;
 
 }
 
 .tournaments h2
 {
-	color: #FF9966;
-	font-family: 'Poiret one', cursive;
+	color: white;
+	font-family: 'Open sans condensed', sans-serif;
+}
+
+.tournaments h3
+{
+	color: black;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	text-shadow: 1px 1px 10px white;
 }
 
 
@@ -336,7 +366,7 @@ input
 	background-color: #C5C5C5;
 	font-weight: bold;
 	margin-bottom: 10px;
-	font-size: 20px;
+	font-size: 15px;
 	text-decoration: none;
 	text-align: center;
 	color: black;
@@ -352,4 +382,16 @@ input
 	color: white;
 	font-size: 25px;
 	font-weight: lighter;
+}
+
+.ContentTable td
+{
+	padding: 35px;
+}
+
+.stream
+{
+	width: 250px;
+	height: 160px;
+	padding: 10px;
 }
