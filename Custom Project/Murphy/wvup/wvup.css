@@ -225,6 +225,11 @@ header .intro-text .intro-heading
   color: #ccc;
 }
 
+.item img
+{
+  border-radius: 10px;
+}
+
 .featured
 {
   margin: 35px auto;
@@ -324,14 +329,8 @@ header .intro-text .intro-heading
   font-size: 20px;
 }
 
-.t-grey a
-{
-  transition: font-size 0.3s ease;
-}
-
 .t-grey a:hover
 {
-  /*font-size: 21px;*/
   font-weight: bolder;
 }
 
@@ -363,7 +362,7 @@ audio
   position: fixed;
   padding: 10px auto 0 auto;
   display: block;
-  top: 10px;
+  top: 7px;
   left: 50%;
   border-radius: 10px;
   z-index: 9999;
@@ -373,7 +372,7 @@ audio
 {
   position: fixed;
   display: block;
-  top: 38px;
+  top: 40px;
   left: 53.5%;
   z-index: 9999;
   color: #9d9d9d;
@@ -401,12 +400,12 @@ audio
   color: #ccc;
 }
 
-.alert a:hover
+.alert:hover
 {
   color: white;
+  box-shadow: 2px 2px 15px;
   text-decoration: none;
 }
-
 
 footer
 {
