@@ -77,6 +77,19 @@ http://www.colorschemer.com/schemes/viewscheme.php?id=8202
 	border-radius: 5px;
 }
 
+.dataScreenComparison
+{
+	outline: #6B6464 solid 5px;
+	background-color: #FFFFFF;
+}
+
+.btn-comparison
+{
+	background-color: #C6C1AE;
+	margin-bottom: 2px;
+	text-decoration: none;
+}
+
 .tablestyle
 {
 	margin-left: 3%;
