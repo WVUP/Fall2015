@@ -1,10 +1,12 @@
 body
 {
-  /*background: url('images/riverhawksy.png') 
-  no-repeat top center fixed;*/
   background-color: #E3B11F;
-  /*color: #00457D;*/
   color: #ccc;
+}
+
+ul
+{
+  list-style-type: none;
 }
 
 h1
@@ -16,10 +18,10 @@ h1
 
 hr
 {
-    border: 0;
-    height: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 header
@@ -83,7 +85,7 @@ header .intro-text .intro-heading
   color: #fff;
 }
 
-.btn-blue
+.btn-blue, .btn-blue:focus, .btn-blue:active, .btn-blue.active
 {
   background-color: #00457D;
   color: #ccc;
@@ -95,7 +97,7 @@ header .intro-text .intro-heading
   color: #fff;
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active
 {
   background: rgba(0,0,0,0.3);
   color: white;
@@ -106,6 +108,11 @@ header .intro-text .intro-heading
 {
   box-shadow: 0 0 5px 3px black;
   font-family: "Montserrat";
+}
+
+.navbar-nav li a:hover
+{
+  text-shadow: 2px 2px 15px;
 }
 
 .navbar-right
@@ -135,13 +142,13 @@ header .intro-text .intro-heading
 
 }
 
-.banner
+/*.banner
 {
   background-image: url('images/banner.png');
   background-repeat: no-repeat;
   background-position: top center;
   padding-top: 40px;
-}
+}*/
 
 .t-trans
 {
@@ -153,13 +160,6 @@ header .intro-text .intro-heading
   background-color: #E3B11F;
   color: #00457D;
   padding: 15px;
-}
-
-.news
-{
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 50px;
 }
 
 .t-yellow h1 a
@@ -194,6 +194,23 @@ header .intro-text .intro-heading
   background:rgba(255,255,255,0.2);
 }
 
+.card-title
+{
+  font-family: "Montserrat", Helvetica,Arial,sans-serif;
+  font-weight: bold;
+}
+
+.card-text
+{
+  font-size: 14;
+}
+
+.text-muted
+{
+  font-size: 12;
+  padding-top: 5px;
+}
+
 .separator
 {
   height: 30px;
@@ -214,23 +231,23 @@ header .intro-text .intro-heading
 
 .featured
 {
-  padding-top: 210px;
+  padding-top: 40px;
 }
 
-.featured .well
+/*.featured .well
 {
   background-image: url('images/featured.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 107%;
   border-width: 3px;
   border-radius: 10px;
   border-color: #ccc;
   margin-bottom: 35px;
-}
+}*/
 
 .featured .jumbotron
 {
-  background:rgba(0,0,0,0.5);
+  background:rgba(0,0,0,0.6);
   color: white;
   text-align: center;
 }
@@ -243,6 +260,11 @@ header .intro-text .intro-heading
   text-align: center;
   font-family: "Montserrat";
   font-size: 20px;
+}
+
+.glow
+{
+  text-shadow: 2px 2px 15px;
 }
 
 .overlay{
@@ -314,3 +336,107 @@ footer ul
 {
   list-style-type: none;
 }
+
+/*----------------------------------------------*/
+
+/*#content {  float: left; width: 100%;}
+
+.post { margin: 0 auto; padding-bottom: 50px; float: left; width: 960px; }
+
+.btn-sign {
+  width:460px;
+  margin-bottom:20px;
+  margin:0 auto;
+  padding:20px;
+  border-radius:5px;
+  background:  -o-linear-gradient(top, #00c6ff, #018eb6);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#00c6ff', EndColorStr='#018eb6');
+  text-align:center;
+  font-size:36px;
+  color:#fff;
+  text-transform:uppercase;
+}
+
+.btn-sign a { color:#fff; text-shadow:0 1px 2px #161616; }
+
+#mask {
+  display: none;
+  background: #000; 
+  position: fixed; left: 0; top: 0; 
+  z-index: 10;
+  width: 100%; height: 100%;
+  opacity: 0.8;
+  z-index: 999;
+}
+
+.login-popup{
+  display:none;
+  background: #333;
+  padding: 10px;  
+  border: 2px solid #ddd;
+  float: left;
+  font-size: 1.2em;
+  position: fixed;
+  top: 50%; left: 50%;
+  z-index: 99999;
+  box-shadow: 0px 0px 20px #999;
+  border-radius:3px 3px 3px 3px;
+}
+
+img.btn_close {
+  float: right; 
+  margin: -28px -28px 0 0;
+}
+
+fieldset { 
+  border:none; 
+}
+
+form.signin .textbox label { 
+  display:block; 
+  padding-bottom:7px; 
+}
+
+form.signin .textbox span { 
+  display:block;
+}
+
+form.signin p, form.signin span { 
+  color:#999; 
+  font-size:11px; 
+  line-height:18px;
+} 
+
+form.signin .textbox input { 
+  background:#666666; 
+  border-bottom:1px solid #333;
+  border-left:1px solid #000;
+  border-right:1px solid #333;
+  border-top:1px solid #000;
+  color:#fff; 
+  border-radius: 3px 3px 3px 3px;
+  font:13px Arial, Helvetica, sans-serif;
+  padding:6px 6px 4px;
+  width:200px;
+}
+
+form.signin input:-moz-placeholder { color:#bbb; text-shadow:0 0 2px #000; }
+form.signin input::-webkit-input-placeholder { color:#bbb; text-shadow:0 0 2px #000;  }
+
+.button { 
+  background:  -o-linear-gradient(top, #f3f3f3, #dddddd);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f3f3f3', EndColorStr='#dddddd');
+  border-color:#000; 
+  border-width:1px;
+  border-radius:4px 4px 4px 4px;
+  color:#333;
+  cursor:pointer;
+  display:inline-block;
+  padding:6px 6px 4px;
+  margin-top:10px;
+  font:12px; 
+  width:214px;
+}
+
+.button:hover { background:#ddd; }
+*/
