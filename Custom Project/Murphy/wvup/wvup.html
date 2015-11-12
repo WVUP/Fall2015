@@ -55,6 +55,22 @@
       });
     });
   </script>
+  <script type="text/javascript">
+  function logIn(){
+    //var html = 'Hello ' + email;
+    var user = [
+      {
+        email: '',
+        password: ''
+      }
+    ];
+
+    user.email = document.email;
+    user.password = document.password;
+    window.open("helloWorld.html")
+    //document.getElementById('body').innerHTML = html;
+  }
+  </script>
 
 </head>
 
@@ -93,6 +109,13 @@
     <a href="http://wpkmradio.com/">96.3 FM WPVM - WVUP Radio</a>
   </span>
 
+  <div style="position: absolute; left: 50%;">
+    <div class="alert">
+      alert status: 
+      <i class="fa fa-circle" style="color:green;"></i> ( <a href="legend.html">in session</a> )
+    </div>
+  </div>
+
   <header>
     <div class="container">
       <div class="intro-text">
@@ -118,7 +141,7 @@
                   <input id="password" name="password" value="" type="password" placeholder="password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'password'"required>
                 </label>
                 
-                <button class="submit button" type="submit">Sign in</button>
+                <button class="submit button" type="submit" onclick="logIn()">Sign in</button>
                 <button class="submit button" type="reset" value="Clear">Clear</button>
 
                 <p>
@@ -239,6 +262,9 @@
                   </div>
                   <div class="item">
                     <img src="images/16.jpg">
+                  </div>
+                  <div class="item">
+                    <img src="images/20.jpg">
                   </div>
               </div> <!-- end carousel -->
             </div>

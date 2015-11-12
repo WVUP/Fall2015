@@ -78,7 +78,8 @@ header .intro-text .intro-heading
 
 .btn-trans
 {
-  background: none;
+  /*background: none;*/
+  background-color: rgba(0,0,0,0.3);
   border-style: solid;
   border-color: #ccc;
   border-width: 1px;
@@ -101,7 +102,7 @@ header .intro-text .intro-heading
 .btn-primary.active, .btn-trans:hover, 
 .btn-trans:focus, .btn-trans:active
 {
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.6);
   color: white;
   border-color: white;
 }
@@ -122,7 +123,8 @@ header .intro-text .intro-heading
   padding-top: 15px;
 }
 
-.form-text{
+.form-text
+{
   border-radius: 3px;
   background: none;
   border-style: solid;
@@ -232,8 +234,9 @@ header .intro-text .intro-heading
 {
   background: none;
   border-style: none;
-  padding: 5px;
-  /*border-radius: 5px;
+ /* padding: 25px;
+  box-shadow: inset 0px 0px 5px 5px rgba(0,0,0,0.34);
+  border-radius: 5px;
   box-shadow: inset 0px 0px 11px 3px 
     rgba(231,166,26,1);*/
 }
@@ -243,7 +246,7 @@ header .intro-text .intro-heading
   padding: 15px;
   margin: 15px;
   text-align: center;
-}
+}   
 
 .well-left button
 {
@@ -259,6 +262,7 @@ header .intro-text .intro-heading
 {
   background-color: #333;
   color: #E3B11F;
+  border: none;
 }
 
 .btn-lg:hover, .btn-lg:active
@@ -277,13 +281,37 @@ header .intro-text .intro-heading
   color: #337ab7;
 }
 
-
-
-.featured .jumbotron
+.open>.dropdown-toggle.btn-default:hover,
+.open>.dropdown-toggle.btn-default:active,
+.open>.dropdown-toggle.btn-default:focus,
+.open>.dropdown-toggle.btn-default:visited
 {
-  background:rgba(0,0,0,0.6);
-  color: white;
-  text-align: center;
+  background-color: #222;
+  color: #E3B11F;
+}
+
+.btn-default.active.focus, .btn-default.active:focus, 
+.btn-default.active:hover, .btn-default:active.focus, 
+.btn-default:active:focus, .btn-default:active:hover, 
+.open>.dropdown-toggle.btn-default.focus, 
+.open>.dropdown-toggle.btn-default:focus, 
+.open>.dropdown-toggle.btn-default:hover
+{
+  background-color: #222;
+  color: #E3B11F;
+}
+
+.btn-default.active, .btn-default:active, 
+.open>.dropdown-toggle.btn-default
+{
+  background-color: #222;
+  color: #E3B11F;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover
+{
+  background-color: #222;
+  color: #E3B11F;
 }
 
 .t-grey
@@ -294,6 +322,17 @@ header .intro-text .intro-heading
   text-align: center;
   font-family: "Montserrat";
   font-size: 20px;
+}
+
+.t-grey a
+{
+  transition: font-size 0.3s ease;
+}
+
+.t-grey a:hover
+{
+  /*font-size: 21px;*/
+  font-weight: bolder;
 }
 
 .glow
@@ -333,7 +372,6 @@ audio
 .wvupradio a
 {
   position: fixed;
-  /*padding: 10px auto 0 auto;*/
   display: block;
   top: 38px;
   left: 53.5%;
@@ -347,8 +385,28 @@ audio
 {
   color: white;
   text-decoration: none;
-  text-shadow: 2px 2px 15px;
 }
+
+.alert 
+{
+  position: relative;
+  /*transform: perspective(3px) rotateX(1deg);*/
+  border-radius: 0 0 10px 10px;
+  padding: auto;
+  display: block;
+  top: 55px;
+  left: -50%;
+  z-index: 999;
+  background-color: #222;
+  color: #ccc;
+}
+
+.alert a:hover
+{
+  color: white;
+  text-decoration: none;
+}
+
 
 footer
 {
