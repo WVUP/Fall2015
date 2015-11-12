@@ -5,7 +5,7 @@ var ebayRecords =
 	{
 	ProductID: 'FF7',
 	SKU: '00001',
-	Price: '45',
+	Price: 45,
 	Name: 'Final7',
 	NumberSold: '81122',
 	SellingHot: 'No',
@@ -15,7 +15,7 @@ var ebayRecords =
 	{
 	ProductID: 'FF9',
 	SKU: '00002',
-	Price: '44.6',
+	Price: 44.6,
 	Name: 'Final9',
 	NumberSold: '3424',
 	SellingHot: 'No',
@@ -25,7 +25,7 @@ var ebayRecords =
 	{
 	ProductID: 'FF10',
 	SKU: '00003',
-	Price: '5',
+	Price: 5,
 	Name: 'Final10',
 	NumberSold: '676676',
 	SellingHot: 'No',

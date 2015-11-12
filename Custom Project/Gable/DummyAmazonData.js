@@ -5,7 +5,7 @@ var amazonRecords =
 	{
 	ProductID: 'FinalFantasy7',
 	SKU: '12774',
-	Price: '50',
+	Price: 50,
 	Name: 'FinalFantasy 7',
 	NumberSold: '512334',
 	SellingHot: 'Yes',
@@ -15,7 +15,7 @@ var amazonRecords =
 	{
 	ProductID: 'FinalFantasy9',
 	SKU: '12774',
-	Price: '50',
+	Price: 50,
 	Name: 'FinalFantasy 9',
 	NumberSold: '438999',
 	SellingHot: 'No',
@@ -25,7 +25,7 @@ var amazonRecords =
 	{
 	ProductID: 'FinalFantasy10',
 	SKU: '12774',
-	Price: '50',
+	Price: 50,
 	Name: 'FinalFantasy 10',
 	NumberSold: '32445',
 	SellingHot: 'No',
