@@ -3,6 +3,8 @@
 
 function giveAverage(){
 
-	return "The mean price between these two vendors is: " + 
+	return "The mean price between these two vendors is: $" + 
 	(amazonRecords[0].Price + ebayRecords[0].Price) / 2;
 }
+
+function
