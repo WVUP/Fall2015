@@ -53,7 +53,7 @@ function queryEbayRecords()
 {
 	return 	'You currently have ' + 
 			ebaypreferredProducts.length +
-			' items in your preferred products.';
+			' items in your Ebay preferred products.';
 }
 
 function giveEbayFinancials()

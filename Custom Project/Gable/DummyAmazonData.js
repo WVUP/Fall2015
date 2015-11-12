@@ -53,7 +53,7 @@ function queryAmazonRecords()
 {
 	return 	'You currently have ' + 
 			amazonpreferredProducts.length +
-			' items in your preferred products.';
+			' items in your Amazon preferred products.';
 }
 
 function giveAmazonFinancials()
