@@ -10,6 +10,11 @@
     text-align: center;
 }
 
+.nav.navbar-nav
+{
+    font-size: large;
+    font-family: sans-serif;
+}
 
 
 .navbar-default
@@ -25,19 +30,24 @@
 {
     background-color: rgb(0,56,107);
     font-weight: bold;
+    font-family: sans-serif;
+    font-size: large;
 }
+
+.dropdown:hover .dropdown-menu
+{
+    display: block;
+    margin-top: 0; 
+ }
 
 .dropdown-menu li a
 {
     color: gold;
 }
 
-.events
+.col-md-4 p
 {
-    color: rgb(0,56,107);
-    text-align: left;
-    padding-right: 150px;
-
+    margin: 0 0 5px;
 }
 
 .button-ql
@@ -51,46 +61,67 @@
 .quick-links
 {
     background-color: rgb(0,56,107);
-
 }
 
-.col-md-4 h2
+.more-links
 {
-    font-weight: bold;
-    font-size: 35px;
+    font-size: 12px;
+   
 }
 
-.row
+.date-top
 {
-    text-align:center; 
-    font-family: sans-serif; 
-    color: rgb(0,56,107);
-    padding: 20px;
+    font-size: 22px;
 }
+
 
 .bl-info
 {
     text-align: left;
-    background-color: rgb(0,40,65);
+    background-color: black;
     color: white;
 }
 
 .bc-info
 {
     text-align: center;
-    background-color: rgb(0,40,65);
+    background-color: black;
     color: white;
 
 }
 
 .br-info
 {
-    background-color: rgb(0,40,65);
-    color: white;
+    background-color: black;
     float: right;
 }
 
+.events
+{
+    color: rgb(0,56,107);
+    text-align: left;
+    padding: 0 0 0 400;
+    font-size: 18px;
+}
 
 
+.btn.btn-default.btn-default
+{
+    background-color:rgb(0,56,107);
+    color:gold; 
+    font-weight: bold; 
+    border-color:rgb(0,56,107); 
+    padding: 10 100;
+    box-shadow: 4px 4px 20px black;
+}
 
-
+.btn.btn-primary.btn-sm
+{
+    background-color:rgb(0,56,107);
+    color:gold; 
+    font-weight: bold; 
+    border-color:rgb(0,56,107); 
+    padding: 5;
+    margin: 8;
+    box-shadow: 2px 2px 10px black;
+}

@@ -1,0 +1,96 @@
+.row
+{
+    background-color: rgb(0,56,107);
+    padding-top: 40px;
+    padding-bottom: 15px;
+}
+
+.navbar-header
+{
+    text-align: center;
+}
+
+
+
+.navbar-default
+{
+    background-color: gold;
+    border-color: gold;
+    border-radius: 0;
+    margin-bottom: 0px;
+    color: rgb(0,56,107);
+}
+
+.dropdown-menu
+{
+    background-color: rgb(0,56,107);
+    font-weight: bold;
+}
+
+.dropdown-menu li a
+{
+    color: gold;
+}
+
+.events
+{
+    color: rgb(0,56,107);
+    text-align: left;
+    padding-right: 150px;
+
+}
+
+.button-ql
+{
+    background-color:rgb(0,56,107);
+    color:gold; 
+    font-weight: bold; 
+    border-color:rgb(0,56,107);
+}
+
+.quick-links
+{
+    background-color: rgb(0,56,107);
+
+}
+
+.col-md-4 h2
+{
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.row
+{
+    text-align:center; 
+    font-family: sans-serif; 
+    color: rgb(0,56,107);
+    padding: 20px;
+}
+
+.bl-info
+{
+    text-align: left;
+    background-color: rgb(0,40,65);
+    color: white;
+}
+
+.bc-info
+{
+    text-align: center;
+    background-color: rgb(0,40,65);
+    color: white;
+
+}
+
+.br-info
+{
+    background-color: rgb(0,40,65);
+    color: white;
+    float: right;
+}
+
+
+
+
+
