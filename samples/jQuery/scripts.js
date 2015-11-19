@@ -1,5 +1,28 @@
 $(document).on('ready', function(){
 
+	$('#fetch').click(function () {
+		console.log('Starting Fetch');
+		$.ajax({
+			url: 'https://raw.githubusercontent.com/WVUP/Fall2015/master/samples/jQuery/users.json',
+			type: 'GET',
+			success: function (resp) {
+				console.log('Call Successful');
+				var person = JSON.parse(resp);
+				console.log(person);
+				debugger;
+			},
+			error: function (err) {
+				console.log('Errror :(');
+				console.log(err);
+			},
+			finally: function () {
+				console.log('finally');
+			}
+			
+		});
+
+	});
+
 	$('#btn_alert').on('click', function (milkAndCookies) {
 		console.log(milkAndCookies);
 		console.log(arguments);

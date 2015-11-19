@@ -1,4 +1,18 @@
-{
-	"firstName": "Aaron",
-	"lastName": "Freeland"
-}
+[
+	{
+		"firstName": "Aaron",
+		"lastName": "Freeland"
+	},
+	{
+		"firstName": "Josh",
+		"lastName": "Pepper"
+	}
+	{
+		"firstName": "Lane",
+		"lastName": "Katris"
+	}
+	{
+		"firstName": "Anthony",
+		"lastName": "Cobranchi"
+	}
+]
