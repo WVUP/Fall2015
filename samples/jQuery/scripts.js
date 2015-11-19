@@ -3,11 +3,37 @@ function renderStudents (students) {
 	var html = '';
 	for (var i = 0; i < students.length; i++) {
 		html += students[i].firstName + ' ' + students[i].lastName + ' <br />';
-	};
+	}
 	container.innerHTML = html;
 }
 
+function getWarranty () {
+	var container = document.getElementById('warranty');
+	$.ajax({
+			url: 'https://raw.githubusercontent.com/WVUP/Fall2015/master/samples/jQuery/warranty.html',
+			type: 'GET',
+			success: function (resp) {
+				container.innerHTML = resp;
+
+				$('#soWhat').click(function () {
+					alert('get over it');
+				});
+				
+			},
+			error: function (err) {
+				console.log('Errror :(');
+				console.log(err);
+			},
+			finally: function () {
+				console.log('finally');
+			}
+			
+		});
+}
+
 $(document).on('ready', function(){
+
+
 
 	$('#fetch').click(function () {
 		console.log('Starting Fetch');
@@ -19,6 +45,8 @@ $(document).on('ready', function(){
 				console.log('Call Successful');
 				console.log(students);
 				renderStudents(students);
+
+				getWarranty();
 				
 			},
 			error: function (err) {
