@@ -1,3 +1,12 @@
+function renderStudents (students) {
+	var container = document.getElementById('student_list');
+	var html = '';
+	for (var i = 0; i < students.length; i++) {
+		html += students[i].firstName + ' ' + students[i].lastName + ' <br />';
+	};
+	container.innerHTML = html;
+}
+
 $(document).on('ready', function(){
 
 	$('#fetch').click(function () {
@@ -5,11 +14,12 @@ $(document).on('ready', function(){
 		$.ajax({
 			url: 'https://raw.githubusercontent.com/WVUP/Fall2015/master/samples/jQuery/users.json',
 			type: 'GET',
-			success: function (resp) {
+			dataType: "json",
+			success: function (students) {
 				console.log('Call Successful');
-				var person = JSON.parse(resp);
-				console.log(person);
-				debugger;
+				console.log(students);
+				renderStudents(students);
+				
 			},
 			error: function (err) {
 				console.log('Errror :(');
