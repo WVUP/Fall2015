@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<head>
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="mainStylesheet.css">
+	
+	<!-- Font awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<!-- Main script -->
+	<script type="text/javascript" src="scripts/mainScript.js"></script>
+
+	<!-- Turn.js -->
+	<script type="text/javascript" src="lib/turn.js"></script>
+
+
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				hiii
+			</div>
+			<div class="col-md-3">
+				hiii
+			</div>
+			<div class="col-md-3">
+				hiii
+			</div>
+			<div class="col-md-3" onclick="goToGuestbook()">
+				hiii
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div id="flipbook" class="flipclass">
+	  				<div class="hard coverA"> Turn.js </div> 
+					<div class="hard coverA"></div>
+					<div class="pageA"> Page 1 </div>
+					<div class="pageA"> Page 2 </div>
+					<div class="pageA"> Page 3 </div>
+					<div class="pageA"> Page 4 </div>
+					<div class="hard coverA"></div>
+					<div class="hard coverA"></div>
+				</div>
+
+				<script type="text/javascript">
+
+					jQuery("#flipbook").turn({
+				  		autoCenter: true
+					});
+				</script>
+
+			<div>
+		</div>
+		
+		end of container.
+	</div>
+
+	Hello.
+
+	<i class="fa fa-check-square"></i>
+
+	
+
+</body>
