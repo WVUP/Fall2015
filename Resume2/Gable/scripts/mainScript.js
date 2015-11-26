@@ -35,7 +35,7 @@ function giveFormData () {
 
 };
 
-//TODO: Stringify form data
+//TODO: Write to the guestbook itself
 
 //Get the form data, iterate over it and stringify it into JSON form, 
 //then return an object literal.
@@ -54,18 +54,19 @@ function giveJSON () {
 	};
 	output += "}";
 
-	//JSON.stringify(output);
+	//Logging the function
 	console.log(JSON.parse(output));
 
+	//Assigning the object literal
 	var JSONobj = JSON.parse(output);
 
-	//guests.push("it worked");
 
 	return JSONobj;
 
 };
 
 
+//...
 function getData2 () {
 
 	var input = document.getElementById('form1');
