@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+
+<head>
+
 <!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="mainStylesheet.css">
 	
@@ -18,15 +22,18 @@
 	<!-- Turn.js -->
 	<script type="text/javascript" src="lib/turn.js"></script>
 
+</head>
 
-
+</body>
 <form id="form1">
   <input name="fname" value=""></br>
   <input name="lname" value=""></br>
-  <input type="submit" onclick="giveFormData()"></br>
-  <input type="button" value="click" onclick="writeBasic()">
+  <input name="submitbtn" type="submit" value="submitt" onclick="giveJSON()"></br>
+  <input name="btn2" type="button" value="click" onclick="writeBasic()">
 </form>
 
-<button onclick="writeBasic()">this</button>
+<button onclick="guests.push(giveJSON());">this</button>
 
 <div id="testformtext"></div>
+
+</body>
