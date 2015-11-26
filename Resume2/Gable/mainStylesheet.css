@@ -1,6 +1,12 @@
+.bodybg
+{
+	background-image: url("img/pt.jpg");
+	background-size: cover;
+}
+
 .flipclass
 {
-	background-color: white;
+	background-color: none;
 	height: 500px;
 
 }
@@ -9,11 +15,27 @@
 	background-color: #9F703A;
 	width: 80%;
 	height: 500px;
+	text-align: center;
+	font-family: 'Shadows Into Light Two', cursive;
+	font-size: 30px;
+	box-shadow: inset 0px 0px 3px 3px #603311;
 }
 
 .pageA{
 	background-color: #FFCC99;
-	box-shadow: inset 5px 5px 5px 5px black;
+	box-shadow: inset 0px 0px 3px 3px #7B3F00;
 	width: 70%;
 	height: 500px;
 }
+
+.topnav_btn
+{
+	box-shadow: inset 0px 0px 3px 3px green;
+}
+
+.topnav_btn:hover
+{
+    background-color: lightblue;
+}
+
+
