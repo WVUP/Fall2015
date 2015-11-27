@@ -16,13 +16,15 @@
 	width: 80%;
 	height: 500px;
 	text-align: center;
-	font-family: 'Shadows Into Light Two', cursive;
+	font-family: 'Lora';
 	font-size: 30px;
+	color: #E5C100;
 	box-shadow: inset 0px 0px 3px 3px #603311;
 }
 
 .pageA{
 	background-color: #FFCC99;
+	font-family: 'Lora';
 	box-shadow: inset 0px 0px 3px 3px #7B3F00;
 	width: 70%;
 	height: 500px;
@@ -30,12 +32,16 @@
 
 .topnav_btn
 {
-	box-shadow: inset 0px 0px 3px 3px green;
+	/*box-shadow: inset 0px 0px 3px 3px #603311;*/
+	background-color: rgba(254, 204, 153, 1.0);
+	border-radius: 0 !Important;
+	outline: 2px solid #9F703A;
+	font-family: 'Lora';
 }
 
 .topnav_btn:hover
 {
-    background-color: lightblue;
+    background-color: rgba(254, 204, 153, .25);
 }
 
 
