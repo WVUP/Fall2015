@@ -1,17 +1,35 @@
-.bodybg
-{
+.bodybg {
+
 	background-image: url("img/pt.jpg");
 	background-size: cover;
 }
 
-.flipclass
-{
+.flipclass {
+
 	background-color: none;
 	height: 500px;
 
 }
 
+.formAttributes {
+
+	background-color: #FFCC99;
+	font-family: 'Lora';
+	color: #9F703A;
+	text-align: center;
+
+}
+
+.refreshForm {
+	
+	background-color: #FFCC99;
+	font-family: 'Lora';
+	color: #9F703A;
+	text-align: center;
+}
+
 .coverA {
+
 	background-color: #9F703A;
 	width: 80%;
 	height: 500px;
@@ -20,9 +38,24 @@
 	font-size: 30px;
 	color: #E5C100;
 	box-shadow: inset 0px 0px 3px 3px #603311;
+
 }
 
-.pageA{
+.coverB {
+
+	background-color: #355E3B;
+	width: 80%;
+	height: 500px;
+	text-align: center;
+	font-family: 'Lora';
+	font-size: 30px;
+	color: #E5C100;
+	box-shadow: inset 0px 0px 3px 3px #003018;
+
+}
+
+.pageA {
+
 	background-color: #FFCC99;
 	font-family: 'Lora';
 	box-shadow: inset 0px 0px 3px 3px #7B3F00;
@@ -30,18 +63,21 @@
 	height: 500px;
 }
 
-.topnav_btn
-{
-	/*box-shadow: inset 0px 0px 3px 3px #603311;*/
+.topnav_btn {
 	background-color: rgba(254, 204, 153, 1.0);
 	border-radius: 0 !Important;
 	outline: 2px solid #9F703A;
 	font-family: 'Lora';
 }
 
-.topnav_btn:hover
-{
+.topnav_btn:hover {
+
     background-color: rgba(254, 204, 153, .25);
+
+}
+
+.test {
+
 }
 
 

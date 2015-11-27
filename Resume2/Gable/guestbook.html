@@ -31,15 +31,35 @@
 </head>
 
 <body class="bodybg">
-<form id="form1">
-  <input name="fname" value=""></br>
-  <input name="lname" value=""></br>
-  <input name="caption" value = ""></br>
-  <input name="submitbtn" type="reset" value="Reset Fields"></br>
-  <input name="btn2" type="button" value="Add to Guestbook" onclick="guests.push(giveJSON());">
-</form>
+	<div class="container">
+		<div class="row">
 
-<div id="testformtext"></div>
+		
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+				<form id="form1" class="formAttributes">
+					Feel free to sign my guestbook!</br>
+					First name: <input name="fname" value=""></br>
+					Last name: <input name="lname" value=""></br>
+					Message: <input name="message" value = ""></br>
+					<input name="submitbtn" type="reset" value="Clear Fields"></br>
+					<input name="btn2" type="button" value="Add to Guestbook" onclick="guests.push(giveJSON());">
+					<input name ="btn3" type="button" value="Refresh" onclick="refreshGuestbook()">
+				</form>
+				<!-- <button class="refreshForm" onclick="refreshGuestbook()">Show/Refresh Guestbook</button> -->
+			<div>
+
+
+			<div class="col-md-4"></div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12">
+			<div id="testdiv"></div>
+		</div>
+
+	</div>
 
 </body>
 

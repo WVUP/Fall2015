@@ -1,10 +1,12 @@
-guests = [{"name" : "value"},
+guests = [
+
+	{"fname" : "Patrick", "lname": "Star", "message": "LeedleLeedleLeedle"},
 
 ];
 
 //Main functions
 
-function printStuff(){
+function printStuff() {
 
 	document.write("hello2");
 
@@ -17,7 +19,6 @@ function goToGuestbook () {
 	location.href = 'guestbook.html';
 
 };
-
 //Form functions
 
 //Capture and test form data
@@ -35,7 +36,7 @@ function giveFormData () {
 
 };
 
-//TODO: Write to the guestbook itself
+
 
 //Get the form data, iterate over it and stringify it into JSON form, 
 //then return an object literal.
@@ -62,6 +63,44 @@ function giveJSON () {
 
 
 	return JSONobj;
+
+};
+
+//This function redraws the guestbook from the array and 
+//adds new entries if they exist.
+
+function refreshGuestbook () {
+
+	var output = "";
+	var i = 0;
+	output += '<div id="flipbook" class="flipclass">' + 
+	  				'<div class="hard coverB">' + 
+	  					'<p></br></br></br>Guestbook</br></br></p>' +
+	  				'</div>' +  
+					'<div class="hard coverB"></div>' +
+					'<div class ="pageA">'
+	for (i = 0; i < guests.length; i++) {
+
+
+			output += 	(i + 1) + ') ' + guests[i].fname + ' ' + 
+						guests[i].lname + ' said " ' + guests[i].message + 
+						'"' + '!</br>';
+
+	}
+
+	output +=	'</div>' +
+				'<div class ="pageA"></div>' +
+				'<div class="hard coverB"></div>' + 
+				'<div class="hard coverB"></div>' + 
+				'</div>';
+
+
+	document.getElementById('testdiv').innerHTML = output;
+	//document.getElementById('testdiv').innerHTML = '</br> [o]: ' + guests[0].name;
+
+	jQuery("#flipbook").turn({
+		autoCenter: true
+	});
 
 };
 
