@@ -37,27 +37,37 @@ $(document).on('ready', function(){
 
 	$('#fetch').click(function () {
 		console.log('Starting Fetch');
-		$.ajax({
-			url: 'https://raw.githubusercontent.com/WVUP/Fall2015/master/samples/jQuery/users.json',
-			type: 'GET',
-			dataType: "json",
-			success: function (students) {
-				console.log('Call Successful');
-				console.log(students);
-				renderStudents(students);
 
-				getWarranty();
+		var dialog = bootbox.alert('<div style="font-size:200%;"><i class="fa fa-refresh fa-spin"></i> Loading data</div>');
+
+
+		setTimeout(function () {
+			$.ajax({
+				url: 'https://raw.githubusercontent.com/WVUP/Fall2015/master/samples/jQuery/users.json',
+				type: 'GET',
+				dataType: "json",
+				success: function (students) {
+					console.log('Call Successful');
+					console.log(students);
+					renderStudents(students);
+
+					getWarranty();
+					
+				},
+				error: function (err) {
+					console.log('Errror :(');
+					console.log(err);
+				},
+				complete: function () {
+					console.log('finally');
+					setTimeout(function () {
+						
+						dialog.modal('hide');
+					}, 800);
+				}
 				
-			},
-			error: function (err) {
-				console.log('Errror :(');
-				console.log(err);
-			},
-			finally: function () {
-				console.log('finally');
-			}
-			
-		});
+			});
+		}, 2500);
 
 	});
 
@@ -104,5 +114,30 @@ $(document).on('ready', function(){
 
 		}, timeInterval);
 	}
+
+
+	function debounce(func, wait, immediate) {
+		var timeout;
+		return function() {
+			var context = this, args = arguments;
+			var later = function() {
+				timeout = null;
+				if (!immediate) func.apply(context, args);
+			};
+			var callNow = immediate && !timeout;
+			clearTimeout(timeout);
+			timeout = setTimeout(later, wait);
+			if (callNow) func.apply(context, args);
+		};
+	}
+
+	var debouncedKeyup = debounce(function (ev) {
+		console.log(ev.keyCode);
+
+		if(ev.keyCode === 13)
+			console.log('ENTER was hit...go search');
+	}, 800);
+
+	$('input[name="search"]').keyup(debouncedKeyup);
 });
 
