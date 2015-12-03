@@ -1,16 +1,10 @@
+//Array of guests populated via guestbook form
+
 guests = [
 
 	{"fname" : "Patrick", "lname": "Star", "message": "LeedleLeedleLeedle"},
 
 ];
-
-//Main functions
-
-function printStuff() {
-
-	document.write("hello2");
-
-}
 
 //Topnav functions
 
@@ -18,25 +12,25 @@ function goToHome () {
 
 	location.href = 'index.html';
 
-};
+}
 
 function goToAbout () {
 
 	location.href = 'about.html';
 
-};
+}
 
 function goToContact () {
 
 	location.href = 'contact.html';
 
-};
+}
 
 function goToGuestbook () {
 
 	location.href = 'guestbook.html';
 
-};
+}
 
 //Form functions
 
@@ -53,7 +47,7 @@ function giveFormData () {
 	console.log(output);
 	document.getElementById('testformtext').innerHTML = output;
 
-};
+}
 
 
 
@@ -83,7 +77,7 @@ function giveJSON () {
 
 	return JSONobj;
 
-};
+}
 
 //This function redraws the guestbook from the array and 
 //adds new entries if they exist.
@@ -97,7 +91,7 @@ function refreshGuestbook () {
 	  					'<p></br></br></br>Guestbook</br></br></p>' +
 	  				'</div>' +  
 					'<div class="hard coverB"></div>' +
-					'<div class ="pageA">'
+					'<div class ="pageA">';
 	for (i = 0; i < guests.length; i++) {
 
 
@@ -121,17 +115,4 @@ function refreshGuestbook () {
 		autoCenter: true
 	});
 
-};
-
-
-//...
-function getData2 () {
-
-	var input = document.getElementById('form1');
-	document.getElementById('testformtext').innerHTML = input;
-};
-
-function writeBasic () {
-	document.getElementById("testformtext").innerHTML = "testttt";
-
-};
+}

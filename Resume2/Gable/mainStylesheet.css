@@ -14,8 +14,9 @@
 .formAttributes {
 
 	background-color: #FFCC99;
-	font-family: 'Lora';
-	color: #9F703A;
+	font-family: 'Lora', sans-serif;
+	/*color: #9F703A;*/
+	outline: 2px solid #9F703A;
 	text-align: center;
 
 }
@@ -23,7 +24,7 @@
 .refreshForm {
 	
 	background-color: #FFCC99;
-	font-family: 'Lora';
+	font-family: 'Lora', sans-serif;
 	color: #9F703A;
 	text-align: center;
 }
@@ -34,7 +35,7 @@
 	width: 80%;
 	height: 500px;
 	text-align: center;
-	font-family: 'Lora';
+	font-family: 'Lora', sans-serif;
 	font-size: 30px;
 	color: #E5C100;
 	box-shadow: inset 0px 0px 3px 3px #603311;
@@ -47,7 +48,7 @@
 	width: 80%;
 	height: 500px;
 	text-align: center;
-	font-family: 'Lora';
+	font-family: 'Lora', sans-serif;
 	font-size: 30px;
 	color: #E5C100;
 	box-shadow: inset 0px 0px 3px 3px #003018;
@@ -57,7 +58,7 @@
 .pageA {
 
 	background-color: #FFCC99;
-	font-family: 'Lora';
+	font-family: 'Lora', sans-serif;
 	box-shadow: inset 0px 0px 3px 3px #7B3F00;
 	width: 70%;
 	height: 500px;
@@ -67,17 +68,22 @@
 	background-color: rgba(254, 204, 153, 1.0);
 	border-radius: 0 !Important;
 	outline: 2px solid #9F703A;
-	font-family: 'Lora';
+	font-family: 'Lora', sans-serif;
 }
 
 .topnav_btn:hover {
 
-    background-color: rgba(254, 204, 153, .25);
+    background-color: rgba(254, 204, 153, .50);
 
 }
 
-.test {
+.aboutText {
 
+	border-radius: 10px;
+	background-color: rgba(254, 204, 153, .80);
+	font-family: 'Dosis', sans-serif;
+	box-shadow: inset 0px 0px 0px 2px #9F703A;
+	padding: 4px;
 }
 
 
