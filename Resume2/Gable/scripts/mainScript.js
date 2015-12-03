@@ -14,11 +14,30 @@ function printStuff() {
 
 //Topnav functions
 
+function goToHome () {
+
+	location.href = 'index.html';
+
+};
+
+function goToAbout () {
+
+	location.href = 'about.html';
+
+};
+
+function goToContact () {
+
+	location.href = 'contact.html';
+
+};
+
 function goToGuestbook () {
 
 	location.href = 'guestbook.html';
 
 };
+
 //Form functions
 
 //Capture and test form data
