@@ -1,4 +1,4 @@
-/* Fonts from Google Fonts Available:
+/* Fonts so i dont forget em:
 
 	font-family: 'Megrim', cursive;
 	font-family: 'Six Caps', sans-serif;
@@ -29,7 +29,7 @@ body
 .jumbotron h1
 {
 	color: white;
-	font-family: 'Cabin Sketch', cursive;
+	font-family: 'Fredericka the Great', cursive;
 	text-align: center;
 	margin-top: -5px;
 	text-shadow: 10px 5px 50px white;
@@ -54,5 +54,15 @@ body
 
 }
 
-.nav-tabs li:hover
+.icon
+{
+	margin-left: 20px;
+	margin-right: 20px;
+	transition: opacity 0.5s ease;
+}
+
+.icon:hover
+{
+	opacity: 0.2;
+}
  
