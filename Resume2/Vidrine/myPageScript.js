@@ -1,7 +1,7 @@
 function getAboutMe () {
-	var container = document.getElementById('about');
+	var container = document.getElementById('displayArea');
 	$.ajax({
-		url: 'https://raw.githubusercontent.com/WVUP/Fall2015/master/resume2/Vidrine/about.html',
+		url: 'https://raw.githubusercontent.com/WVUP/Fall2015/master/Resume2/Vidrine/about.html',
 		type: 'GET',
 		success: function (resp) {
 			container.innerHTML = resp
@@ -13,7 +13,8 @@ function getAboutMe () {
 
 $(document).on( 'ready', function () {
 	$('#about').on( 'click', function () {
-		var dialog = bootbox.alert('<div style="font-size:200%;"><i class="fa fa-refresh fa-spin"></i> Loading data</div>');
 		getAboutMe()
+		alert("Fudge Yeah, I'm a mac genius yo.....but na really im a nub tho")
 	});
+	
 });
