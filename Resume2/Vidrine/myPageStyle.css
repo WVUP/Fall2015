@@ -1,0 +1,45 @@
+body
+{
+	background-color: gray;
+}
+
+
+.jumbotron
+{
+	background: url("studio.JPG");
+	height: 350px;
+	width: 100%;
+	position: relative;
+	
+}
+
+.jumbotron h1
+{
+	color: white;
+	font-family: 'Cabin Sketch', cursive;
+	text-align: center;
+	margin-top: -5px;
+	text-shadow: 10px 5px 50px white;
+	outline-color: black;
+}
+
+.panel-heading
+{
+	text-align: center;
+}
+
+.nav-tabs
+{
+	display: inline-block;
+}
+
+.nav-tabs li
+{
+	padding-left: 60px;
+	padding-right: 60px;
+	font-family: 'Megrim', cursive;
+
+}
+
+.nav-tabs li:hover
+ 
