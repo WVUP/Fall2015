@@ -1,5 +1,7 @@
 
 $(document).on('ready', function () {
+
+	document.getElementById('about').className="active";
 	
 	$('#about').on( 'click', function () {
 	
