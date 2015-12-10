@@ -5,7 +5,7 @@ $(document).on('ready', function () {
 	
 	$('#about').on( 'click', function () {
 	
-		var dialog = bootbox.alert('<div style="font-size:200%;"><i class="fa fa-refresh fa-spin"></i> Loading data</div>');
+		
 
 		setTimeout(function () {
 			var container = document.getElementById('displayArea')
@@ -25,17 +25,15 @@ $(document).on('ready', function () {
 				},
 				complete: function () {
 					console.log("complete")
-					setTimeout(function () {
-						dialog.modal('hide');
-					}, 100)
+			
 				}
 			})
-		}, 1000)
+		}, 100)
 	});
 
 	$('#resume').on('click', function () {
 
-		var dialog = bootbox.alert('<div style="font-size:200%;"><i class="fa fa-refresh fa-spin"></i> Loading data</div>');
+		
 		
 		setTimeout(function () {
 
@@ -57,18 +55,14 @@ $(document).on('ready', function () {
 				},
 				complete: function () {
 					console.log('complete')
-					setTimeout(function () {
-						dialog.modal('hide');
-					}, 100)
 				}
 			})
 
-		}, 1000)
+		}, 100)
 	});
 
 	$('#contact').on('click', function () {
 
-		var dialog = bootbox.alert('<div style="font-size:200%;"><i class="fa fa-refresh fa-spin"></i> Loading data</div>');
 		
 		setTimeout(function () {
 
@@ -90,18 +84,16 @@ $(document).on('ready', function () {
 				},
 				complete: function () {
 					console.log('complete')
-					setTimeout(function () {
-						dialog.modal('hide');
-					}, 100)
+
 				}
 			})
 
-		}, 1000)
+		}, 100)
 	});
 
 	$('#demos').on('click', function () {
 
-		var dialog = bootbox.alert('<div style="font-size:200%;"><i class="fa fa-refresh fa-spin"></i> Loading data</div>');
+		
 		
 		setTimeout(function () {
 
@@ -123,13 +115,11 @@ $(document).on('ready', function () {
 				},
 				complete: function () {
 					console.log('complete')
-					setTimeout(function () {
-						dialog.modal('hide');
-					}, 100)
+		
 				}
 			})
 
-		}, 1000)
+		}, 100)
 	})
 	
 });

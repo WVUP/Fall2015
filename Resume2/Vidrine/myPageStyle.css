@@ -94,3 +94,44 @@ body
 	font-family: 'Julius Sans One', sans-serif;
 	padding: 20px;
 }
+
+.longestHour
+{
+	width: 450px;
+	height: 450px;
+	padding: 30px;
+}
+
+.titus
+{
+	width: 450px;
+	height: 450px;
+	padding: 30px;
+}
+
+.music
+{
+	text-align: center;
+	font-family: 'Julius Sans One', sans-serif;
+}
+
+.myContact
+{
+	font-family: 'Julius Sans One', sans-serif;
+}
+
+
+.address
+{
+	display: inline-block;
+}
+
+.phone
+{
+	
+}
+
+.email
+{
+	display: inline-block;
+}
