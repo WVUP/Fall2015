@@ -10,3 +10,8 @@ bootbox.dialog({
   title: "That html",
   message: '<img src="images/bootstrap_logo.png" width="100px"/><br/> You can also use <b>html</b>'
 });
+
+// enable all tooltips in doc
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+});
