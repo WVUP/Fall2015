@@ -1,0 +1,25 @@
+.bodybg
+{
+	background-image: url("background2.jpg");
+	background-size: cover;
+}
+
+.top-name h1
+{
+	text-align: center;
+	font-size: 110px;
+	font-family: Titillium Web;
+	font-weight: bold;
+	text-shadow: 2px 2px #C0BDBD;
+	color: black;
+}
+
+
+.col-md-6
+{
+	font-family: Titillium Web;
+	font-size: 18px;
+	color: whitesmoke;
+	padding-left: 20px;
+	padding-right: 20px;
+}
