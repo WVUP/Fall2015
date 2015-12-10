@@ -65,11 +65,23 @@ body
 	margin-left: 20px;
 	margin-right: 20px;
 	transition: opacity 0.5s ease;
+	font-size: 50pt;
 }
 
 .icon:hover
 {
 	opacity: 0.2;
+}
+
+.fa-instagram
+{
+	color: #532900;
+	
+}
+
+.fa-soundcloud
+{
+	color: #ff6600;
 }
 
 .myResume
