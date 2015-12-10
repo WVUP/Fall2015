@@ -54,6 +54,12 @@ body
 
 }
 
+.myAbout
+{
+	font-family: 'Julius Sans One', sans-serif;
+	text-align: center;
+}
+
 .icon
 {
 	margin-left: 20px;
@@ -65,4 +71,14 @@ body
 {
 	opacity: 0.2;
 }
- 
+
+.myResume
+{
+	
+}
+
+.myResume h1
+{
+	font-family: 'Julius Sans One', sans-serif;
+	padding: 20px;
+}

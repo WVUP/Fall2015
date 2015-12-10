@@ -6,12 +6,13 @@ $(document).on('ready', function () {
 		var dialog = bootbox.alert('<div style="font-size:200%;"><i class="fa fa-refresh fa-spin"></i> Loading data</div>');
 
 		setTimeout(function () {
-			var container = document.getElementById('aboutArea')
+			var container = document.getElementById('displayArea')
 			$.ajax({
 				url: 'https://raw.githubusercontent.com/WVUP/Fall2015/master/Resume2/Vidrine/about.html',
 				type: 'GET',
 				success: function (resp) {
 					container.innerHTML = resp
+
 				},
 				error: function (err) {
 					console.log("Error")
@@ -33,7 +34,7 @@ $(document).on('ready', function () {
 		
 		setTimeout(function () {
 
-			var container = document.getElementById('aboutArea');
+			var container = document.getElementById('displayArea');
 
 			$.ajax({
 				url: 'https://raw.githubusercontent.com/WVUP/Fall2015/master/Resume2/Vidrine/isaacResume.html',
