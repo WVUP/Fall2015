@@ -274,3 +274,9 @@ hr {
   text-decoration: none;
   color: #fff;
 }
+
+.modal-content {
+  background-color: #444 !important;
+  opacity: .9;
+  color: white;
+}

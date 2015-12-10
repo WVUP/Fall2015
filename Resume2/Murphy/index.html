@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Casey Murphy</title>
+
 	<!-- css -->
 	<link rel="stylesheet" href="config/main.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -15,11 +16,10 @@
 
   <!-- JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
-  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
-  <script src="config/scripts.js" type="text/javaScript">
-  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="config/scripts.js" type="text/javaScript"></script>
+
   </head>
 
 <body class="foundation">
@@ -44,16 +44,26 @@
 			      <a href='#' target='_blank' data-toggle="tooltip" title="Activism">&#9794</a>
 			    </li>
 			    <li class='menu-item'>
-			      <a href='#' data-toggle="tooltip" title="Resume">&#8853</a>
+			      <a class ='alert' href=# data-toggle="tooltip" title="Livelihood">&#8853</a>
+						<script>
+        		$(document).on("click", ".alert", function() {
+            	bootbox.dialog({
+								title: "Professional Resume",
+								message: '<img src="images/bootstrap_logo.png" width="100px"/><br/> work, school, and stuff<br> <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore harum asperiores temporibus, quod quidem in voluptatum, quo debitis praesentium sapiente et soluta fugit tenetur eveniet, velit odio minus, nobis. Recusandae.</div><div>Doloribus perferendis facere soluta. Soluta cumque aliquam, corporis quisquam, animi amet voluptates accusantium voluptatibus rem quasi inventore a fugit, odio dolor veniam dolore est quaerat eveniet. Qui iure, a ratione.</div><div>Enim molestias reprehenderit praesentium, repellat labore minima dignissimos nesciunt soluta nostrum quisquam harum aspernatur modi sunt quia, placeat animi. Eum dolorum dolore architecto dolores numquam. Cum nihil animi quae molestiae!</div><div>Esse dolorem, temporibus nam, itaque velit sunt qui. Illo qui excepturi sint necessitatibus. Fugiat asperiores quae voluptas molestiae, animi voluptates quisquam, voluptate vitae est ullam fuga dolorum tenetur sint eius.</div>',
+								backdrop: true,
+								onEscape: function() { console.log("Escape!"); }
+							});
+        		});
+    				</script>
 			    </li>
 			    <li class='menu-item'>
 			      <a href='#' target='_blank' data-toggle="tooltip" title="Metamorphosis">&#9796</a>
 			    </li>
 			    <li class='menu-item'>
-			      <a href='#' target='_blank' data-toggle="tooltip" title="Suppressed Info">&#9790</a>
+			      <a href='http://truthconduit.weebly.com/' target='_blank' data-toggle="tooltip" title="Suppressed Info">&#9790</a>
 			    </li>
 			    <li class='menu-item'>
-			      <a href='#' target='_blank' data-toggle="tooltip" title="Writing">&#9791</a>
+			      <a href='blog.html' target='_blank' data-toggle="tooltip" title="Writing">&#9791</a>
 			    </li>
 			  </ul>
 			</nav>
