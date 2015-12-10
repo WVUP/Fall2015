@@ -32,24 +32,12 @@
 			  <label for='menu-toggler'></label>
 			  <ul>
 			    <li class='menu-item'>
-			      <a href='#' target='_blank' data-toggle="tooltip" data-placement="right" title="Interests">&#9795</a>
-			    </li>
-			    <li class='menu-item'>
-			      <a href='#' target='_blank' data-toggle="tooltip" title="Love">&#9792</a>
-			    </li>
-			    <li class='menu-item'>
-			      <a href='#' target='_blank' data-toggle="tooltip" title="About">&#9737</a>
-			    </li>
-			    <li class='menu-item'>
-			      <a href='#' target='_blank' data-toggle="tooltip" title="Activism">&#9794</a>
-			    </li>
-			    <li class='menu-item'>
-			      <a class ='alert' href=# data-toggle="tooltip" title="Livelihood">&#8853</a>
-						<script>
-        		$(document).on("click", ".alert", function() {
+			      <a class='adventures' href=# data-toggle="tooltip" data-placement="left" title="Adventures">&#9795</a>
+			      <script>
+        		$(document).on("click", ".adventures", function() {
             	bootbox.dialog({
-								title: "Professional Resume",
-								message: '<img src="images/bootstrap_logo.png" width="100px"/><br/> work, school, and stuff<br> <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore harum asperiores temporibus, quod quidem in voluptatum, quo debitis praesentium sapiente et soluta fugit tenetur eveniet, velit odio minus, nobis. Recusandae.</div><div>Doloribus perferendis facere soluta. Soluta cumque aliquam, corporis quisquam, animi amet voluptates accusantium voluptatibus rem quasi inventore a fugit, odio dolor veniam dolore est quaerat eveniet. Qui iure, a ratione.</div><div>Enim molestias reprehenderit praesentium, repellat labore minima dignissimos nesciunt soluta nostrum quisquam harum aspernatur modi sunt quia, placeat animi. Eum dolorum dolore architecto dolores numquam. Cum nihil animi quae molestiae!</div><div>Esse dolorem, temporibus nam, itaque velit sunt qui. Illo qui excepturi sint necessitatibus. Fugiat asperiores quae voluptas molestiae, animi voluptates quisquam, voluptate vitae est ullam fuga dolorum tenetur sint eius.</div>',
+								title: "Adventures",
+								message: 'great life adventures abound<br><br><img src="https://1.bp.blogspot.com/-UQCxwi4es5g/UoCu3ejOUEI/AAAAAAAAHFw/MeIg65B-L34/s1600/vision-of-dmt-art.jpg" width="400px"/><br><br><div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore harum asperiores temporibus, quod quidem in voluptatum, quo debitis praesentium sapiente et soluta fugit tenetur eveniet, velit odio minus, nobis. Recusandae.</div><div>Doloribus perferendis facere soluta. Soluta cumque aliquam, corporis quisquam, animi amet voluptates accusantium voluptatibus rem quasi inventore a fugit, odio dolor veniam dolore est quaerat eveniet. Qui iure, a ratione.</div><div>Enim molestias reprehenderit praesentium, repellat labore minima dignissimos nesciunt soluta nostrum quisquam harum aspernatur modi sunt quia, placeat animi. Eum dolorum dolore architecto dolores numquam. Cum nihil animi quae molestiae!</div><div>Esse dolorem, temporibus nam, itaque velit sunt qui. Illo qui excepturi sint necessitatibus. Fugiat asperiores quae voluptas molestiae, animi voluptates quisquam, voluptate vitae est ullam fuga dolorum tenetur sint eius.</div>',
 								backdrop: true,
 								onEscape: function() { console.log("Escape!"); }
 							});
@@ -57,13 +45,49 @@
     				</script>
 			    </li>
 			    <li class='menu-item'>
-			      <a href='#' target='_blank' data-toggle="tooltip" title="Metamorphosis">&#9796</a>
+			      <a class='credits' href=# data-toggle="tooltip" data-placement="right" title="Credits">&#9792</a>
+			      <script>
+        		$(document).on("click", ".credits", function() {
+            	bootbox.dialog({
+								title: "Credits",
+								message: 'the circular menu that drives this site came from a modification of this pen: <a href="http://codepen.io/hadarweiss/pen/WvEXeK" target="_blank">Pure CSS Circle Menu</a><br> <hr><div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore harum asperiores temporibus, quod quidem in voluptatum, quo debitis praesentium sapiente et soluta fugit tenetur eveniet, velit odio minus, nobis. Recusandae.</div><div>Doloribus perferendis facere soluta. Soluta cumque aliquam, corporis quisquam, animi amet voluptates accusantium voluptatibus rem quasi inventore a fugit, odio dolor veniam dolore est quaerat eveniet. Qui iure, a ratione.</div><div>Enim molestias reprehenderit praesentium, repellat labore minima dignissimos nesciunt soluta nostrum quisquam harum aspernatur modi sunt quia, placeat animi. Eum dolorum dolore architecto dolores numquam. Cum nihil animi quae molestiae!</div><div>Esse dolorem, temporibus nam, itaque velit sunt qui. Illo qui excepturi sint necessitatibus. Fugiat asperiores quae voluptas molestiae, animi voluptates quisquam, voluptate vitae est ullam fuga dolorum tenetur sint eius.</div>',
+								backdrop: true,
+								onEscape: function() { console.log("Escape!"); }
+							});
+        		});
+    				</script>
 			    </li>
 			    <li class='menu-item'>
-			      <a href='http://truthconduit.weebly.com/' target='_blank' data-toggle="tooltip" title="Suppressed Info">&#9790</a>
+			      <a class='about' href=# data-toggle="tooltip" data-placement="right" title="About">&#9737</a>
+			      <script>
+        		$(document).on("click", ".about", function() {
+            	bootbox.dialog({
+								title: "About",
+								message: 'stuff about me<br><br> <img src="config/spiral.png" width="300px"/><br/><br/> <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore harum asperiores temporibus, quod quidem in voluptatum, quo debitis praesentium sapiente et soluta fugit tenetur eveniet, velit odio minus, nobis. Recusandae.</div><div>Doloribus perferendis facere soluta. Soluta cumque aliquam, corporis quisquam, animi amet voluptates accusantium voluptatibus rem quasi inventore a fugit, odio dolor veniam dolore est quaerat eveniet. Qui iure, a ratione.</div><div>Enim molestias reprehenderit praesentium, repellat labore minima dignissimos nesciunt soluta nostrum quisquam harum aspernatur modi sunt quia, placeat animi. Eum dolorum dolore architecto dolores numquam. Cum nihil animi quae molestiae!</div><div>Esse dolorem, temporibus nam, itaque velit sunt qui. Illo qui excepturi sint necessitatibus. Fugiat asperiores quae voluptas molestiae, animi voluptates quisquam, voluptate vitae est ullam fuga dolorum tenetur sint eius.</div>',
+								backdrop: true,
+								onEscape: function() { console.log("Escape!"); }
+							});
+        		});
+    				</script>
 			    </li>
 			    <li class='menu-item'>
-			      <a href='blog.html' target='_blank' data-toggle="tooltip" title="Writing">&#9791</a>
+			      <a class ='resume' href=# data-toggle="tooltip" data-placement="bottom" title="Resume">&#8853</a>
+						<script>
+        		$(document).on("click", ".resume", function() {
+            	bootbox.dialog({
+								title: "Professional Resume",
+								message: 'Experience:<br><hr><div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ipsum laudantium vero rem, quibusdam, dolores distinctio natus quaerat illum, dolorem ratione commodi, voluptate autem doloremque eos molestiae harum fuga in.</div><div>Obcaecati officia, delectus aspernatur ad! Magni delectus, non, dolorum sequi alias dolores, quia cupiditate asperiores consequuntur iusto eaque deserunt esse saepe deleniti consectetur, ab? Consequatur aliquid perspiciatis deserunt dolores tempore!</div><br>Education:<br><hr><div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi quod modi odit alias laudantium, dolore accusantium ipsam ut. Corporis illo totam magni illum, quasi tenetur quisquam voluptate at eaque nulla.</div><div>Dignissimos fugiat, corporis suscipit explicabo, illo architecto labore perspiciatis. Quas repellat amet nam expedita eligendi laborum quisquam nesciunt adipisci. Maiores earum doloremque officiis consequatur praesentium facilis odit iusto totam est.</div><div>Accusantium quia atque iusto a recusandae repudiandae nostrum sed, nulla! Culpa nihil eveniet sed corporis voluptas aspernatur maxime ullam autem et incidunt id, rem aliquam consectetur hic sit qui unde.</div><br>References:<br><hr>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, earum, neque. Fugiat culpa, voluptatum pariatur odio totam excepturi quaerat explicabo, quo, provident reiciendis nemo! Quos culpa nihil quis possimus voluptate!<br><div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis consequuntur, nostrum ipsum quod odio quisquam, expedita porro vel. Vel consequatur, aliquam ad ut inventore quibusdam iusto magni maxime, sed dolorem.</div><div>Odio similique cum, quos ducimus error officiis, dolorem mollitia assumenda obcaecati ab provident aliquam repellendus impedit sit ipsa velit dolore. Minus officiis quod qui vel dolor ratione quasi eligendi dolorum.</div>',
+								backdrop: true,
+								onEscape: function() { console.log("Escape!"); }
+							});
+        		});
+    				</script>
+			    </li>
+			    <li class='menu-item'>
+			      <a href='http://truthconduit.weebly.com/' target='_blank' data-toggle="tooltip" data-placement="left" title="Suppressed Info"> &#9790</a>
+			    </li>
+			    <li class='menu-item'>
+			      <a href='blog.html' target='_blank' data-toggle="tooltip" data-placement="left" title="Writing">&#9791</a>
 			    </li>
 			  </ul>
 			</nav>
