@@ -42,6 +42,7 @@ body
 	text-align: center;
 }
 
+
 .panel-body
 {
 	box-shadow: 10px 10px 100px black;
@@ -74,6 +75,7 @@ body
 {
 	font-size: 20px;
 	font-family: 'Julius Sans One', sans-serif;
+	line-height: 40px;
 }
 
 .icon
@@ -111,12 +113,14 @@ body
 	padding: 20px;
 	font-size: 30px;
 	
+	
 }
 
 .myResume p
 {
 	width: 40%;
 	font-family: 'Julius Sans One', sans-serif;
+	
 }
 
 .longestHour
@@ -167,4 +171,12 @@ body
 {
 	display: inline-block;
 	padding: 30px;
+}
+
+.aboutPicture
+{
+	width: 250px;
+	height: 300px;
+	border-radius: 40px;
+	margin: 30px;
 }
