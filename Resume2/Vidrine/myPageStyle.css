@@ -23,6 +23,7 @@ body
 	height: 350px;
 	width: 100%;
 	position: relative;
+	box-shadow: 10px 20px 100px white;
 	
 }
 
@@ -41,6 +42,11 @@ body
 	text-align: center;
 }
 
+.panel-body
+{
+	box-shadow: 10px 10px 100px black;
+}
+
 .nav-tabs
 {
 	display: inline-block;
@@ -56,8 +62,18 @@ body
 
 .myAbout
 {
-	font-family: 'Julius Sans One', sans-serif;
 	text-align: center;
+}
+
+.myAbout h1
+{
+	font-family: 'Cabin Sketch', cursive;
+}
+
+.myAbout p
+{
+	font-size: 20px;
+	font-family: 'Julius Sans One', sans-serif;
 }
 
 .icon
@@ -93,6 +109,14 @@ body
 {
 	font-family: 'Julius Sans One', sans-serif;
 	padding: 20px;
+	font-size: 30px;
+	
+}
+
+.myResume p
+{
+	width: 40%;
+	font-family: 'Julius Sans One', sans-serif;
 }
 
 .longestHour
@@ -115,23 +139,32 @@ body
 	font-family: 'Julius Sans One', sans-serif;
 }
 
+.music h1
+{
+	font-size: 20px;
+}
+
 .myContact
 {
 	font-family: 'Julius Sans One', sans-serif;
+	text-align: center;
 }
 
 
 .address
 {
 	display: inline-block;
+	padding: 30px;
 }
 
 .phone
 {
-	
+	display: inline-block;
+	padding: 30px;
 }
 
 .email
 {
 	display: inline-block;
+	padding: 30px;
 }
