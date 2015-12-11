@@ -1,0 +1,61 @@
+body{font-family: 'Josefin Sans', sans-serif}
+p{font-size:18px;}
+#top-page{background-color: #142428;background-image: url(http://www.transparenttextures.com/patterns/dark-geometric.png);
+border-bottom:2px solid #90b5b5;}
+h1.name{color:#fff;font-family: 'Bevan', cursive; letter-spacing: 3px;margin-bottom:2px;font-weight:400;}
+h1.name a{color:#49C4DB;text-decoration:underline;transition: color 0.2s ease;}
+h1.name a:hover{color:#49C4DB;transition: color 0.2s ease;}
+h3.small-name{color:#fff;margin:5px 0 20px;font-weight:600;letter-spacing: 2px}
+h3.small-name a{color:#fff;transition: color 0.2s ease;}
+h3.small-name a:hover{color:#49C4DB;transition: color 0.2s ease;}
+.main-nav{color:#E0E5E5;margin-top:20px;margin-left:10px;}
+.intro{font-family: 'Josefin Slab', serif;line-height: 1.5;font-size:25px;}
+.jumbotron{background-color:#fff;}
+#slideshow {background-color: #E1E9E9; background-image: url(http://www.transparenttextures.com/patterns/45-degree-fabric-light.png);
+border-top:5px solid #90b5b5;}
+footer#bottom-info{padding:20px 0;background:#847E68;color:#D5D3C5;border-top:3px solid #EBECE7;}
+#bottom-info p {font-size:14px;}
+.carousel-caption{position:relative;left:0;right:0;color:#acacac;}
+aside#sidebar{margin-top:20px;}
+.btn {border:1px solid #fff;color:#91a542;}
+.button {
+	color: transparent;
+  	font-size: 2rem;
+  	letter-spacing: 5px;
+  	border: 4px solid transparent;
+  	border-image: linear-gradient(45deg, pink, skyblue);
+  	border-image-slice: 1;
+  	background: linear-gradient(45deg, pink, skyblue);
+  	-webkit-background-clip: text;
+	transition: color 0.2s ease;
+  	text-fill-color: transparent;
+	padding:10px;
+	margin-top:5px;
+  	
+}
+
+.button:hover {
+   	border-image: linear-gradient(45deg, #2ecc71, dodgerblue);
+    	background: linear-gradient(45deg, #2ecc71, dodgerblue); 
+ 	text-decoration:none;
+	color:#fff;
+}
+
+.home-btn {margin-top:20px;}
+
+/* Validation Form */
+input:required:invalid {border:1px solid #cd0d31}
+input:valid{border:1px solid #468847}
+textarea:valid{border:1px solid #468847}
+textarea:required:invalid {border:1px solid #cd0d31}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+.jumbotron{background-color:#fff;background:url(../images/stock-ill.jpg) no-repeat right top; margin-bottom:0}
+.main-nav{margin-left:0;}
+.intro{font-size:30px;}
+
+
+}
+
+
